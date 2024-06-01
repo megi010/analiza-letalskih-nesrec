@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1007852,      18975]
-NotebookOptionsPosition[   1002007,      18864]
-NotebookOutlinePosition[   1002405,      18880]
-CellTagsIndexPosition[   1002362,      18877]
+NotebookDataLength[   1128481,      21403]
+NotebookOptionsPosition[   1122299,      21287]
+NotebookOutlinePosition[   1122697,      21303]
+CellTagsIndexPosition[   1122654,      21300]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -15778,6 +15778,2429 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
  CellChangeTimes->{3.926272254229821*^9},
  CellLabel->
   "Out[106]=",ExpressionUUID->"158bc277-c0e1-49e2-ae37-977249eb6817"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"tipLetaBrezPre\[ZHacek]ivelih", "=", 
+   RowBox[{
+    RowBox[{"nesre\[CHacek]eCSV", "//", 
+     RowBox[{"Query", "[", 
+      RowBox[{"Select", "[", 
+       RowBox[{
+        RowBox[{"StringContainsQ", "[", 
+         RowBox[{
+          RowBox[{"#", "[", 
+           RowBox[{"[", "8", "]"}], "]"}], ",", "\"\<No\>\""}], "]"}], "&"}], 
+       "]"}], "]"}]}], "//", 
+    RowBox[{"Query", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"GroupBy", "[", "\"\<Flight type\>\"", "]"}], "/*", 
+       RowBox[{"Map", "[", 
+        RowBox[{
+         RowBox[{"<|", 
+          RowBox[{"#", ",", 
+           RowBox[{"\"\<Number of Accidents\>\"", "->", 
+            RowBox[{"Length", "[", "#", "]"}]}]}], "|>"}], "&"}], "]"}], "/*",
+        "Values"}], ",", 
+      RowBox[{"{", "7", "}"}]}], "]"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.926272843662719*^9, 3.926272888899048*^9}},
+ CellLabel->
+  "In[114]:=",ExpressionUUID->"f46c085a-064c-450c-bafc-646fa0e38165"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PieChart3D", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"tipLetaBrezPre\[ZHacek]ivelih", "//", 
+     RowBox[{"Query", "[", 
+      RowBox[{"All", ",", "2"}], "]"}]}], "//", "Normal"}], ",", 
+   RowBox[{"ChartLabels", "->", 
+    RowBox[{"Placed", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"tipLetaBrezPre\[ZHacek]ivelih", "//", 
+        RowBox[{"Query", "[", 
+         RowBox[{"All", ",", "1"}], "]"}]}], "//", "Normal"}], ",", 
+      "\"\<VerticalCallout\>\""}], "]"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.926272915783806*^9, 3.926272921507593*^9}},
+ CellLabel->
+  "In[115]:=",ExpressionUUID->"9a82acba-8dc9-447a-9942-7f77bced42e5"],
+
+Cell[BoxData[
+ Graphics3DBox[
+  DynamicModuleBox[{DynamicChart`click$172855$174697 = False, 
+   DynamicChart`click$172883$174697 = False, 
+   DynamicChart`click$172911$174697 = False, 
+   DynamicChart`click$172939$174697 = False, 
+   DynamicChart`click$172967$174697 = False, 
+   DynamicChart`click$172995$174697 = False, 
+   DynamicChart`click$173023$174697 = False, 
+   DynamicChart`click$173051$174697 = False, 
+   DynamicChart`click$173079$174697 = False, 
+   DynamicChart`click$173107$174697 = False, 
+   DynamicChart`click$173135$174697 = False, 
+   DynamicChart`click$173163$174697 = False, 
+   DynamicChart`click$173191$174697 = False, 
+   DynamicChart`click$173219$174697 = False, 
+   DynamicChart`click$173247$174697 = False, 
+   DynamicChart`click$173275$174697 = False, 
+   DynamicChart`click$173303$174697 = False, 
+   DynamicChart`click$173331$174697 = False, 
+   DynamicChart`click$173359$174697 = False, 
+   DynamicChart`click$173387$174697 = False, 
+   DynamicChart`click$173415$174697 = False, 
+   DynamicChart`click$173443$174697 = False, 
+   DynamicChart`click$173471$174697 = False, 
+   DynamicChart`click$173499$174697 = False, 
+   DynamicChart`click$173527$174697 = False, 
+   DynamicChart`click$173555$174697 = False, 
+   DynamicChart`click$173583$174697 = False}, 
+   {RGBColor[0.5, 0.5, 1.], EdgeForm[{GrayLevel[0], Opacity[0.1]}], {{{}, {
+       {RGBColor[0.980722, 0.7110406, 0.2420506], EdgeForm[{GrayLevel[0], 
+        Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   Polygon3DBox[CompressedData["
+1:eJzt1V1IE1AUB/A5gxEbpOGDRC8jUrOCskKx4rYiXDHDJMPaoJRZQZlQLIxF
+WInBNCjCNHJW0GZJ82tKtbSTc+T2YCpojRpN0czNfRzcknyItR52B3GCXnrb
+gQuX3327nPM/0vKq4opkgUAgjJ6c6Pl9T1Si/l8hiFRp2zKMj3fFJF1xsuhZ
+IAhnczRrDYYuFvOd4gbxS0sQVqt3rHjU8pZ7/tECrVodhCzLj1WVE3buGzan
+bJL4AqAbt+LT6jHudco3N7cWB+CLvHteppngrruwRa5t8kOoYfhip9LJ/V6k
+1Wru94Hp/f6WF5ku7lLHMYndugBDHZmi3ZNu7mkm1/K7di+4F0d7pV3T3It0
+xctujQc6hk/4L5fPcFfusTnK1s+Dubrw6lhklrszvTTllWUOXAPbr1TUzXHX
+92aPnM/9CvW2tid3wt+4+3oquzP0M5AX/JRll3u43228X6r3T8PnM0Zl8zUv
+93D/w1PG7Cmw3RbLOvUL3IdyCteUPHfBOcWtn84HPu6aS97QwVknqDaOrBNq
+/dyNB5rLCpImoelDsjsvP8D9Y3rEUCMah4bjqcsmZ9z3inyq+iUHnD608nVf
+STD+D0daRxcHB0Fxo6DN3hX31IGp77nhHjjcuE9S64n7ktEsTKq5DiFZbVV7
+JO504V/eE57wf3O635DR/YmM7mdkdP8jo+cFGT1fyOh5REbPLzJ63pHR+YCM
+zhNkdP4go/Mq+g9kviGj8xAZnZ/I6LxFRuczMjrPkdH5j4zeF8jo/YKM3kfI
+6P0V66s/9x2yX7Bh9DM=
+                    "]], 
+                   
+                   BSplineSurface3DBox[{{{-0.009033210654212347, 
+                    0.9999591997203069, 0.}, {-0.9999999999999999, 
+                    0.9910072227176524, 0.}, {-1., 1.227880070545946*^-16, 
+                    0.}}, {{-0.009033210654212347, 0.9999591997203069, 
+                    1}, {-0.9999999999999999, 0.9910072227176524, 1}, {-1., 
+                    1.227880070545946*^-16, 1}}}, SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.7102933234425803, 1.}, {1., 
+                    0.7102933234425803, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.009033210654212347, 0.9999591997203069, 
+                    1.}, {-0.009033210654212347, 0.9999591997203069, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {-1., 
+                    1.2246467991473532`*^-16, 1.}, {-1., 
+                    1.2246467991473532`*^-16, 0.}}}]}},
+                 
+                 ImageSizeCache->{{201.88675903819697`, 
+                  406.32442268876093`}, {-187.99756387267985`, \
+-1.1743933451847113`}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.7102933234425803, 0.7039058137797229, 
+                 0.5}, {-0.7813226557868385, 0.7742963951576953, 0.5}}], 
+                Line3DBox[{{-0.7813226557868385, 0.7742963951576953, 
+                 0.5}, {-1.1, 0.7742963951576953, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.7102933234425803, 0.7039058137797229, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox["\<\"Private\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 FontColor->GrayLevel[0]], {-1.1400000000000001`, 
+                0.7742963951576953, 0.5}, {1, 0}]},
+              StatusArea[#, 389]& ,
+              TagBoxNote->"389"],
+             StyleBox["389", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[389, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$172855$174697, 
+               FEPrivate`Not[DynamicChart`click$172855$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$172855$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.14205866468851608`, 0.1407811627559446, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$172855$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[
+        0.9836878461538462, 0.6765728153846154, 0.22019666153846154`], 
+        EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   Polygon3DBox[CompressedData["
+1:eJxTTMoPSmVmYGBgAmIhIAaxhyv4tmwzE2ND0/7Pji35q/6/t4eJ283icGdm
+XWuvU/J535VPCPF1tZmfv7nst9d6oHR+xSGEuHyTkWb2p+P2G/weP4/OR4j/
+eCOr+F74gr37pP3aXj/fwcXzlzhbPpC5Yp9TI2L0LQEhvv6nVvwk/hv2XM/m
+l3EsfwsXbzv5aP3y57ftd/aqzfc78wYuzmNza/v9Bfft+17+m77r4mu4OHbw
+AYf80BHH7t8P9tjD54M99vD8YI89/D/YY4+vD/bY4/eDPfb08MEee/r5YI89
+vX2wBwDQQ7Hw
+                    "]], 
+                   
+                   BSplineSurface3DBox[{{{0.4941939635691035, 
+                    0.8693516701380746, 0.}, {0.2601604534536635, 
+                    1.0023909820123702`, 0.}, {-0.009033210654212425, 
+                    0.9999591997203069, 
+                    0.}}, {{0.4941939635691035, 0.8693516701380746, 1}, {
+                    0.2601604534536635, 1.0023909820123702`, 
+                    1}, {-0.009033210654212425, 0.9999591997203069, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9656220902013947, 1.}, {1., 
+                    0.9656220902013947, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
+                    0.4941939635691035, 0.8693516701380746, 1.}, {
+                    0.4941939635691035, 0.8693516701380746, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.009033210654212347, 0.9999591997203069, 
+                    1.}, {-0.009033210654212347, 0.9999591997203069, 0.}}}]}},
+                 
+                 
+                 ImageSizeCache->{{387.706760535817, 
+                  503.9448814967244}, {-182.80190242454222`, 
+                  0.25736937534367144`}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{0.25121668085166915`, 0.9679308752498138, 0.5}, {
+                 0.27633834893683606`, 1.0647239627747953`, 0.5}}], 
+                Line3DBox[{{0.27633834893683606`, 1.0647239627747953`, 0.5}, {
+                 1.1, 1.0647239627747953`, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{0.25121668085166915`, 0.9679308752498138, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox["\<\"Scheduled Revenue Flight\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 FontColor->GrayLevel[0]], {1.1400000000000001`, 
+                1.0647239627747953`, 0.5}, {-1, 0}]},
+              StatusArea[#, 131]& ,
+              TagBoxNote->"131"],
+             StyleBox["131", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[131, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$172883$174697, 
+               FEPrivate`Not[DynamicChart`click$172883$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$172883$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {0.05024333617033383, 0.19358617504996278`, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$172883$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[
+        0.9866536923076923, 0.6421050307692308, 0.19834272307692308`], 
+        EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   Polygon3DBox[CompressedData["
+1:eJxTTMoPSmVmYGBgAmIuIAaxBwrw2Nzafn/Bffu+l/+m77r42h4mnl15Ocf0
+1UN7k2eqJ582v4KLy8xecnjmi8f2Cdvm3+zifQkX/35tyZUJJ57aK67tefO0
+4Dlc3OHtMhHb9uf2Epc3rczd8NSeAS/4gEOeeuLY3fPBHrv7P9hj9+8He+zh
+88Eee3h+sAcAU65rxg==
+                    "]], 
+                   
+                   BSplineSurface3DBox[{{{0.7352586177216054, 
+                    0.6777866663383945, 0.}, {0.6296504736676252, 
+                    0.7923497019861128, 0.}, {0.49419396356910356`, 
+                    0.8693516701380746, 
+                    0.}}, {{0.7352586177216054, 0.6777866663383945, 1}, {
+                    0.6296504736676252, 0.7923497019861128, 1}, {
+                    0.49419396356910356`, 0.8693516701380746, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9880777653906552, 1.}, {1., 
+                    0.9880777653906552, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
+                    0.7352586177216054, 0.6777866663383945, 1.}, {
+                    0.7352586177216054, 0.6777866663383945, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
+                    0.4941939635691035, 0.8693516701380746, 1.}, {
+                    0.4941939635691035, 0.8693516701380746, 0.}}}]}},
+                 
+                 ImageSizeCache->{{390.57709995089795`, 
+                  550.9982111893443}, {-163.6750696022334, 
+                  0.9476905319524462}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{0.6221436329986747, 0.7829031229463901, 0.5}, {
+                 0.6843579962985422, 0.8611934352410292, 0.5}}], 
+                Line3DBox[{{0.6843579962985422, 0.8611934352410292, 0.5}, {
+                 1.1, 0.8611934352410292, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{0.6221436329986747, 0.7829031229463901, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox["\<\"Positioning\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 FontColor->GrayLevel[0]], {1.1400000000000001`, 
+                0.8611934352410292, 0.5}, {-1, 0}]},
+              StatusArea[#, 77]& ,
+              TagBoxNote->"77"],
+             StyleBox["77", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[77, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$172911$174697, 
+               FEPrivate`Not[DynamicChart`click$172911$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$172911$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {0.12442872659973495`, 0.15658062458927802`, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$172911$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[
+        0.9896195384615385, 0.6076372461538462, 0.17648878461538461`], 
+        EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   Polygon3DBox[CompressedData["
+1:eJxTTMoPSmVmYGBgAmIeIAaxBxtweLtMxLb9ub3E5U0rczc8tYeJnzRsOCnz
+54X9Eu7juqX/HsPFH6y1Zz8Z+Mr+QObRwy3Gj+Di3el98tPbXttv5jLrvhn4
+AC7uHL86n3XmG/tH6f48s7bfgYtP7WRw2tv+1t5MiCdkyfIbcHHs4AMOedqL
+Y3fnB3vs/vpgjz0cPthjD7cP9tjD+YM99nj5YA8Axp9vjA==
+                    "]], 
+                   
+                   BSplineSurface3DBox[{{{0.9228197373488906, 
+                    0.38523205001573346`, 0.}, {0.8548486343893121, 
+                    0.5480561851776723, 0.}, {0.7352586177216053, 
+                    0.6777866663383946, 
+                    0.}}, {{0.9228197373488906, 0.38523205001573346`, 1}, {
+                    0.8548486343893121, 0.5480561851776723, 1}, {
+                    0.7352586177216053, 0.6777866663383946, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9847883811855799, 1.}, {1., 
+                    0.9847883811855799, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
+                    0.9228197373488906, 0.38523205001573346`, 1.}, {
+                    0.9228197373488906, 0.38523205001573346`, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
+                    0.7352586177216054, 0.6777866663383945, 1.}, {
+                    0.7352586177216054, 0.6777866663383945, 0.}}}]}},
+                 
+                 ImageSizeCache->{{392.3977185219922, 
+                  587.3556051525404}, {-135.56124376052173`, 
+                  1.4811837279787028`}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{0.8418450028189544, 0.5397193633998643, 0.5}, {
+                 0.9260295031008499, 0.5936912997398507, 0.5}}], 
+                Line3DBox[{{0.9260295031008499, 0.5936912997398507, 0.5}, {
+                 1.1, 0.5936912997398507, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{0.8418450028189544, 0.5397193633998643, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                
+                StyleBox["\<\"Executive/Corporate/Business\"\>", 
+                 "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 FontColor->GrayLevel[0]], {1.1400000000000001`, 
+                0.5936912997398507, 0.5}, {-1, 0}]},
+              StatusArea[#, 87]& ,
+              TagBoxNote->"87"],
+             StyleBox["87", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[87, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$172939$174697, 
+               FEPrivate`Not[DynamicChart`click$172939$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$172939$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {0.1683690005637909, 0.10794387267997285`, 0.}}, {{
+            1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 
+            1}}], TrackedSymbols :> {DynamicChart`click$172939$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[
+        0.9925853846153846, 0.5731694615384615, 0.15463484615384615`], 
+        EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   Polygon3DBox[CompressedData["
+1:eJxTTMoPSmVmYGBgAmIRIAaxRxqY2sngtLf9rb2ZEE/IkuU37GHiO6/MPXPF
+85291IHuK5OWXYGLL1rXyWPx8p395g++TDd6L8DFtc8sTzRIfW/v22P+x+vI
+Cbj4M621B/T3vreX/L7HozXgAFyc5/mD0Isf3tsvP2I520JjPVz8mMriHzf/
+v7fnm19ktWNVxX6YuOg603yLV+/tu/t45dcv3wQXPz+rool1w3v73p27klde
+PwgXT05tedgc+N5++u3d8zjdT8HFsYMP9sNVHHs4fLDHHm4f7LGH8wd77PHy
+wR57PH6wxx7vH+yxp5MP9tjT1Qd77Onwgz32dPvBHgDuwMVk
+                    "]], 
+                   
+                   BSplineSurface3DBox[{{{
+                    0.9787005810386912, -0.20529289484667565`, 0.}, {
+                    1.0424551327190943`, 0.09864659034628744, 0.}, {
+                    0.9228197373488906, 0.38523205001573346`, 
+                    0.}}, {{0.9787005810386912, -0.20529289484667565`, 1}, {
+                    1.0424551327190943`, 0.09864659034628744, 1}, {
+                    0.9228197373488906, 0.38523205001573346`, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9550075419602407, 1.}, {1., 
+                    0.9550075419602407, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
+                    0.9787005810386912, -0.20529289484667565`, 1.}, {
+                    0.9787005810386912, -0.20529289484667565`, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
+                    0.9228197373488906, 0.38523205001573346`, 1.}, {
+                    0.9228197373488906, 0.38523205001573346`, 0.}}}]}},
+                 
+                 ImageSizeCache->{{395.2750875847073, 
+                  615.9254884009654}, {-91.09137134597438, 
+                  35.138145489146865`}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{0.9955525139018988, 0.09420823776936679, 0.5}, {
+                 1.0951077652920889`, 0.10362906154630348`, 0.5}}], 
+                Line3DBox[{{1.0951077652920889`, 0.10362906154630348`, 0.5}, {
+                 1.1, 0.10362906154630348`, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{0.9955525139018988, 0.09420823776936679, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                
+                StyleBox["\<\"Charter/Taxi (Non Scheduled Revenue \
+Flight)\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 FontColor->GrayLevel[0]], {1.1400000000000001`, 
+                0.10362906154630348`, 0.5}, {-1, 0}]},
+              StatusArea[#, 150]& ,
+              TagBoxNote->"150"],
+             StyleBox["150", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[150, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$172967$174697, 
+               FEPrivate`Not[DynamicChart`click$172967$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$172967$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {0.19911050278037978`, 0.01884164755387336, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$172967$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.9955512307692308, 0.5387016769230769, 0.1327809076923077], 
+        EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 0.}, {
+                    0.9787005810386912, -0.20529289484667565`, 0.}, {
+                    0.9519826879005961, -0.3061518609082038, 0.}}, {{0., 0., 
+                    1.}, {0., 0., 1.}, {
+                    0.9519826879005961, -0.3061518609082038, 1.}, {
+                    0.9787005810386912, -0.20529289484667565`, 1.}}}], 
+                   
+                   BSplineSurface3DBox[{{{
+                    0.9519826879005961, -0.3061518609082038, 0.}, {
+                    0.967976072546219, -0.25642024974503236`, 0.}, {
+                    0.9787005810386913, -0.20529289484667565`, 
+                    0.}}, {{0.9519826879005961, -0.3061518609082038, 1}, {
+                    0.967976072546219, -0.25642024974503236`, 1}, {
+                    0.9787005810386913, -0.20529289484667565`, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9986382757474375, 1.}, {1., 
+                    0.9986382757474375, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
+                    0.9519826879005961, -0.3061518609082038, 1.}, {
+                    0.9519826879005961, -0.3061518609082038, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
+                    0.9787005810386912, -0.20529289484667565`, 1.}, {
+                    0.9787005810386912, -0.20529289484667565`, 0.}}}]}},
+                 
+                 ImageSizeCache->{{399.254219187533, 
+                  606.1221310824163}, {-29.517292575354332`, 
+                  51.747496490459696`}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{0.9666579560523325, -0.25607107607210683`, 0.5}, {
+                 1.0633237516575658`, -0.2816781836793175, 0.5}}], 
+                Line3DBox[{{1.0633237516575658`, -0.2816781836793175, 0.5}, {
+                 1.1, -0.2816781836793175, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{0.9666579560523325, -0.25607107607210683`, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox["\<\"Government\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 FontColor->GrayLevel[0]], {
+                1.1400000000000001`, -0.2816781836793175, 0.5}, {-1, 0}]},
+              StatusArea[#, 26]& ,
+              TagBoxNote->"26"],
+             StyleBox["26", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[26, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$172995$174697, 
+               FEPrivate`Not[DynamicChart`click$172995$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$172995$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {0.1933315912104665, -0.05121421521442137, 0.}}, {{
+            1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 
+            1}}], TrackedSymbols :> {DynamicChart`click$172995$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[
+        0.9985170769230769, 0.5042338923076923, 0.11092696923076922`], 
+        EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   Polygon3DBox[CompressedData["
+1:eJxTTMoPSmVmYGBgAmI+IAaxhwxovZO6pOydvXZp78+/0y/vhwkLVevJTz75
+1l5uzsW3lUnX4eKMElbGkf/e2KsfzT3qIXobLn7lUHfKEdE39vfbVj5eveYe
+XPxJtbPeAYHX9v+0Ws0bhB7CxT21Vl0N+fDS/tSPx/WJex/BxWvuLohbtvWF
+/eYE0+meoU/g4tjBB/vBJo7d/R/ssfv3gz328Plgjz08P9hjD/8P9tjjC+hO
+rPH7wR4Ad7eO5A==
+                    "]], 
+                   
+                   BSplineSurface3DBox[{{{
+                    0.7721740577898539, -0.6354110673228405, 0.}, {
+                    0.8935174010193666, -0.4879503343486798, 0.}, {
+                    0.9519826879005961, -0.30615186090820373`, 
+                    0.}}, {{0.7721740577898539, -0.6354110673228405, 1}, {
+                    0.8935174010193666, -0.4879503343486798, 1}, {
+                    0.9519826879005961, -0.30615186090820373`, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9822496158727808, 1.}, {1., 
+                    0.9822496158727808, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
+                    0.7721740577898539, -0.6354110673228405, 1.}, {
+                    0.7721740577898539, -0.6354110673228405, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
+                    0.9519826879005961, -0.30615186090820384`, 1.}, {
+                    0.9519826879005961, -0.30615186090820384`, 0.}}}]}},
+                 
+                 ImageSizeCache->{{399.254219187533, 
+                  609.7230148622741}, {-29.517292575354332`, 
+                  108.22422378808986`}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{0.8776571239269182, -0.47928902847898586`, 0.5}, {
+                 0.9654228363196101, -0.5272179313268844, 0.5}}], 
+                Line3DBox[{{0.9654228363196101, -0.5272179313268844, 0.5}, {
+                 1.1, -0.5272179313268844, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{0.8776571239269182, -0.47928902847898586`, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox["\<\"Training\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 FontColor->GrayLevel[0]], {
+                1.1400000000000001`, -0.5272179313268844, 0.5}, {-1, 0}]},
+              StatusArea[#, 94]& ,
+              TagBoxNote->"94"],
+             StyleBox["94", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[94, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$173023$174697, 
+               FEPrivate`Not[DynamicChart`click$173023$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$173023$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {0.17553142478538364`, -0.09585780569579717, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173023$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.9813076923076922, 0.48104615384615385`, 0.1], EdgeForm[{
+        GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   Polygon3DBox[CompressedData["
+1:eJxTTMoPSmVmYGBgAmIZIAaxRwF1Qc3dBXHLtr6w35xgOt0z9Ml+mPi52BjG
+sqjn9qcu7P8z58FTuPjO8KjsOc+e2vcF3ta6FvIcLm7H2OixKPqJvZnbeoGc
+DS/g4sHMJzZo7H5kzzDr+sL3H1/CxfOWHs1/zvbQvm7Bv0heiddw8ZX3WjPC
+Gu/ZNzqkLO5TfAMX745pCl5+5Za9xfnrctG8b+HiotpPfy/ivm6v4HLqdOUt
+hLjO3soVHlqX7RfJO/ALdbyDi38R3L80KfOcvW5k74wc0fdw8V+Tly8Xiztm
+r3jqpdKXRoS4gO7yx+Fle+x1VgkKm51FiOfF3HJ6obLCXmOl94dH3xDi2MEH
++1Fx8sSxh/MHe+zx8sEeezx+sMce7x/ssaeTD/bY09UHe+zp8IM99nQLdD/W
+dP7BHnu++GCPPR99sMee7z7YY8+nH+yx5+sP9gCPwBM5
+                    "]], 
+                   
+                   BSplineSurface3DBox[{{{
+                    0.047156580124629296`, -0.9988875096580943, 0.}, {
+                    0.49028913431277227`, -0.9779676206862545, 0.}, {
+                    0.7721740577898539, -0.6354110673228405, 
+                    0.}}, {{0.047156580124629296`, -0.9988875096580943, 1}, {
+                    0.49028913431277227`, -0.9779676206862545, 1}, {
+                    0.7721740577898539, -0.6354110673228405, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.914088963524238, 1.}, {1., 
+                    0.914088963524238, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
+                    0.047156580124629296`, -0.9988875096580943, 1.}, {
+                    0.047156580124629296`, -0.9988875096580943, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
+                    0.7721740577898539, -0.6354110673228405, 1.}, {
+                    0.7721740577898539, -0.6354110673228405, 0.}}}]}},
+                 
+                 ImageSizeCache->{{399.254219187533, 
+                  582.5142174942177}, {-29.517292575354332`, 
+                  174.0100206065046}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{0.448167886611158, -0.8939494087533635, 0.5}, {
+                 0.4929846752722738, -0.9833443496286999, 0.5}}], 
+                Line3DBox[{{0.4929846752722738, -0.9833443496286999, 0.5}, {
+                 1.1, -0.9833443496286999, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{0.448167886611158, -0.8939494087533635, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox["\<\"Cargo\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 FontColor->GrayLevel[0]], {
+                1.1400000000000001`, -0.9833443496286999, 0.5}, {-1, 0}]},
+              StatusArea[#, 208]& ,
+              TagBoxNote->"208"],
+             StyleBox["208", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[208, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$173051$174697, 
+               FEPrivate`Not[DynamicChart`click$173051$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$173051$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {0.0896335773222316, -0.1787898817506727, 0.}}, {{
+            1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 
+            1}}], TrackedSymbols :> {DynamicChart`click$173051$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.9439230769230769, 0.4691384615384615, 0.1], EdgeForm[{
+        GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   Polygon3DBox[CompressedData["
+1:eJxTTMoPSmVmYGBgAmIeIAaxBxvIi7nl9EJlhb3GSu8Pj7693w8T59zjujSI
+Z8b+bQx1s/f+RYg7CK1ify+wY3/dHP8JO24jxP/OV3nBwnB0/2zFr67/JyDE
+tbs6J+69c3b/K3s904+yCPGZtu+zl3te3i+8xStOsfkdXBw7+GA/UOLY3fnB
+Hru/PthjD4cP9tjD7YM99nD+YI89Xj7YAwDR+3uG
+                    "]], 
+                   
+                   BSplineSurface3DBox[{{{-0.30137048283082774`, \
+-0.9535071221959036, 0.}, {-0.1311574370745639, -1.0073055538903988`, 0.}, {
+                    0.047156580124629366`, -0.9988875096580944, 
+                    0.}}, {{-0.30137048283082774`, -0.9535071221959036, 
+                    1}, {-0.1311574370745639, -1.0073055538903988`, 1}, {
+                    0.047156580124629366`, -0.9988875096580944, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9844375941142006, 1.}, {1., 
+                    0.9844375941142006, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.30137048283082774`, -0.9535071221959036, 
+                    1.}, {-0.30137048283082774`, -0.9535071221959036, 0.}}}], 
+                   
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
+                    0.047156580124629296`, -0.9988875096580943, 1.}, {
+                    0.047156580124629296`, -0.9988875096580943, 0.}}}]}},
+                 
+                 ImageSizeCache->{{340.4559433848451, 
+                  428.78496403101735`}, {-30.554988278505334`, 
+                  175.5014838010077}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.12911631180386843`, -0.9916294560097366, 
+                 0.5}, {-0.14202794298425528`, -1.0907924016107104`, 0.5}}], 
+                Line3DBox[{{-0.14202794298425528`, -1.0907924016107104`, 
+                 0.5}, {-1.1, -1.0907924016107104`, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.12911631180386843`, -0.9916294560097366, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox["\<\"Military\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -1.0907924016107104`, 0.5}, {1, 
+                0}]},
+              StatusArea[#, 88]& ,
+              TagBoxNote->"88"],
+             StyleBox["88", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[88, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$173079$174697, 
+               FEPrivate`Not[DynamicChart`click$173079$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$173079$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.02582326236077369, -0.19832589120194732`, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173079$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.9065384615384615, 0.4572307692307692, 0.1], EdgeForm[{
+        GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    0.}, {-0.30137048283082774`, -0.9535071221959036, 
+                    0.}, {-0.3768803073570083, -0.9262619683040467, 0.}}, {{
+                    0., 0., 1.}, {0., 0., 
+                    1.}, {-0.3768803073570083, -0.9262619683040467, 
+                    1.}, {-0.30137048283082774`, -0.9535071221959036, 1.}}}], 
+                   
+                   
+                   BSplineSurface3DBox[{{{-0.3768803073570083, \
+-0.9262619683040467, 0.}, {-0.33967261038753105`, -0.9414011500363793, 
+                    0.}, {-0.30137048283082774`, -0.9535071221959034, 
+                    0.}}, {{-0.3768803073570083, -0.9262619683040467, 
+                    1}, {-0.33967261038753105`, -0.9414011500363793, 
+                    1}, {-0.30137048283082774`, -0.9535071221959034, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9991941713187474, 1.}, {1., 
+                    0.9991941713187474, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.3768803073570083, -0.9262619683040467, 
+                    1.}, {-0.3768803073570083, -0.9262619683040467, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.30137048283082774`, -0.9535071221959036, 
+                    1.}, {-0.30137048283082774`, -0.9535071221959036, 0.}}}]}},
+                 
+                 ImageSizeCache->{{325.6347922935713, 
+                  417.9260036092718}, {-30.816598990187742`, 
+                  165.3432229835293}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.33939889245584426`, -0.9406425419891162, 
+                 0.5}, {-0.3733387817014287, -1.0347067961880279`, 0.5}}], 
+                Line3DBox[{{-0.3733387817014287, -1.0347067961880279`, 
+                 0.5}, {-1.1, -1.0347067961880279`, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.33939889245584426`, -0.9406425419891162, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox["\<\"Skydiving / Paratroopers\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -1.0347067961880279`, 0.5}, {1, 
+                0}]},
+              StatusArea[#, 20]& ,
+              TagBoxNote->"20"],
+             StyleBox["20", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[20, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$173107$174697, 
+               FEPrivate`Not[DynamicChart`click$173107$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$173107$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.06787977849116886, -0.18812850839782325`, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173107$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.8691538461538462, 0.4453230769230769, 0.1], EdgeForm[{
+        GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    0.}, {-0.3768803073570083, -0.9262619683040467, 
+                    0.}, {-0.47487847279132633`, -0.8800513826359103, 0.}}, {{
+                    0., 0., 1.}, {0., 0., 
+                    1.}, {-0.47487847279132633`, -0.8800513826359103, 
+                    1.}, {-0.3768803073570083, -0.9262619683040467, 1.}}}], 
+                   
+                   BSplineSurface3DBox[{{{-0.47487847279132633`, \
+-0.8800513826359103, 0.}, {-0.4271329246884045, -0.9058150294104766, 
+                    0.}, {-0.37688030735700834`, -0.9262619683040467, 
+                    0.}}, {{-0.47487847279132633`, -0.8800513826359103, 
+                    1}, {-0.4271329246884045, -0.9058150294104766, 
+                    1}, {-0.37688030735700834`, -0.9262619683040467, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9985315394798148, 1.}, {1., 
+                    0.9985315394798148, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.47487847279132633`, -0.8800513826359103, 
+                    1.}, {-0.47487847279132633`, -0.8800513826359103, 0.}}}], 
+                   
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.3768803073570083, -0.9262619683040467, 
+                    1.}, {-0.3768803073570083, -0.9262619683040467, 0.}}}]}},
+                 
+                 ImageSizeCache->{{306.3460471499504, 
+                  417.56939794257244`}, {-31.157092741085307`, 
+                  160.23465839191624`}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.426505696851628, -0.9044848758011972, 
+                 0.5}, {-0.4691562665367908, -0.994933363381317, 0.5}}], 
+                Line3DBox[{{-0.4691562665367908, -0.994933363381317, 
+                 0.5}, {-1.1, -0.994933363381317, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.426505696851628, -0.9044848758011972, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                
+                StyleBox["\<\"Spraying (Agricultural)\"\>", "Graphics3DLabel",
+                 
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -0.994933363381317, 0.5}, {1, 
+                0}]},
+              StatusArea[#, 27]& ,
+              TagBoxNote->"27"],
+             StyleBox["27", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[27, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$173135$174697, 
+               FEPrivate`Not[DynamicChart`click$173135$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$173135$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.0853011393703256, -0.18089697516023945`, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173135$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.8317692307692307, 0.4334153846153846, 0.1], EdgeForm[{
+        GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    0.}, {-0.47487847279132633`, -0.8800513826359103, 
+                    0.}, {-0.4924478260024238, -0.8703419665082722, 0.}}, {{
+                    0., 0., 1.}, {0., 0., 
+                    1.}, {-0.4924478260024238, -0.8703419665082722, 
+                    1.}, {-0.47487847279132633`, -0.8800513826359103, 1.}}}], 
+                   
+                   
+                   BSplineSurface3DBox[{{{-0.4924478260024238, \
+-0.8703419665082722, 0.}, {-0.48371187791881326`, -0.8752848496592517, 
+                    0.}, {-0.4748784727913263, -0.8800513826359103, 
+                    0.}}, {{-0.4924478260024238, -0.8703419665082722, 
+                    1}, {-0.48371187791881326`, -0.8752848496592517, 
+                    1}, {-0.4748784727913263, -0.8800513826359103, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9999496293646749, 1.}, {1., 
+                    0.9999496293646749, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.4924478260024238, -0.8703419665082722, 
+                    1.}, {-0.4924478260024238, -0.8703419665082722, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.47487847279132633`, -0.8800513826359103, 
+                    1.}, {-0.47487847279132633`, -0.8800513826359103, 0.}}}]}},
+                 
+                 ImageSizeCache->{{302.88149810811063`, 
+                  416.96817709586935`}, {-31.218253512186806`, 
+                  151.6204472521384}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.4836875130442059, -0.8752407610052855, 
+                 0.5}, {-0.5320562643486265, -0.9627648371058141, 0.5}}], 
+                Line3DBox[{{-0.5320562643486265, -0.9627648371058141, 
+                 0.5}, {-1.1, -0.9627648371058141, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.4836875130442059, -0.8752407610052855, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox["\<\"Meteorological / Weather\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -0.9627648371058141, 0.5}, {1, 
+                0}]},
+              StatusArea[#, 5]& ,
+              TagBoxNote->"5"],
+             StyleBox["5", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[5, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$173163$174697, 
+               FEPrivate`Not[DynamicChart`click$173163$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$173163$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.09673750260884117, -0.1750481522010571, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173163$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.7943846153846154, 0.42150769230769225`, 0.1], EdgeForm[{
+        GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   Polygon3DBox[CompressedData["
+1:eJxTTMoPSmVmYGBgAmIOIAaxaQ2iV7965Nxyf//5Ff6p12++3g8Tv/S57M+V
+qQ/3b/jMIKG25xVcnOXOstuJoY/3ezz/de5S/Uu4eKWB0qHj/57sX7vo7G93
+tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
+                    "]], 
+                   
+                   BSplineSurface3DBox[{{{-0.6561011115714016, \
+-0.7546729963333597, 0.}, {-0.5800989096198766, -0.8207481433500723, 
+                    0.}, {-0.4924478260024238, -0.8703419665082722, 
+                    0.}}, {{-0.6561011115714016, -0.7546729963333597, 
+                    1}, {-0.5800989096198766, -0.8207481433500723, 
+                    1}, {-0.4924478260024238, -0.8703419665082722, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9949671214996445, 1.}, {1., 
+                    0.9949671214996445, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.6561011115714016, -0.7546729963333597, 
+                    1.}, {-0.6561011115714016, -0.7546729963333597, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.4924478260024238, -0.8703419665082722, 
+                    1.}, {-0.4924478260024238, -0.8703419665082722, 0.}}}]}},
+                 
+                 ImageSizeCache->{{270.51613301532166`, 
+                  416.84242811708697`}, {-31.78965310630784, 
+                  149.8185098035516}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.5771793422895712, -0.8166174176651989, 
+                 0.5}, {-0.6348972765185285, -0.8982791594317189, 0.5}}], 
+                Line3DBox[{{-0.6348972765185285, -0.8982791594317189, 
+                 0.5}, {-1.1, -0.8982791594317189, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.5771793422895712, -0.8166174176651989, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox["\<\"Ferry\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -0.8982791594317189, 0.5}, {1, 
+                0}]},
+              StatusArea[#, 50]& ,
+              TagBoxNote->"50"],
+             StyleBox["50", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[50, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$173191$174697, 
+               FEPrivate`Not[DynamicChart`click$173191$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$173191$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.11543586845791426`, -0.1633234835330398, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173191$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.757, 0.40959999999999996`, 0.1], EdgeForm[{GrayLevel[0], 
+        Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 0.}, {0., 0., 
+                    0.}, {-0.6561011115714016, -0.7546729963333597, 
+                    0.}, {-0.7228939452759663, -0.6909590030409534, 
+                    0.}, {-0.7835271763657892, -0.6213575169709091, 0.}}, {{
+                    0., 0., 1.}, {0., 0., 1.}, {0., 0., 
+                    1.}, {-0.7835271763657892, -0.6213575169709091, 
+                    1.}, {-0.7228939452759663, -0.6909590030409534, 
+                    1.}, {-0.6561011115714016, -0.7546729963333597, 1.}}}], 
+                   
+                   BSplineSurface3DBox[{{{-0.7835271763657892, \
+-0.6213575169709091, 0.}, {-0.7259869238405118, -0.6939153445615197, 
+                    0.}, {-0.6561011115714016, -0.7546729963333598, 
+                    0.}}, {{-0.7835271763657892, -0.6213575169709091, 
+                    1}, {-0.7259869238405118, -0.6939153445615197, 
+                    1}, {-0.6561011115714016, -0.7546729963333598, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9957396222122247, 1.}, {1., 
+                    0.9957396222122247, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.7835271763657892, -0.6213575169709091, 
+                    1.}, {-0.7835271763657892, -0.6213575169709091, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.6561011115714016, -0.7546729963333597, 
+                    1.}, {-0.6561011115714016, -0.7546729963333597, 0.}}}]}},
+                 
+                 ImageSizeCache->{{244.55781443115845`, 
+                  415.35951651736985`}, {-32.23670799196498, 
+                  128.56309936475125`}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.7228939452759663, -0.6909590030409534, 
+                 0.5}, {-0.7951833398035629, -0.7600549033450488, 0.5}}], 
+                Line3DBox[{{-0.7951833398035629, -0.7600549033450488, 
+                 0.5}, {-1.1, -0.7600549033450488, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.7228939452759663, -0.6909590030409534, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox["\<\"Ambulance\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -0.7600549033450488, 0.5}, {1, 
+                0}]},
+              StatusArea[#, 46]& ,
+              TagBoxNote->"46"],
+             StyleBox["46", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[46, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$173219$174697, 
+               FEPrivate`Not[DynamicChart`click$173219$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$173219$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.14457878905519325`, -0.13819180060819067`, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173219$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[
+        0.7382143692307692, 0.41126153846153846`, 0.1904290923076925], 
+        EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    0.}, {-0.7835271763657892, -0.6213575169709091, 
+                    0.}, {-0.8504035701151653, -0.5261309418152302, 0.}}, {{
+                    0., 0., 1.}, {0., 0., 
+                    1.}, {-0.8504035701151653, -0.5261309418152302, 
+                    1.}, {-0.7835271763657892, -0.6213575169709091, 1.}}}], 
+                   
+                   BSplineSurface3DBox[{{{-0.8504035701151653, \
+-0.5261309418152302, 0.}, {-0.8197403074399255, -0.5756930298392426, 
+                    0.}, {-0.7835271763657892, -0.6213575169709091, 
+                    0.}}, {{-0.8504035701151653, -0.5261309418152302, 
+                    1}, {-0.8197403074399255, -0.5756930298392426, 
+                    1}, {-0.7835271763657892, -0.6213575169709091, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9983059960932817, 1.}, {1., 
+                    0.9983059960932817, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.8504035701151653, -0.5261309418152302, 
+                    1.}, {-0.8504035701151653, -0.5261309418152302, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.7835271763657892, -0.6213575169709091, 
+                    1.}, {-0.7835271763657892, -0.6213575169709091, 0.}}}]}},
+                 
+                 ImageSizeCache->{{230.69342197777067`, 
+                  413.6843201785821}, {-32.472089016572724`, 
+                  104.53864227356674`}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.8183516641566279, -0.5747178035976245, 
+                 0.5}, {-0.9001868305722908, -0.632189583957387, 0.5}}], 
+                Line3DBox[{{-0.9001868305722908, -0.632189583957387, 
+                 0.5}, {-1.1, -0.632189583957387, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.8183516641566279, -0.5747178035976245, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox["\<\"Test\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -0.632189583957387, 0.5}, {1, 
+                0}]},
+              StatusArea[#, 29]& ,
+              TagBoxNote->"29"],
+             StyleBox["29", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[29, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$173247$174697, 
+               FEPrivate`Not[DynamicChart`click$173247$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$173247$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.1636703328313256, -0.1149435607195249, 0.}}, {{
+            1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 
+            1}}], TrackedSymbols :> {DynamicChart`click$173247$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.7194287384615384, 0.4129230769230769, 0.2808581846153848], 
+        EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    0.}, {-0.8504035701151653, -0.5261309418152302, 
+                    0.}, {-0.8688552079985464, -0.49506628599996844`, 0.}}, {{
+                    0., 0., 1.}, {0., 0., 
+                    1.}, {-0.8688552079985464, -0.49506628599996844`, 
+                    1.}, {-0.8504035701151653, -0.5261309418152302, 1.}}}], 
+                   
+                   BSplineSurface3DBox[{{{-0.8688552079985464, \
+-0.49506628599996844`, 0.}, {-0.8599100369887451, -0.5107653118437601, 
+                    0.}, {-0.8504035701151653, -0.5261309418152302, 
+                    0.}}, {{-0.8688552079985464, -0.49506628599996844`, 
+                    1}, {-0.8599100369887451, -0.5107653118437601, 
+                    1}, {-0.8504035701151653, -0.5261309418152302, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9998368022105532, 1.}, {1., 
+                    0.9998368022105532, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.8688552079985464, -0.49506628599996844`, 
+                    1.}, {-0.8688552079985464, -0.49506628599996844`, 0.}}}], 
+                   
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.8504035701151653, -0.5261309418152302, 
+                    1.}, {-0.8504035701151653, -0.5261309418152302, 0.}}}]}},
+                 
+                 ImageSizeCache->{{227.04602267654377`, 
+                  412.50938783740514`}, {-32.537124044761555`, 
+                  87.68042592821055}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.8597697015715856, -0.510681956073941, 
+                 0.5}, {-0.9457466717287443, -0.5617501516813351, 0.5}}], 
+                Line3DBox[{{-0.9457466717287443, -0.5617501516813351, 
+                 0.5}, {-1.1, -0.5617501516813351, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.8597697015715856, -0.510681956073941, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox["\<\"Postal (mail)\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -0.5617501516813351, 0.5}, {1, 
+                0}]},
+              StatusArea[#, 9]& ,
+              TagBoxNote->"9"],
+             StyleBox["9", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[9, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$173275$174697, 
+               FEPrivate`Not[DynamicChart`click$173275$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$173275$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.17195394031431713`, -0.1021363912147882, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173275$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[
+        0.7006431076923078, 0.4145846153846154, 0.37128727692307706`], 
+        EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    0.}, {-0.8688552079985464, -0.49506628599996844`, 
+                    0.}, {-0.9040563349186167, -0.4274133167011973, 0.}}, {{
+                    0., 0., 1.}, {0., 0., 
+                    1.}, {-0.9040563349186167, -0.4274133167011973, 
+                    1.}, {-0.8688552079985464, -0.49506628599996844`, 1.}}}], 
+                   
+                   
+                   BSplineSurface3DBox[{{{-0.9040563349186167, \
+-0.4274133167011973, 0.}, {-0.8877465646380908, -0.46191142559724035`, 
+                    0.}, {-0.8688552079985464, -0.49506628599996844`, 
+                    0.}}, {{-0.9040563349186167, -0.4274133167011973, 
+                    1}, {-0.8877465646380908, -0.46191142559724035`, 
+                    1}, {-0.8688552079985464, -0.49506628599996844`, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9992727300903163, 1.}, {1., 
+                    0.9992727300903163, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9040563349186167, -0.4274133167011973, 
+                    1.}, {-0.9040563349186167, -0.4274133167011973, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.8688552079985464, -0.49506628599996844`, 
+                    1.}, {-0.8688552079985464, -0.49506628599996844`, 0.}}}]}},
+                 
+                 ImageSizeCache->{{219.81138003527073`, 
+                  412.12992645065344`}, {-32.66130507386549, 
+                  82.23437883009603}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.8871009332742043, -0.4615754913164648, 
+                 0.5}, {-0.9758110266016248, -0.5077330404481113, 0.5}}], 
+                Line3DBox[{{-0.9758110266016248, -0.5077330404481113, 
+                 0.5}, {-1.1, -0.5077330404481113, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.8871009332742043, -0.4615754913164648, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox["\<\"Fire fighting\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -0.5077330404481113, 0.5}, {1, 
+                0}]},
+              StatusArea[#, 19]& ,
+              TagBoxNote->"19"],
+             StyleBox["19", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[19, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$173303$174697, 
+               FEPrivate`Not[DynamicChart`click$173303$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$173303$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.17742018665484086`, -0.09231509826329297, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173303$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.681857476923077, 0.4162461538461538, 0.4617163692307693], 
+        EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    0.}, {-0.9040563349186167, -0.4274133167011973, 
+                    0.}, {-0.9157096546509434, -0.4018405509391129, 0.}}, {{
+                    0., 0., 1.}, {0., 0., 
+                    1.}, {-0.9157096546509434, -0.4018405509391129, 
+                    1.}, {-0.9040563349186167, -0.4274133167011973, 1.}}}], 
+                   
+                   BSplineSurface3DBox[{{{-0.9157096546509434, \
+-0.4018405509391129, 0.}, {-0.910062678972876, -0.4147088145722895, 
+                    0.}, {-0.9040563349186167, -0.42741331670119737`, 
+                    0.}}, {{-0.9157096546509434, -0.4018405509391129, 
+                    1}, {-0.910062678972876, -0.4147088145722895, 
+                    1}, {-0.9040563349186167, -0.42741331670119737`, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9999012743504347, 1.}, {1., 
+                    0.9999012743504347, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9157096546509434, -0.4018405509391129, 
+                    1.}, {-0.9157096546509434, -0.4018405509391129, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9040563349186167, -0.4274133167011973, 
+                    1.}, {-0.9040563349186167, -0.4274133167011973, 0.}}}]}},
+                 
+                 ImageSizeCache->{{217.59343405280077`, 
+                  411.30994000668375`}, {-32.70244710860436, 
+                  70.46348992662712}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.9099728324437498, -0.4146678721751894, 
+                 0.5}, {-1.000970115688125, -0.45613465939270836`, 0.5}}], 
+                Line3DBox[{{-1.000970115688125, -0.45613465939270836`, 
+                 0.5}, {-1.1, -0.45613465939270836`, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.9099728324437498, -0.4146678721751894, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox["\<\"Calibration\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -0.45613465939270836`, 0.5}, {1,
+                 0}]},
+              StatusArea[#, 7]& ,
+              TagBoxNote->"7"],
+             StyleBox["7", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[7, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$173331$174697, 
+               FEPrivate`Not[DynamicChart`click$173331$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$173331$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.18199456648874998`, -0.08293357443503789, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173331$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.6630718461538462, 0.4179076923076923, 0.5521454615384616], 
+        EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    0.}, {-0.9157096546509434, -0.4018405509391129, 
+                    0.}, {-0.9325575162479366, -0.36102143826853195`, 0.}}, {{
+                    0., 0., 1.}, {0., 0., 
+                    1.}, {-0.9325575162479366, -0.36102143826853195`, 
+                    1.}, {-0.9157096546509434, -0.4018405509391129, 1.}}}], 
+                   
+                   BSplineSurface3DBox[{{{-0.9325575162479366, \
+-0.36102143826853195`, 0.}, {-0.9245843319609425, -0.38161703771804656`, 
+                    0.}, {-0.9157096546509434, -0.40184055093911286`, 
+                    0.}}, {{-0.9325575162479366, -0.36102143826853195`, 
+                    1}, {-0.9245843319609425, -0.38161703771804656`, 
+                    1}, {-0.9157096546509434, -0.40184055093911286`, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9997562139842385, 1.}, {1., 
+                    0.9997562139842385, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9325575162479366, -0.36102143826853195`, 
+                    1.}, {-0.9325575162479366, -0.36102143826853195`, 0.}}}], 
+                   
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9157096546509434, -0.4018405509391129, 
+                    1.}, {-0.9157096546509434, -0.4018405509391129, 0.}}}]}},
+                 
+                 ImageSizeCache->{{214.19419482431834`, 
+                  411.0022513393756}, {-32.761956598396296`, 
+                  66.0457762396936}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.9243589312304181, -0.381524004820875, 
+                 0.5}, {-1.01679482435346, -0.4196764053029625, 0.5}}], 
+                Line3DBox[{{-1.01679482435346, -0.4196764053029625, 
+                 0.5}, {-1.1, -0.4196764053029625, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.9243589312304181, -0.381524004820875, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox["\<\"Delivery\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -0.4196764053029625, 0.5}, {1, 
+                0}]},
+              StatusArea[#, 11]& ,
+              TagBoxNote->"11"],
+             StyleBox["11", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[11, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$173359$174697, 
+               FEPrivate`Not[DynamicChart`click$173359$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$173359$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.18487178624608364`, -0.07630480096417501, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173359$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.6442862153846154, 0.41956923076923075`, 0.642574553846154],
+         EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    0.}, {-0.9325575162479366, -0.36102143826853195`, 
+                    0.}, {-0.9488619298953358, -0.31569136509461077`, 0.}}, {{
+                    0., 0., 1.}, {0., 0., 
+                    1.}, {-0.9488619298953358, -0.31569136509461077`, 
+                    1.}, {-0.9325575162479366, -0.36102143826853195`, 1.}}}], 
+                   
+                   
+                   BSplineSurface3DBox[{{{-0.9488619298953358, \
+-0.31569136509461077`, 0.}, {-0.9412558042600084, -0.3385528172828903, 
+                    0.}, {-0.9325575162479366, -0.36102143826853195`, 
+                    0.}}, {{-0.9488619298953358, -0.31569136509461077`, 
+                    1}, {-0.9412558042600084, -0.3385528172828903, 
+                    1}, {-0.9325575162479366, -0.36102143826853195`, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.999709876734453, 1.}, {1., 
+                    0.999709876734453, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9488619298953358, -0.31569136509461077`, 
+                    1.}, {-0.9488619298953358, -0.31569136509461077`, 0.}}}], 
+                   
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9325575162479366, -0.36102143826853195`, 
+                    1.}, {-0.9325575162479366, -0.36102143826853195`, 0.}}}]}},
+                 
+                 ImageSizeCache->{{210.97143702631078`, 
+                  410.5136686785762}, {-32.819578226645234`, 
+                  59.02988147145808}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.9409827240523615, -0.33845459523398, 
+                 0.5}, {-1.0350809964575978`, -0.37230005475737804`, 0.5}}], 
+                Line3DBox[{{-1.0350809964575978`, -0.37230005475737804`, 
+                 0.5}, {-1.1, -0.37230005475737804`, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.9409827240523615, -0.33845459523398, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                
+                StyleBox["\<\"Geographical / Geophysical / Scientific\"\>", 
+                 "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -0.37230005475737804`, 0.5}, {1,
+                 0}]},
+              StatusArea[#, 12]& ,
+              TagBoxNote->"12"],
+             StyleBox["12", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[12, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$173387$174697, 
+               FEPrivate`Not[DynamicChart`click$173387$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$173387$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.18819654481047232`, -0.06769091904679601, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173387$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.6196400615384615, 0.4264923076923077, 0.6971743], 
+        EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    0.}, {-0.9488619298953358, -0.31569136509461077`, 
+                    0.}, {-0.9765907854364996, -0.21510564334884597`, 0.}}, {{
+                    0., 0., 1.}, {0., 0., 
+                    1.}, {-0.9765907854364996, -0.21510564334884597`, 
+                    1.}, {-0.9488619298953358, -0.31569136509461077`, 1.}}}], 
+                   
+                   
+                   BSplineSurface3DBox[{{{-0.9765907854364996, \
+-0.21510564334884597`, 0.}, {-0.9653536585958635, -0.26612278244616483`, 
+                    0.}, {-0.9488619298953358, -0.31569136509461077`, 
+                    0.}}, {{-0.9765907854364996, -0.21510564334884597`, 
+                    1}, {-0.9653536585958635, -0.26612278244616483`, 
+                    1}, {-0.9488619298953358, -0.31569136509461077`, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9986382757474375, 1.}, {1., 
+                    0.9986382757474375, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9765907854364996, -0.21510564334884597`, 
+                    1.}, {-0.9765907854364996, -0.21510564334884597`, 0.}}}], 
+                   
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9488619298953358, -0.31569136509461077`, 
+                    1.}, {-0.9488619298953358, -0.31569136509461077`, 0.}}}]}},
+                 ImageSizeCache->{{205.43956428889052`, 
+                  409.9747324504502}, {-32.91764676775742, 
+                  51.289569389996444`}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.9640391131066538, -0.265760396599148, 
+                 0.5}, {-1.0604430244173193`, -0.29233643625906286`, 0.5}}], 
+                Line3DBox[{{-1.0604430244173193`, -0.29233643625906286`, 
+                 0.5}, {-1.1, -0.29233643625906286`, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.9640391131066538, -0.265760396599148, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                
+                StyleBox["\<\"Survey / Patrol / Reconnaissance\"\>", 
+                 "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -0.29233643625906286`, 0.5}, {1,
+                 0}]},
+              StatusArea[#, 26]& ,
+              TagBoxNote->"26"],
+             StyleBox["26", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[26, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$173415$174697, 
+               FEPrivate`Not[DynamicChart`click$173415$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$173415$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.19280782262133078`, -0.053152079319829605`, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173415$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.5891333846153847, 0.4386769230769231, 0.7159447000000001], 
+        EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    0.}, {-0.9765907854364996, -0.21510564334884597`, 
+                    0.}, {-0.984437594114201, -0.1757345250502695, 0.}}, {{0.,
+                     0., 1.}, {0., 0., 
+                    1.}, {-0.984437594114201, -0.1757345250502695, 
+                    1.}, {-0.9765907854364996, -0.21510564334884597`, 1.}}}], 
+                   
+                   
+                   BSplineSurface3DBox[{{{-0.984437594114201, \
+-0.1757345250502695, 0.}, {-0.9809094122443986, -0.19549885349120588`, 
+                    0.}, {-0.9765907854364996, -0.21510564334884597`, 
+                    0.}}, {{-0.984437594114201, -0.1757345250502695, 
+                    1}, {-0.9809094122443986, -0.19549885349120588`, 
+                    1}, {-0.9765907854364996, -0.21510564334884597`, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.999798522533102, 1.}, {1., 
+                    0.999798522533102, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.984437594114201, -0.1757345250502695, 
+                    1.}, {-0.984437594114201, -0.1757345250502695, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9765907854364996, -0.21510564334884597`, 
+                    1.}, {-0.9765907854364996, -0.21510564334884597`, 0.}}}]}},
+                 
+                 ImageSizeCache->{{204.22912376651826`, 
+                  408.7923370985734}, {-32.94541494312193, 
+                  34.302781225271616`}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.9807117811007634, -0.19545946487742247`, 
+                 0.5}, {-1.0787829592108398`, -0.21500541136516474`, 0.5}}], 
+                Line3DBox[{{-1.0787829592108398`, -0.21500541136516474`, 
+                 0.5}, {-1.1, -0.21500541136516474`, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.9807117811007634, -0.19545946487742247`, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox["\<\"Demonstration\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -0.21500541136516474`, 0.5}, {1,
+                 0}]},
+              StatusArea[#, 10]& ,
+              TagBoxNote->"10"],
+             StyleBox["10", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[10, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$173443$174697, 
+               FEPrivate`Not[DynamicChart`click$173443$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$173443$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.1961423562201527, -0.039091892975484495`, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173443$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[
+        0.5586267076923076, 0.45086153846153854`, 0.7347151000000001], 
+        EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 0.}, {0., 0., 
+                    0.}, {-0.984437594114201, -0.1757345250502695, 
+                    0.}, {-0.9936881056603953, -0.11217820050729513`, 
+                    0.}, {-0.9988396752808307, -0.04815914331551843, 0.}}, {{
+                    0., 0., 1.}, {0., 0., 1.}, {0., 0., 
+                    1.}, {-0.9988396752808307, -0.04815914331551843, 
+                    1.}, {-0.9936881056603953, -0.11217820050729513`, 
+                    1.}, {-0.984437594114201, -0.1757345250502695, 1.}}}], 
+                   
+                   BSplineSurface3DBox[{{{-0.9988396752808307, \
+-0.04815914331551843, 0.}, {-0.9957418123711378, -0.11241004500847103`, 
+                    0.}, {-0.984437594114201, -0.17573452505026954`, 
+                    0.}}, {{-0.9988396752808307, -0.04815914331551843, 
+                    1}, {-0.9957418123711378, -0.11241004500847103`, 
+                    1}, {-0.984437594114201, -0.17573452505026954`, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9979375108233608, 1.}, {1., 
+                    0.9979375108233608, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9988396752808307, -0.04815914331551843, 
+                    1.}, {-0.9988396752808307, -0.04815914331551843, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.984437594114201, -0.1757345250502695, 
+                    1.}, {-0.984437594114201, -0.1757345250502695, 0.}}}]}},
+                 
+                 ImageSizeCache->{{201.38600261115488`, 
+                  408.3345156269287}, {-32.99639965982868, 27.7236858505037}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.9936881056603953, -0.11217820050729513`, 
+                 0.5}, {-1.093056916226435, -0.12339602055802465`, 0.5}}], 
+                Line3DBox[{{-1.093056916226435, -0.12339602055802465`, 
+                 0.5}, {-1.1, -0.12339602055802465`, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.9936881056603953, -0.11217820050729513`, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox["\<\"Illegal (smuggling)\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -0.12339602055802465`, 0.5}, {1,
+                 0}]},
+              StatusArea[#, 32]& ,
+              TagBoxNote->"32"],
+             StyleBox["32", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[32, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$173471$174697, 
+               FEPrivate`Not[DynamicChart`click$173471$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$173471$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.19873762113207907`, -0.02243564010145903, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173471$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.5281200307692308, 0.4630461538461539, 0.7534855], 
+        EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    0.}, {-0.9988396752808307, -0.04815914331551843, 
+                    0.}, {-0.9990249748001975, -0.0441486095530165, 0.}}, {{
+                    0., 0., 1.}, {0., 0., 
+                    1.}, {-0.9990249748001975, -0.0441486095530165, 
+                    1.}, {-0.9988396752808307, -0.04815914331551843, 1.}}}], 
+                   
+                   BSplineSurface3DBox[{{{-0.9990249748001975, \
+-0.0441486095530165, 0.}, {-0.9989363504335905, -0.046154062420334624`, 
+                    0.}, {-0.9988396752808307, -0.04815914331551843, 
+                    0.}}, {{-0.9990249748001975, -0.0441486095530165, 
+                    1}, {-0.9989363504335905, -0.046154062420334624`, 
+                    1}, {-0.9988396752808307, -0.04815914331551843, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9999979851583487, 1.}, {1., 
+                    0.9999979851583487, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9990249748001975, -0.0441486095530165, 
+                    1.}, {-0.9990249748001975, -0.0441486095530165, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9988396752808307, -0.04815914331551843, 
+                    1.}, {-0.9988396752808307, -0.04815914331551843, 0.}}}]}},
+                 
+                 
+                 ImageSizeCache->{{201.88660957593274`, 
+                  406.8699171429043}, {-32.99705579644103, 6.66986105353277}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.9989343377350247, -0.04615396942720744, 
+                 0.5}, {-1.0988277715085273`, -0.05076936636992819, 0.5}}], 
+                Line3DBox[{{-1.0988277715085273`, -0.05076936636992819, 
+                 0.5}, {-1.1, -0.05076936636992819, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.9989343377350247, -0.04615396942720744, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox["\<\"Topographic\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -0.05076936636992819, 0.5}, {1, 
+                0}]},
+              StatusArea[#, 1]& ,
+              TagBoxNote->"1"],
+             StyleBox["1", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[1, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$173499$174697, 
+               FEPrivate`Not[DynamicChart`click$173499$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$173499$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.19978686754700495`, -0.009230793885441489, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173499$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.4976133538461538, 0.4752307692307693, 0.7722559000000001], 
+        EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    0.}, {-0.9990249748001975, -0.0441486095530165, 
+                    0.}, {-0.9997098767344531, -0.02408655972912368, 0.}}, {{
+                    0., 0., 1.}, {0., 0., 
+                    1.}, {-0.9997098767344531, -0.02408655972912368, 
+                    1.}, {-0.9990249748001975, -0.0441486095530165, 1.}}}], 
+                   
+                   BSplineSurface3DBox[{{{-0.9997098767344531, \
+-0.02408655972912368, 0.}, {-0.9994681109189419, -0.03412102194960716, 
+                    0.}, {-0.9990249748001976, -0.0441486095530165, 
+                    0.}}, {{-0.9997098767344531, -0.02408655972912368, 
+                    1}, {-0.9994681109189419, -0.03412102194960716, 
+                    1}, {-0.9990249748001976, -0.0441486095530165, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9999496293646749, 1.}, {1., 
+                    0.9999496293646749, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9997098767344531, -0.02408655972912368, 
+                    1.}, {-0.9997098767344531, -0.02408655972912368, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9990249748001975, -0.0441486095530165, 
+                    1.}, {-0.9990249748001975, -0.0441486095530165, 0.}}}]}},
+                 
+                 ImageSizeCache->{{201.76195459695666`, 
+                  406.8243372220154}, {-32.99948103603393, 
+                  6.014473998149981}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.9994177670752079, -0.03411930325205174, 
+                 0.5}, {-1.0993595437827288`, -0.03753123357725691, 0.5}}], 
+                Line3DBox[{{-1.0993595437827288`, -0.03753123357725691, 
+                 0.5}, {-1.1, -0.03753123357725691, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.9994177670752079, -0.03411930325205174, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox["\<\"Humanitarian\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -0.03753123357725691, 0.5}, {1, 
+                0}]},
+              StatusArea[#, 5]& ,
+              TagBoxNote->"5"],
+             StyleBox["5", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[5, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$173527$174697, 
+               FEPrivate`Not[DynamicChart`click$173527$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$173527$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.1998835534150416, -0.006823860650410348, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173527$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.4671066769230769, 0.4874153846153847, 0.7910263000000001], 
+        EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    0.}, {-0.9997098767344531, -0.02408655972912368, 
+                    0.}, {-0.9999677626959624, -0.008029543500808457, 0.}}, {{
+                    0., 0., 1.}, {0., 0., 
+                    1.}, {-0.9999677626959624, -0.008029543500808457, 
+                    1.}, {-0.9997098767344531, -0.02408655972912368, 1.}}}], 
+                   
+                   BSplineSurface3DBox[{{{-0.9999677626959624, \
+-0.008029543500808457, 0.}, {-0.99990328704861, -0.016059087001617272`, 
+                    0.}, {-0.999709876734453, -0.024086559729123682`, 
+                    0.}}, {{-0.9999677626959624, -0.008029543500808457, 
+                    1}, {-0.99990328704861, -0.016059087001617272`, 
+                    1}, {-0.999709876734453, -0.024086559729123682`, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9999677626959623, 1.}, {1., 
+                    0.9999677626959623, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9999677626959624, -0.008029543500808457, 
+                    1.}, {-0.9999677626959624, -0.008029543500808457, 0.}}}], 
+                   
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9997098767344531, -0.02408655972912368, 
+                    1.}, {-0.9997098767344531, -0.02408655972912368, 0.}}}]}},
+                 
+                 
+                 ImageSizeCache->{{201.79278473069036`, 
+                  406.5967489559913}, {-33.000394225219225`, 
+                  2.741862910940256}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.9998710528623372, -0.016058569299947, 
+                 0.5}, {-1.0998581581485711`, -0.0176644262299417, 0.5}}], 
+                Line3DBox[{{-1.0998581581485711`, -0.0176644262299417, 
+                 0.5}, {-1.1, -0.0176644262299417, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.9998710528623372, -0.016058569299947, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox["\<\"Aerial photography\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -0.0176644262299417, 0.5}, {1, 
+                0}]},
+              StatusArea[#, 4]& ,
+              TagBoxNote->"4"],
+             StyleBox["4", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[4, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$173555$174697, 
+               FEPrivate`Not[DynamicChart`click$173555$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$173555$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.19997421057246745`, -0.0032117138599894, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173555$174697}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.4366, 0.49960000000000004`, 0.8097967], EdgeForm[{
+        GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    0.}, {-0.9999677626959624, -0.008029543500808457, 
+                    0.}, {-1., -1.2246467991473532`*^-16, 0.}}, {{0., 0., 
+                    1.}, {0., 0., 1.}, {-1., -1.2246467991473532`*^-16, 
+                    1.}, {-0.9999677626959624, -0.008029543500808457, 1.}}}], 
+                   
+                   
+                   BSplineSurface3DBox[{{{-1., -1.2246467991473532`*^-16, 
+                    0.}, {-1., -0.004014836464157299, 
+                    0.}, {-0.9999677626959624, -0.008029543500808459, 
+                    0.}}, {{-1., -1.2246467991473532`*^-16, 
+                    1}, {-1., -0.004014836464157299, 
+                    1}, {-0.9999677626959624, -0.008029543500808459, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.999991940641514, 1.}, {1., 
+                    0.999991940641514, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-1., -1.2246467991473532`*^-16, 
+                    1.}, {-1., -1.2246467991473532`*^-16, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9999677626959624, -0.008029543500808457, 
+                    1.}, {-0.9999677626959624, -0.008029543500808457, 0.}}}]}},
+                 
+                 ImageSizeCache->{{201.85325740566572`, 
+                  406.4150950491826}, {-33.000508379937486`, 
+                  0.1295837073045334}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.999991940641514, -0.0040148041071498405`, 
+                 0.5}, {-1.0999911347056655`, -0.004416284517864825, 0.5}}], 
+                Line3DBox[{{-1.0999911347056655`, -0.004416284517864825, 
+                 0.5}, {-1.1, -0.004416284517864825, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.999991940641514, -0.0040148041071498405`, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox["\<\"Refuelling\"\>", "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -0.004416284517864825, 0.5}, {1,
+                 0}]},
+              StatusArea[#, 2]& ,
+              TagBoxNote->"2"],
+             StyleBox["2", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[2, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$173583$174697, 
+               FEPrivate`Not[DynamicChart`click$173583$174697]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$173583$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.1999983881283028, -0.0008029608214299681, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173583$174697}]],
+         "DelayedClickEffect3D"]}}}, {}}, {}},
+   DynamicModuleValues:>{}],
+  BoxRatios->{1, 1, 0.1},
+  Boxed->False,
+  FaceGridsStyle->Automatic,
+  ImageSize->{822.0793978837249, 511.06337340023674`},
+  ImageSizeRaw->Automatic,
+  Lighting->"Neutral",
+  PlotRange->{{1.2, -1.2}, {1.2, -1.2}, {0., 1.02}},
+  ViewPoint->{-0.37793604605658004`, -1.7580403040121635`, 
+   2.5546934521699347`},
+  ViewVertical->{-0.009366485134073205, 0.028530531761534268`, 
+   0.999549037173083}]], "Output",
+ CellChangeTimes->{3.926272923161413*^9},
+ CellLabel->
+  "Out[115]=",ExpressionUUID->"27d7f3af-1709-41c1-82f2-bf51fa23fcb5"]
 }, Open  ]]
 }, Open  ]],
 
@@ -18961,19 +21384,24 @@ Cell[766277, 14587, 618, 17, 30, "Input",ExpressionUUID->"f6387e0f-f199-4527-a9a
 Cell[CellGroupData[{
 Cell[766920, 14608, 302, 9, 30, "Input",ExpressionUUID->"231bc9ed-0cb4-45c1-b720-ccf11634773b"],
 Cell[767225, 14619, 62055, 1160, 627, "Output",ExpressionUUID->"158bc277-c0e1-49e2-ae37-977249eb6817"]
+}, Open  ]],
+Cell[829295, 15782, 990, 27, 52, "Input",ExpressionUUID->"f46c085a-064c-450c-bafc-646fa0e38165"],
+Cell[CellGroupData[{
+Cell[830310, 15813, 668, 17, 52, "Input",ExpressionUUID->"9a82acba-8dc9-447a-9942-7f77bced42e5"],
+Cell[830981, 15832, 118591, 2370, 528, "Output",ExpressionUUID->"27d7f3af-1709-41c1-82f2-bf51fa23fcb5"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[829329, 15785, 216, 4, 54, "Subsection",ExpressionUUID->"d4de1c5a-014b-4407-b605-16c4da821052"],
-Cell[829548, 15791, 714, 19, 30, "Input",ExpressionUUID->"ae49e75d-2326-492e-93a0-1506b9ba3619"],
+Cell[949621, 18208, 216, 4, 54, "Subsection",ExpressionUUID->"d4de1c5a-014b-4407-b605-16c4da821052"],
+Cell[949840, 18214, 714, 19, 30, "Input",ExpressionUUID->"ae49e75d-2326-492e-93a0-1506b9ba3619"],
 Cell[CellGroupData[{
-Cell[830287, 15814, 378, 10, 30, "Input",ExpressionUUID->"39dacbbd-b57d-4935-b759-ee07b4627a05"],
-Cell[830668, 15826, 89324, 1558, 627, "Output",ExpressionUUID->"f82a4244-4c02-4998-9374-9bffe9564e35"]
+Cell[950579, 18237, 378, 10, 30, "Input",ExpressionUUID->"39dacbbd-b57d-4935-b759-ee07b4627a05"],
+Cell[950960, 18249, 89324, 1558, 627, "Output",ExpressionUUID->"f82a4244-4c02-4998-9374-9bffe9564e35"]
 }, Open  ]],
-Cell[920007, 17387, 925, 26, 52, "Input",ExpressionUUID->"fd70ae42-3fe9-464d-8b99-13fdba917255"],
+Cell[1040299, 19810, 925, 26, 52, "Input",ExpressionUUID->"fd70ae42-3fe9-464d-8b99-13fdba917255"],
 Cell[CellGroupData[{
-Cell[920957, 17417, 354, 9, 30, "Input",ExpressionUUID->"fafb326f-634b-49d2-b1eb-afe3b690cba6"],
-Cell[921314, 17428, 80653, 1431, 627, "Output",ExpressionUUID->"114d5c95-18d1-4bf4-bfe3-2646a7b9e9f8"]
+Cell[1041249, 19840, 354, 9, 30, "Input",ExpressionUUID->"fafb326f-634b-49d2-b1eb-afe3b690cba6"],
+Cell[1041606, 19851, 80653, 1431, 627, "Output",ExpressionUUID->"114d5c95-18d1-4bf4-bfe3-2646a7b9e9f8"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
