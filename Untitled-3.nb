@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    834508,      15885]
-NotebookOptionsPosition[    829463,      15787]
-NotebookOutlinePosition[    829861,      15803]
-CellTagsIndexPosition[    829818,      15800]
+NotebookDataLength[   1007852,      18975]
+NotebookOptionsPosition[   1002007,      18864]
+NotebookOutlinePosition[   1002405,      18880]
+CellTagsIndexPosition[   1002362,      18877]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -15743,10 +15743,7 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
         TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$}], FrameStyle -> 
       None, ImageMargins -> 0, FrameMargins -> 0, Alignment -> Top, 
       ImageSize -> {Automatic, 15}], FontSize -> 1], 
-    TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = 
-    TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-    "2e39a8d7-8a4c-4b3c-8ad7-541c5a8e80f6"][{19, 
-      Key["Flight type"]}, "Item", False]}, 
+    TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = Null}, 
     DynamicWrapperBox[
      DynamicBox[ToBoxes[
        Dataset`DatasetContent[
@@ -15781,6 +15778,3086 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
  CellChangeTimes->{3.926272254229821*^9},
  CellLabel->
   "Out[106]=",ExpressionUUID->"158bc277-c0e1-49e2-ae37-977249eb6817"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Modeli letala", "Subsection",
+ CellChangeTimes->{{3.9262725266396523`*^9, 3.926272532186714*^9}, {
+  3.9262725731293716`*^9, 
+  3.9262725777616577`*^9}},ExpressionUUID->"d4de1c5a-014b-4407-b605-\
+16c4da821052"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"modelLetala", "=", 
+   RowBox[{"nesre\[CHacek]eCSV", "//", 
+    RowBox[{"Query", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"GroupBy", "[", "\"\<Aircraft\>\"", "]"}], "/*", 
+       RowBox[{"Map", "[", 
+        RowBox[{
+         RowBox[{"<|", 
+          RowBox[{"#", ",", 
+           RowBox[{"\"\<Number of Accidents\>\"", "->", 
+            RowBox[{"Length", "[", "#", "]"}]}]}], "|>"}], "&"}], "]"}], "/*",
+        "Values"}], ",", 
+      RowBox[{"{", "3", "}"}]}], "]"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{
+  3.9262725483620768`*^9, {3.926272581154764*^9, 3.9262725816527033`*^9}},
+ CellLabel->
+  "In[108]:=",ExpressionUUID->"ae49e75d-2326-492e-93a0-1506b9ba3619"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"modelLetala", "=", 
+  RowBox[{"SortBy", "[", 
+   RowBox[{"modelLetala", ",", 
+    RowBox[{
+     RowBox[{"-", 
+      RowBox[{"#", "[", 
+       RowBox[{"[", "2", "]"}], "]"}]}], "&"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.926272591289298*^9, 3.9262725917943707`*^9}},
+ CellLabel->
+  "In[109]:=",ExpressionUUID->"39dacbbd-b57d-4935-b759-ee07b4627a05"],
+
+Cell[BoxData[
+ TagBox[
+  TagBox[
+   DynamicModuleBox[{TypeSystem`NestedGrid`PackagePrivate`$state$$ = <|
+    "InitialData" -> {<|
+       "Aircraft" -> "Cessna 208B Grand Caravan", "Number of Accidents" -> 
+        161|>, <|"Aircraft" -> "PZL-Mielec AN-2", "Number of Accidents" -> 
+        151|>, <|"Aircraft" -> 
+        "Piper PA-46 (Malibu/Meridian/Mirage/Matrix/M-Class)", 
+        "Number of Accidents" -> 130|>, <|
+       "Aircraft" -> "Beechcraft 90 King Air", "Number of Accidents" -> 
+        99|>, <|"Aircraft" -> "Beechcraft 200 Super King Air", 
+        "Number of Accidents" -> 89|>, <|
+       "Aircraft" -> "Piper PA-31-350 Navajo Chieftain", 
+        "Number of Accidents" -> 88|>, <|
+       "Aircraft" -> "Antonov AN-26", "Number of Accidents" -> 75|>, <|
+       "Aircraft" -> "Let L-410", "Number of Accidents" -> 75|>, <|
+       "Aircraft" -> "De Havilland DHC-2 Beaver", "Number of Accidents" -> 
+        74|>, <|"Aircraft" -> "Britten-Norman Islander", 
+        "Number of Accidents" -> 73|>, <|
+       "Aircraft" -> "Antonov AN-12", "Number of Accidents" -> 68|>, <|
+       "Aircraft" -> "De Havilland DHC-6 Twin Otter", "Number of Accidents" -> 
+        68|>, <|"Aircraft" -> "Piper PA-31-310 Navajo", "Number of Accidents" -> 
+        68|>, <|"Aircraft" -> "Lockheed C-130 Hercules", 
+        "Number of Accidents" -> 64|>, <|
+       "Aircraft" -> "Cessna 207 Skywagon/Stationair", "Number of Accidents" -> 
+        54|>, <|"Aircraft" -> "Cessna 402", "Number of Accidents" -> 49|>, <|
+       "Aircraft" -> "Cessna 340", "Number of Accidents" -> 44|>, <|
+       "Aircraft" -> "Piper PA-31 Cheyenne", "Number of Accidents" -> 43|>, <|
+       "Aircraft" -> "Beechcraft 100 King Air", "Number of Accidents" -> 
+        40|>, <|"Aircraft" -> "Learjet 35", "Number of Accidents" -> 40|>, <|
+       "Aircraft" -> "Piper PA-61 Aerostar (Ted Smith 601)", 
+        "Number of Accidents" -> 39|>, <|
+       "Aircraft" -> "Pilatus PC-6 (Porter & Turbo Porter)", 
+        "Number of Accidents" -> 38|>, <|
+       "Aircraft" -> "Cessna 421C Golden Eagle III", "Number of Accidents" -> 
+        37|>, <|"Aircraft" -> "Boeing 737-200", "Number of Accidents" -> 
+        36|>, <|"Aircraft" -> "Mitsubishi MU-2 Marquise", 
+        "Number of Accidents" -> 35|>, <|
+       "Aircraft" -> "PZL-Mielec AN-28", "Number of Accidents" -> 35|>, <|
+       "Aircraft" -> "Swearingen SA227 Metro III", "Number of Accidents" -> 
+        35|>, <|"Aircraft" -> "Cessna 208A Caravan", "Number of Accidents" -> 
+        33|>, <|"Aircraft" -> "Cessna 414 Chancellor", "Number of Accidents" -> 
+        33|>, <|"Aircraft" -> "BAe 125", "Number of Accidents" -> 32|>, <|
+       "Aircraft" -> "Antonov AN-32", "Number of Accidents" -> 31|>, <|
+       "Aircraft" -> "Ilyushin II-76", "Number of Accidents" -> 31|>, <|
+       "Aircraft" -> "Cessna 421B Golden Eagle II", "Number of Accidents" -> 
+        30|>, <|"Aircraft" -> "Casa 212 Aviocar", "Number of Accidents" -> 
+        29|>, <|"Aircraft" -> "Antonov AN-24", "Number of Accidents" -> 
+        28|>, <|"Aircraft" -> "Fokker F27 Friendship", "Number of Accidents" -> 
+        28|>, <|"Aircraft" -> "Rockwell Shrike Commander 500", 
+        "Number of Accidents" -> 28|>, <|
+       "Aircraft" -> "Pilatus PC-12", "Number of Accidents" -> 27|>, <|
+       "Aircraft" -> "Antonov AN-2", "Number of Accidents" -> 26|>, <|
+       "Aircraft" -> "Beechcraft 60 Duke", "Number of Accidents" -> 26|>, <|
+       "Aircraft" -> "Socata TBM-700", "Number of Accidents" -> 26|>, <|
+       "Aircraft" -> "Boeing 737-300", "Number of Accidents" -> 25|>, <|
+       "Aircraft" -> "Cessna 550 Citation II", "Number of Accidents" -> 
+        24|>, <|"Aircraft" -> "De Havilland DHC-3 Otter", 
+        "Number of Accidents" -> 24|>, <|
+       "Aircraft" -> "Fletcher FU-24", "Number of Accidents" -> 24|>, <|
+       "Aircraft" -> "Boeing 737-800", "Number of Accidents" -> 23|>, <|
+       "Aircraft" -> "Embraer EMB-110 Bandeirante", "Number of Accidents" -> 
+        23|>, <|"Aircraft" -> "Boeing 737-400", "Number of Accidents" -> 
+        22|>, <|"Aircraft" -> "Partenavia P.68", "Number of Accidents" -> 
+        22|>, <|"Aircraft" -> "Piper PA-60 Aerostar (Ted Smith 600)", 
+        "Number of Accidents" -> 22|>, <|
+       "Aircraft" -> "Rockwell Grand Commander 690", "Number of Accidents" -> 
+        22|>, <|"Aircraft" -> "Airbus A320", "Number of Accidents" -> 21|>, <|
+       "Aircraft" -> "Douglas DC-3", "Number of Accidents" -> 21|>, <|
+       "Aircraft" -> "BAe Jetstream 31", "Number of Accidents" -> 20|>, <|
+       "Aircraft" -> "Cessna 401", "Number of Accidents" -> 20|>, <|
+       "Aircraft" -> "Dassault Falcon 20", "Number of Accidents" -> 20|>, <|
+       "Aircraft" -> "Beechcraft 1900C", "Number of Accidents" -> 18|>, <|
+       "Aircraft" -> "Boeing 707", "Number of Accidents" -> 18|>, <|
+       "Aircraft" -> "ATR72-200", "Number of Accidents" -> 17|>, <|
+       "Aircraft" -> "Beechcraft 350 Super King Air", "Number of Accidents" -> 
+        17|>, <|"Aircraft" -> "Cessna 303 Crusader", "Number of Accidents" -> 
+        17|>, <|"Aircraft" -> "Cessna 441 Conquest", "Number of Accidents" -> 
+        17|>, <|"Aircraft" -> "Dornier DO228", "Number of Accidents" -> 
+        17|>, <|"Aircraft" -> "Fokker 50", "Number of Accidents" -> 17|>, <|
+       "Aircraft" -> "Learjet 25", "Number of Accidents" -> 17|>, <|
+       "Aircraft" -> "Embraer EMB-820 Navajo/Caraj\[AAcute]", 
+        "Number of Accidents" -> 16|>, <|
+       "Aircraft" -> "Rockwell Aero Commander 500", "Number of Accidents" -> 
+        16|>, <|"Aircraft" -> "Swearingen SA226 Metro II", 
+        "Number of Accidents" -> 16|>, <|
+       "Aircraft" -> "Boeing 727-200", "Number of Accidents" -> 15|>, <|
+       "Aircraft" -> "Cessna 500 Citation", "Number of Accidents" -> 15|>, <|
+       "Aircraft" -> "Douglas DC-9", "Number of Accidents" -> 15|>, <|
+       "Aircraft" -> "Embraer EMB-120 Bras\[IAcute]lia", 
+        "Number of Accidents" -> 15|>, <|
+       "Aircraft" -> "Fokker 100", "Number of Accidents" -> 15|>, <|
+       "Aircraft" -> "Tupolev TU-154", "Number of Accidents" -> 15|>, <|
+       "Aircraft" -> "Boeing 747-200", "Number of Accidents" -> 14|>, <|
+       "Aircraft" -> "Cessna 404 Titan", "Number of Accidents" -> 14|>, <|
+       "Aircraft" -> "Raytheon 390 Premier I", "Number of Accidents" -> 
+        14|>, <|"Aircraft" -> "ATR42-300", "Number of Accidents" -> 13|>, <|
+       "Aircraft" -> "Beechcraft 1900D", "Number of Accidents" -> 13|>, <|
+       "Aircraft" -> "Cessna 501 Citation I", "Number of Accidents" -> 13|>, <|
+       "Aircraft" -> "Convair CV-580", "Number of Accidents" -> 13|>, <|
+       "Aircraft" -> "De Havilland DHC-8-400 (Dash-8)", "Number of Accidents" -> 
+        13|>, <|"Aircraft" -> "Harbin Yunsunji Y-12", "Number of Accidents" -> 
+        13|>, <|"Aircraft" -> "Beechcraft 99 Airliner", "Number of Accidents" -> 
+        12|>, <|"Aircraft" -> "Cessna 425 Conquest", "Number of Accidents" -> 
+        12|>, <|"Aircraft" -> "McDonnell Douglas MD-83", 
+        "Number of Accidents" -> 12|>, <|
+       "Aircraft" -> "Yakovlev Yak-40", "Number of Accidents" -> 12|>, <|
+       "Aircraft" -> "Airbus A300", "Number of Accidents" -> 11|>, <|
+       "Aircraft" -> "Avro 748", "Number of Accidents" -> 11|>, <|
+       "Aircraft" -> "Cessna 421A Golden Eagle I", "Number of Accidents" -> 
+        11|>, <|"Aircraft" -> "Cessna 525 CitationJet CJ1", 
+        "Number of Accidents" -> 11|>, <|
+       "Aircraft" -> "PAC 750XL - Pacific Aerospace Corporation", 
+        "Number of Accidents" -> 11|>, <|
+       "Aircraft" -> "Saab 340", "Number of Accidents" -> 11|>, <|
+       "Aircraft" -> "Casa-Nurtanio CN-235 (IPTN)", "Number of Accidents" -> 
+        10|>, <|"Aircraft" -> "McDonnell Douglas MD-82", 
+        "Number of Accidents" -> 10|>, <|
+       "Aircraft" -> "Short 360", "Number of Accidents" -> 10|>, <|
+       "Aircraft" -> "Socata TBM-850", "Number of Accidents" -> 10|>, <|
+       "Aircraft" -> "Beechcraft 300 Super King Air", "Number of Accidents" -> 
+        9|>, <|"Aircraft" -> "Comp Air CA-8", "Number of Accidents" -> 9|>, <|
+       "Aircraft" -> "GippsAero GA8 Airvan", "Number of Accidents" -> 9|>, <|
+       "Aircraft" -> "IAI 1124 Westwind", "Number of Accidents" -> 9|>, <|
+       "Aircraft" -> "Piper PA-42 Cheyenne", "Number of Accidents" -> 9|>, <|
+       "Aircraft" -> "Boeing 727-100", "Number of Accidents" -> 8|>, <|
+       "Aircraft" -> "Canadair CL-215", "Number of Accidents" -> 8|>, <|
+       "Aircraft" -> "Cessna 406 Caravan", "Number of Accidents" -> 8|>, <|
+       "Aircraft" -> "Douglas C-47 Skytrain (DC-3)", "Number of Accidents" -> 
+        8|>, <|"Aircraft" -> "Douglas DC-10", "Number of Accidents" -> 8|>, <|
+       "Aircraft" -> "Fokker F28 Fellowship", "Number of Accidents" -> 8|>, <|
+       "Aircraft" -> "Gulfstream GIV", "Number of Accidents" -> 8|>, <|
+       "Aircraft" -> "Quest Kodiak 100", "Number of Accidents" -> 8|>, <|
+       "Aircraft" -> "Tupolev TU-134", "Number of Accidents" -> 8|>, <|
+       "Aircraft" -> "Xian MA60", "Number of Accidents" -> 8|>, <|
+       "Aircraft" -> "Airbus A310", "Number of Accidents" -> 7|>, <|
+       "Aircraft" -> "Antonov AN-74", "Number of Accidents" -> 7|>, <|
+       "Aircraft" -> "BAe 146", "Number of Accidents" -> 7|>, <|
+       "Aircraft" -> "Basler BT-67", "Number of Accidents" -> 7|>, <|
+       "Aircraft" -> "Beechcraft C-45 Expeditor", "Number of Accidents" -> 
+        7|>, <|"Aircraft" -> "Beechcraft E18", "Number of Accidents" -> 7|>, <|
+       "Aircraft" -> "Boeing 737-500", "Number of Accidents" -> 7|>, <|
+       "Aircraft" -> "Boeing 747-400", "Number of Accidents" -> 7|>, <|
+       "Aircraft" -> "Boeing 767-200", "Number of Accidents" -> 7|>, <|
+       "Aircraft" -> "Canadair CL-415", "Number of Accidents" -> 7|>, <|
+       "Aircraft" -> "Canadair CL-601 Challenger", "Number of Accidents" -> 
+        7|>, <|"Aircraft" -> "Canadair RegionalJet CRJ-200", 
+        "Number of Accidents" -> 7|>, <|
+       "Aircraft" -> "Cessna 411", "Number of Accidents" -> 7|>, <|
+       "Aircraft" -> "Cessna 560 Citation V", "Number of Accidents" -> 7|>, <|
+       "Aircraft" -> "Embraer ERJ-190", "Number of Accidents" -> 7|>, <|
+       "Aircraft" -> "Grumman G-159 Gulfstream I", "Number of Accidents" -> 
+        7|>, <|"Aircraft" -> "Grumman G-21A Goose", "Number of Accidents" -> 
+        7|>, <|"Aircraft" -> "Grumman S-2 Tracker", "Number of Accidents" -> 
+        7|>, <|"Aircraft" -> "Ilyushin II-18", "Number of Accidents" -> 7|>, <|
+       "Aircraft" -> "Learjet 24", "Number of Accidents" -> 7|>, <|
+       "Aircraft" -> "Rockwell Grand Commander 680", "Number of Accidents" -> 
+        7|>, <|"Aircraft" -> "Rockwell Sabreliner 75", "Number of Accidents" -> 
+        7|>, <|"Aircraft" -> "Airbus A330", "Number of Accidents" -> 6|>, <|
+       "Aircraft" -> "Beechcraft D18", "Number of Accidents" -> 6|>, <|
+       "Aircraft" -> "Boeing 777-200", "Number of Accidents" -> 6|>, <|
+       "Aircraft" -> "Canadair RegionalJet CRJ-100", "Number of Accidents" -> 
+        6|>, <|"Aircraft" -> "Cessna 525 CitationJet CJ2", 
+        "Number of Accidents" -> 6|>, <|
+       "Aircraft" -> "Cessna 560XLS Citation Excel", "Number of Accidents" -> 
+        6|>, <|"Aircraft" -> "De Havilland DHC-8-100 (Dash-8)", 
+        "Number of Accidents" -> 6|>, <|
+       "Aircraft" -> "Douglas C-54 Skymaster", "Number of Accidents" -> 6|>, <|
+       "Aircraft" -> "Embraer ERJ-145", "Number of Accidents" -> 6|>, <|
+       "Aircraft" -> "GAF Nomad N.22", "Number of Accidents" -> 6|>, <|
+       "Aircraft" -> "Grumman E-2C Hawkeye", "Number of Accidents" -> 6|>, <|
+       "Aircraft" -> "Gulfstream G200", "Number of Accidents" -> 6|>, <|
+       "Aircraft" -> "Gulfstream GII", "Number of Accidents" -> 6|>, <|
+       "Aircraft" -> "Learjet 60", "Number of Accidents" -> 6|>, <|
+       "Aircraft" -> "PAC Cresco 08-600 (08-750)", "Number of Accidents" -> 
+        6|>, <|"Aircraft" -> "Rockwell Sabreliner 40", "Number of Accidents" -> 
+        6|>, <|"Aircraft" -> "Shaanxi Y-8", "Number of Accidents" -> 6|>, <|
+       "Aircraft" -> "Short 330", "Number of Accidents" -> 6|>, <|
+       "Aircraft" -> "Swearingen SA226AT Merlin IV", "Number of Accidents" -> 
+        6|>, <|"Aircraft" -> "Antonov AN-72", "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "ATR72-500", "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "Beechcraft Beechjet 400", "Number of Accidents" -> 
+        5|>, <|"Aircraft" -> "Beechcraft C-12 Huron", "Number of Accidents" -> 
+        5|>, <|"Aircraft" -> "Boeing 757-200", "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "Curtiss C-46 Commando", "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "De Havilland DHC-8-200 (Dash-8)", "Number of Accidents" -> 
+        5|>, <|"Aircraft" -> "Dornier DO.28D Skyservant", 
+        "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "Douglas DC-8", "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "Eclipse EA500", "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "Embraer EMB-500 Phenom 100", "Number of Accidents" -> 
+        5|>, <|"Aircraft" -> "Grumman G-64 Albatross", "Number of Accidents" -> 
+        5|>, <|
+       "Aircraft" -> "Gulfstream GIII", "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "Hawker Siddeley HS.780 Andover C.1", 
+        "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "IAI Arava 201", "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "Learjet 55 Longhorn", "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "Lockheed P-2 Neptune", "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "McDonnell Douglas MD-11", "Number of Accidents" -> 
+        5|>, <|"Aircraft" -> "NAMC YS-11", "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "Rockwell Gulfstream 690C Jetprop 840", 
+        "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "Rockwell Sabreliner 60", "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "Swearingen SA226T Merlin III", "Number of Accidents" -> 
+        5|>, <|"Aircraft" -> "Transall C-160", "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "Airbus A321", "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "ATR42-500", "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "Bae Jetstream 41", "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "Beechcraft 80 Queen Air", "Number of Accidents" -> 
+        4|>, <|"Aircraft" -> "Beechcraft G18S", "Number of Accidents" -> 
+        4|>, <|"Aircraft" -> "Beechcraft H18", "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "Boeing 747-300", "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "Canadair CL-604 Challenger", "Number of Accidents" -> 
+        4|>, <|"Aircraft" -> "Cessna 510 Citation Mustang", 
+        "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "Cessna 550 Citation Bravo", "Number of Accidents" -> 
+        4|>, <|"Aircraft" -> "Cessna 551 Citation II", "Number of Accidents" -> 
+        4|>, <|"Aircraft" -> "Cessna 560 Citation Encore", 
+        "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "Dassault Falcon 10", "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "De Havilland DHC-5 Buffalo", "Number of Accidents" -> 
+        4|>, <|"Aircraft" -> "Dornier DO328", "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "Hawker 800XP", "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "Ilyushin II-62", "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "Learjet 45", "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "Mitsubishi MU-300 Diamond", "Number of Accidents" -> 
+        4|>, <|"Aircraft" -> "Rockwell Sabreliner 65", "Number of Accidents" -> 
+        4|>, <|"Aircraft" -> "Rockwell T-39 Sabreliner", 
+        "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "Saab 2000", "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "Technoavia SM-92 Turbo Finist", "Number of Accidents" -> 
+        4|>, <|"Aircraft" -> "Airbus A300-600", "Number of Accidents" -> 
+        3|>, <|"Aircraft" -> "Airbus A319", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "ATR72-600", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Avro RJ100", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "BAe ATP", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Beechcraft 65 Queen Air", "Number of Accidents" -> 
+        3|>, <|"Aircraft" -> "Beechcraft MC-12W Liberty", 
+        "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Boeing 737-700", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Boeing 767-300", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Casa C-295M", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Cessna 525 CitationJet CJ4", "Number of Accidents" -> 
+        3|>, <|"Aircraft" -> "Cessna 650 Citation III", "Number of Accidents" -> 
+        3|>, <|"Aircraft" -> "Cessna 650 Citation VII", "Number of Accidents" -> 
+        3|>, <|"Aircraft" -> "Cessna 750 Citation X", "Number of Accidents" -> 
+        3|>, <|"Aircraft" -> "Convair CV-440 Metropolitan", 
+        "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "De Havilland DHC-4 Caribou", "Number of Accidents" -> 
+        3|>, <|"Aircraft" -> "De Havilland DHC-8-300 (Dash-8)", 
+        "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Dornier DO328Jet", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Douglas DC-6", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Embraer EMB-121 Xingu", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Embraer EMB-505 Phenom 300", "Number of Accidents" -> 
+        3|>, <|"Aircraft" -> "Epic LT", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "GAF Nomad N.24", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "HESA IrAn-140-100", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Learjet 31", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Learjet C-21A", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Rockwell Aero Commander 560", "Number of Accidents" -> 
+        3|>, <|"Aircraft" -> "Rockwell Gulfstream 695 Jetprop 980", 
+        "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Short SC.7 Skyvan Variant", "Number of Accidents" -> 
+        3|>, <|"Aircraft" -> "Socata TBM-900", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Sukhoi Superjet 100-95", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Tupolev TU-204", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Xian Yunsunji Y-7-100", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "A\[EAcute]rospatiale SN.601 Corvette", 
+        "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Airbus A340-600", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Antonov AN-140", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Antonov AN-148", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Antonov AN-30", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Antonov AN-8", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Avro RJ85", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "BAc 111", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Beechcraft 250 Super King Air", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Beechcraft T-1 Jayhawk", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Boeing 737 MAX 8", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Boeing B-17 Flying Fortress", 
+        "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Boeing B-52 Stratofortress", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Boeing KC-135 Stratotanker", 
+        "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Bombardier Global Express/XRS", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Britten-Norman Trislander", 
+        "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Cessna 421 Golden Eagle", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Cessna (DMI) Falcon 402", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Convair CV-340", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Dassault Falcon 50", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Dassault Falcon 900", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "De Havilland DHC-7 (Dash-7)", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Douglas A-26 Invader", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Embraer C-95 Bandeirante", 
+        "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Embraer ERJ-135", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Extra EA-400", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Fairchild-Hiller FH-227", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Grumman C-2A Greyhound", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Grumman G-73 Mallard", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Ilyushin II-38", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Ilyushin II-86", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Learjet 36", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Lockheed L-1011 TriStar", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Lockheed P-3 Orion", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "McDonnell Douglas MD-87", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "McDonnell Douglas MD-90", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Noorduyn Norseman", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "North American B-25 Mitchell", 
+        "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Piaggio P.166 Albatross", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Piaggio P.180 Avanti", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Rockwell Aero Commander 685", 
+        "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Rockwell Aero Commander 700 (Fuji FA-300)", 
+        "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Shijiazhuang Yunsunji Y-5", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Sud-Aviation SE-210 Caravelle", 
+        "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Swearingen SA26T Merlin II", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Travel Air 4000", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Tupolev TU-95", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Vickers Viscount", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Yakovlev Yak-42", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Aeritalia G.222", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "A\[EAcute]rospatiale-BAC Concorde", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Airbus A340-300", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Airbus A400M", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Angel Aircraft Corporation Model 44 Angel", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Antonov AN-124", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Antonov AN-22", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Antonov AN-3", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Antonov AN-70", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Antonov AN-74TK-300", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "ATR42-600", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Aviation Traders ATL-98 Carvair", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Avro RJ70", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "BAe Nimrod", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Beechcraft 70 Queen Air", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Beriev Be-103", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Beriev Be-12", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Beriev Be-200", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Boeing 307 Stratoliner", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Boeing 777-300", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Boeing E-3 Sentry", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Boeing KC-137 Stratoliner", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Bombardier Global 5000", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Bushmaster 2000", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Canadair CL-44", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Canadair CL-600 Challenger", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Canadair CL-605 Challenger", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Canadair CL-66 Cosmopolitan", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Casa 2.111", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Caudron C.635 Simoun", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Cessna 525 CitationJet CJ3", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Cessna 525 Citation M2", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Cessna 560 Citation V Ultra", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Cessna 650 Citation VI", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Cessna 680 Citation Latitude", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Cirrus Vision SF50", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Comp Air CA-9", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Consolidated PB4Y-2 Privateer", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Convair C-131 Samaritan", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "De Havilland C-7A Caribou", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "De Havilland DH.104 Dove", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "De Havilland DH.60 Moth", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "De Havilland DH.84 Dragon", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "De Havilland DH.89 Dragon Rapide", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Dornier DO.128 Skyservant", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Douglas C-118 Liftmaster", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Embraer KC-390", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Excel Jet Sport Jet I", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Fairchild C-123 Provider", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Gavil\[AAcute]n 358", "Number of Accidents" -> 
+        1|>, <|
+       "Aircraft" -> "GippsAero GA10 Airvan", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Grob G180 SPn", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Grumman C-1A Trader", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Grumman G-44 Widgeon", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Gulfstream G150", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Gulfstream G650", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Gulfstream GV", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Harbin SH-5 - Shuishang Hongzha 5", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Hawker 850XP", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Honda HA-420 HondaJet", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "IAI 1125 Astra", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Ilyushin II-112", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Ilyushin II-20", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Ilyushin II-96", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Junkers JU.52", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Kawasaki C-1", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Learjet 23", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Learjet 40", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Learjet 75", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Lisunov LI-2", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Lockheed 18 LodeStar", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Lockheed C-5 Galaxy", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Lockheed L-1329 JetStar", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Lockheed L-188 Electra", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "MBB HFB-320 Hansa Jet", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "McDonnell Douglas C-17 Globemaster III", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "McDonnell Douglas MD-81", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "McDonnell Douglas MD-88", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "NAL Saras", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Nord 262", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Piaggio P.1HH HammerHead", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Rockwell Gulfstream 690D Jetprop 900", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Rockwell Gulfstream 695A Jetprop 1000", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Rockwell Turbo Commander 680/681", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "SCAN-30", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Shin Meiwa US-2", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Sino Swearingen SJ30-2", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Socata TBM-910", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Spectrum FJ33", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Stinson SR-10 Reliant", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Swearingen SA226T Merlin", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Tupolev TU-142", "Number of Accidents" -> 1|>}, 
+     "AllowEmbedding" -> True, "InitialShape" -> 
+     TypeSystem`PackageScope`HeaderShape[<|{All, "Aircraft"} -> 
+        1, {All, "Number of Accidents"} -> 1|>, 
+       TypeSystem`PackageScope`Limited[
+        TypeSystem`PackageScope`ColumnShape[
+         TypeSystem`PackageScope`Limited[
+          
+          TypeSystem`PackageScope`RowShape[<|
+           "Aircraft" -> TypeSystem`PackageScope`AtomShape[313.6], 
+            "Number of Accidents" -> TypeSystem`PackageScope`AtomShape[34]|>], 
+          DirectedInfinity[1], 2, {All}]], 20, 
+        DirectedInfinity[1], {}]], "InitialType" -> TypeSystem`Vector[
+       TypeSystem`Struct[{"Aircraft", "Number of Accidents"}, {
+         TypeSystem`Atom[String], 
+         TypeSystem`Atom[Integer]}], 373], "Meta" -> <||>, "RowTarget" -> 20, 
+     "ColumnTarget" -> 10, "Shape" -> 
+     TypeSystem`PackageScope`HeaderShape[<|{All, "Aircraft"} -> 
+        1, {All, "Number of Accidents"} -> 1|>, 
+       TypeSystem`PackageScope`Limited[
+        TypeSystem`PackageScope`ColumnShape[
+         TypeSystem`PackageScope`Limited[
+          
+          TypeSystem`PackageScope`RowShape[<|
+           "Aircraft" -> TypeSystem`PackageScope`AtomShape[313.6], 
+            "Number of Accidents" -> TypeSystem`PackageScope`AtomShape[34]|>], 
+          DirectedInfinity[1], 2, {All}]], 20, 
+        DirectedInfinity[1], {}]], "Type" -> TypeSystem`Vector[
+       TypeSystem`Struct[{"Aircraft", "Number of Accidents"}, {
+         TypeSystem`Atom[String], 
+         TypeSystem`Atom[Integer]}], 373], "Path" -> {}, "DisplayedRowCount" -> 
+     20, "DisplayedColumnCount" -> 2, "DataRowCount" -> 373, 
+     "DataColumnCount" -> 2, "SortPaths" -> {}, "SortDirections" -> {}, 
+     "HiddenItemsMap" -> Null, "UpdateType" -> 1|>, 
+    TypeSystem`NestedGrid`PackagePrivate`$outputID$$, 
+    TypeSystem`NestedGrid`PackagePrivate`$path$$ = {}, 
+    TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 1, 
+    TypeSystem`NestedGrid`PackagePrivate`$hPos$$ = 1, 
+    TypeSystem`NestedGrid`PackagePrivate`$grid$$ = 
+    DynamicModule[{
+     TypeSystem`NestedGrid`PackagePrivate`renderedGrid = Deploy[
+        Style[
+         Grid[{{
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Aircraft", 
+                  Style[
+                  "Aircraft", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                   All, "Aircraft"}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                All, "Aircraft"}, "ColumnHeader", True], "Mouse"], 
+              ImageSize -> {{1, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Number of Accidents", 
+                  Style[
+                  "Number of Accidents", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                   All, "Number of Accidents"}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                All, "Number of Accidents"}, "ColumnHeader", True], "Mouse"], 
+              ImageSize -> {{1, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}]}, {
+            Item[
+             Pane[
+              Annotation["Cessna 208B Grand Caravan", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{1, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{313.6, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["161"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{1, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["PZL-Mielec AN-2", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{2, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{313.6, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["151"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{2, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation[
+              "Piper PA-46 (Malibu/Meridian/Mirage/Matrix/M-Class)", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{3, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{313.6, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["130"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{3, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Beechcraft 90 King Air", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{4, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{313.6, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["99"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{4, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Beechcraft 200 Super King Air", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{5, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{313.6, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["89"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{5, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Piper PA-31-350 Navajo Chieftain", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{6, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{313.6, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["88"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{6, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Antonov AN-26", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{7, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{313.6, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["75"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{7, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Let L-410", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{8, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{313.6, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["75"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{8, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["De Havilland DHC-2 Beaver", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{9, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{313.6, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["74"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{9, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Britten-Norman Islander", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{10, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{313.6, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["73"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{10, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Antonov AN-12", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{11, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{313.6, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["68"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{11, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["De Havilland DHC-6 Twin Otter", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{12, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{313.6, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["68"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{12, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Piper PA-31-310 Navajo", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{13, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{313.6, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["68"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{13, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Lockheed C-130 Hercules", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{14, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{313.6, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["64"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{14, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Cessna 207 Skywagon/Stationair", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{15, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{313.6, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["54"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{15, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Cessna 402", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{16, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{313.6, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["49"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{16, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Cessna 340", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{17, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{313.6, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["44"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{17, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Piper PA-31 Cheyenne", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{18, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{313.6, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["43"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{18, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Beechcraft 100 King Air", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{19, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{313.6, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["40"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{19, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Learjet 35", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{20, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{313.6, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["40"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{20, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Deploy[
+              Pane[
+               Row[{
+                 Spacer[2], 
+                 Style[
+                  Row[{
+                    Button[
+                    MouseAppearance[
+                    Mouseover[
+                    Graphics[{{
+                    EdgeForm[None], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}], 
+                    Line[{{0, 5}, {8, 5}}]}, {5, 6.5}], 0, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35], BaseStyle -> 
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843]], 
+                    Graphics[{{
+                    EdgeForm[
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549]], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}], 
+                    Line[{{0, 5}, {8, 5}}]}, {5, 6.5}], 0, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35]]], "LinkHand"], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    If[True, 373, 1], {1, 373 - -20 + 1}]; 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]], True][
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$]], 
+                    Appearance -> None], 
+                    Button[
+                    MouseAppearance[
+                    Mouseover[
+                    Graphics[{{
+                    EdgeForm[None], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}]}, {5, 6.5}], 0, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35], BaseStyle -> 
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843]], 
+                    Graphics[{{
+                    EdgeForm[
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549]], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}]}, {5, 6.5}], 0, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35]]], "LinkHand"], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    If[False, 373, 1], {1, 373 - -20 + 1}]; 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]], True][
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$]], 
+                    Appearance -> None], " ", 
+                    Style[
+                    Mouseover[
+                    Style[
+                    Row[{"rows ", 1, "\[Dash]", 20, " of ", 
+                    Style[373, FontWeight -> Bold]}], FontSize -> 
+                    9.333333333333332, FontColor -> 
+                    RGBColor[
+                    0.5098039215686274, 0.5098039215686274, 
+                    0.5098039215686274]], 
+                    Style[
+                    Row[{"rows ", 1, "\[Dash]", 20, " of ", 
+                    Style[373, FontWeight -> Bold]}], FontSize -> 
+                    9.333333333333332, FontColor -> 
+                    RGBColor[
+                    0.5098039215686274, 0.5098039215686274, 
+                    0.5098039215686274]]], ContextMenu -> {
+                    MenuItem["Hide", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 1, {}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show up to 10 Rows", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 10, {}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show up to 30 Rows", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 30, {}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show up to 100 Rows", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 100, {}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show All", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 100000000, {}]], MenuEvaluator -> Automatic]}], 
+                    " ", 
+                    Button[
+                    MouseAppearance[
+                    Mouseover[
+                    Graphics[{{
+                    EdgeForm[None], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}]}, {5, 6.5}], 180 Degree, {
+                    9, 9}]}, ImageSize -> (1 -> 1), 
+                    ImagePadding -> {{0, 1}, {1, 0}}, BaselinePosition -> 
+                    Scaled[0.35], BaseStyle -> 
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843]], 
+                    Graphics[{{
+                    EdgeForm[
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549]], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}]}, {5, 6.5}], 180 Degree, {
+                    9, 9}]}, ImageSize -> (1 -> 1), 
+                    ImagePadding -> {{0, 1}, {1, 0}}, BaselinePosition -> 
+                    Scaled[0.35]]], "LinkHand"], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + 
+                    20 If[False, 373, 1], {1, 373 - 20 + 1}]; 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]], True][
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$]], 
+                    Appearance -> None], 
+                    Button[
+                    MouseAppearance[
+                    Mouseover[
+                    Graphics[{{
+                    EdgeForm[None], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}], 
+                    Line[{{0, 5}, {8, 5}}]}, {5, 6.5}], 180 Degree, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35], BaseStyle -> 
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843]], 
+                    Graphics[{{
+                    EdgeForm[
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549]], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}], 
+                    Line[{{0, 5}, {8, 5}}]}, {5, 6.5}], 180 Degree, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35]]], "LinkHand"], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + 
+                    20 If[True, 373, 1], {1, 373 - 20 + 1}]; 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]], True][
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$]], 
+                    Appearance -> None]}], ContextMenu -> {}]}], 
+               ImageMargins -> {{0, -1}, {-1, 1}}]], Background -> 
+             RGBColor[
+              0.9764705882352941, 0.9764705882352941, 0.9764705882352941], 
+             Alignment -> {Left, Top}], SpanFromLeft}}, 
+          BaseStyle -> {
+           ContextMenu -> 
+            Dynamic[TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger; 
+              Which[TypeSystem`NestedGrid`PackagePrivate`$lastOutputID =!= 
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$], {}, 
+                TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger === 
+                TypeSystem`NestedGrid`PackagePrivate`$lastContextMenuTrigger, 
+                TypeSystem`NestedGrid`PackagePrivate`$lastContextMenu, True, 
+                TypeSystem`NestedGrid`PackagePrivate`$lastContextMenuTrigger = 
+                 TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger; 
+                TypeSystem`NestedGrid`PackagePrivate`$lastContextMenu = 
+                 Block[{TypeSystem`NestedGrid`PackagePrivate`$globalScrollPos = \
+{TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$}}, 
+                   
+                   With[{TypeSystem`NestedGrid`PackagePrivate`lastPath$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPathType, 
+                    TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`$\
+lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
+                    MatchQ[TypeSystem`NestedGrid`PackagePrivate`$lastPathType, 
+                    Alternatives["RowHeader", "ColumnHeader"]], 
+                    TypeSystem`NestedGrid`PackagePrivate`headerHiddenQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$]], 
+                    TypeSystem`NestedGrid`PackagePrivate`allHidden$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`allHiddenQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`anyHidden$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`anyHiddenQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`columnSortDirection[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$[
+                    "SortPaths"], 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$[
+                    "SortDirections"]], 
+                    TypeSystem`NestedGrid`PackagePrivate`haveData$ = Not[
+                    FailureQ[
+                    TypeSystem`NestedGrid`PackagePrivate`datasetInitialData[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$]]], 
+                    TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$ = Not[
+                    FreeQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, Keys]]}, 
+                    Join[{
+                    If[
+                    Or[
+                    Not[TypeSystem`NestedGrid`PackagePrivate`haveData$], 
+                    Not[TypeSystem`NestedGrid`PackagePrivate`anyHidden$], 
+                    TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$], 
+                    Nothing, 
+                    MenuItem[
+                    "Show " <> 
+                    Which[TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "Item", "", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "RowHeader", "Row", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "ColumnHeader", "Column", True, ""], 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, 
+                    "remove"]], MenuEvaluator -> Automatic]], 
+                    If[
+                    Or[
+                    Not[TypeSystem`NestedGrid`PackagePrivate`haveData$], 
+                    TypeSystem`NestedGrid`PackagePrivate`pathEmptyQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$, 
+                    And[
+                    TypeSystem`NestedGrid`PackagePrivate`allHidden$, 
+                    TypeSystem`NestedGrid`PackagePrivate`headerHidden$]], 
+                    Nothing, 
+                    MenuItem[
+                    "Hide " <> 
+                    Which[TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "Item", "", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "RowHeader", "Row", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "ColumnHeader", "Column", True, ""], 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, "add"]], 
+                    MenuEvaluator -> Automatic]], Delimiter}, 
+                    If[
+                    And[TypeSystem`NestedGrid`PackagePrivate`haveData$, 
+                    MatchQ[TypeSystem`NestedGrid`PackagePrivate`lastPathType$, 
+                    Alternatives["ColumnHeader", "KeyDummy"]], 
+                    TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$, 
+                    Not[TypeSystem`NestedGrid`PackagePrivate`allHidden$]], {
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
+                    "Ascending", 
+                    MenuItem["Sort", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateSort[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, 
+                    "Ascending"]], MenuEvaluator -> Automatic], Nothing], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
+                    "Descending", 
+                    MenuItem["Reverse Sort", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateSort[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, 
+                    "Descending"]], MenuEvaluator -> Automatic], Nothing], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
+                    None, 
+                    MenuItem["Unsort", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateSort[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, None]], 
+                    MenuEvaluator -> Automatic], Nothing], Delimiter}, {}], {
+                    MenuItem["Copy Position to Clipboard", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[
+                    TypeSystem`NestedGrid`PackagePrivate`copyClip]], 
+                    MenuEvaluator -> Automatic], 
+                    If[TypeSystem`NestedGrid`PackagePrivate`haveData$, 
+                    MenuItem["Copy Data to Clipboard", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`copyClip]], 
+                    MenuEvaluator -> Automatic], Nothing], Delimiter, 
+                    MenuItem["Paste Position in New Cell", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[
+                    TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
+                    MenuEvaluator -> Automatic], 
+                    If[TypeSystem`NestedGrid`PackagePrivate`haveData$, 
+                    MenuItem["Paste Data in New Cell", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
+                    MenuEvaluator -> Automatic], Nothing]}]]]]], FontFamily -> 
+            "Source Sans Pro", FontSize -> 14, FontWeight -> Plain}, Dividers -> 
+          All, FrameStyle -> GrayLevel[0.7490196078431373], 
+          Spacings -> {0, 0}, Alignment -> Left, 
+          BaseStyle -> {
+           FontFamily -> "Source Sans Pro", FontSize -> 14, FontWeight -> 
+            Plain}], LineBreakWithin -> False, ContextMenu -> {}, NumberMarks -> 
+         False, ShowAutoStyles -> False]], 
+      TypeSystem`NestedGrid`PackagePrivate`initialQ = True}, 
+     Dynamic[
+      TypeSystem`NestedGrid`PackagePrivate`setupViewPath[
+      TypeSystem`NestedGrid`PackagePrivate`$path$$, If[
+         Not[TypeSystem`NestedGrid`PackagePrivate`initialQ], 
+         Module[{
+          TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = $Failed, 
+           TypeSystem`NestedGrid`PackagePrivate`tmpData$ = 
+           TypeSystem`NestedGrid`PackagePrivate`datasetData[
+            TypeSystem`NestedGrid`PackagePrivate`$state$$]}, 
+          TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = If[
+             FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpData$], 
+             TypeSystem`NestedGrid`PackagePrivate`renderedGrid, 
+             TypeSystem`NestedGrid`PackagePrivate`renderGrid[
+             TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+              TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+              TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+              TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+              TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+              TypeSystem`NestedGrid`PackagePrivate`localHold[
+              TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+             TypeSystem`NestedGrid`PackagePrivate`tmpData$]]; If[
+            Not[
+             FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]], 
+            TypeSystem`NestedGrid`PackagePrivate`renderedGrid = 
+            TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]; Null]]; 
+       TypeSystem`NestedGrid`PackagePrivate`initialQ = False; 
+       TypeSystem`NestedGrid`PackagePrivate`$vPos$$; 
+       TypeSystem`NestedGrid`PackagePrivate`$hPos$$; If[
+         FailureQ[TypeSystem`NestedGrid`PackagePrivate`renderedGrid], 
+         TypeSystem`SparseGrid[
+          TypeSystem`H["(data no longer present)"]], 
+         TypeSystem`NestedGrid`PackagePrivate`renderedGrid]], 
+      TrackedSymbols :> {
+       TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$hPos$$}], 
+     DynamicModuleValues :> {}], 
+    TypeSystem`NestedGrid`PackagePrivate`$topBar$$ = Dynamic[
+     TypeSystem`NestedGrid`PackagePrivate`makeFramedBar[
+      TypeSystem`PackageScope`SubViewPathbar[
+      TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+       TypeSystem`NestedGrid`PackagePrivate`updateState[
+       TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+        TypeSystem`NestedGrid`PackagePrivate`localHold[
+        TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]]], 
+     TrackedSymbols :> {TypeSystem`NestedGrid`PackagePrivate`$path$$}], 
+    TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$ = Style[
+     Framed[
+      Dynamic[
+       Replace[
+       TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$, {
+        TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+           TypeSystem`NestedGrid`PackagePrivate`localHold[
+           TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][Null, 
+           Blank[]] -> "", TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+           TypeSystem`NestedGrid`PackagePrivate`localHold[
+           TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+           Pattern[TypeSystem`NestedGrid`PackagePrivate`path$, 
+            Blank[]], 
+           Pattern[TypeSystem`NestedGrid`PackagePrivate`pathType$, 
+            Blank[]], 
+           Pattern[TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$, 
+            Blank[]]] :> (
+          Increment[TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger]; 
+          TypeSystem`NestedGrid`PackagePrivate`$lastPath = 
+           TypeSystem`NestedGrid`PackagePrivate`path$; 
+          TypeSystem`NestedGrid`PackagePrivate`$lastPathType = 
+           TypeSystem`NestedGrid`PackagePrivate`pathType$; 
+          TypeSystem`NestedGrid`PackagePrivate`$lastPathIsLeafHeader = 
+           TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$; 
+          TypeSystem`NestedGrid`PackagePrivate`$lastOutputID = 
+           TypeSystem`NestedGrid`PackagePrivate`localHold[
+            TypeSystem`NestedGrid`PackagePrivate`$outputID$$]; 
+          TypeSystem`NestedGrid`PackagePrivate`makePathTrail[
+           TypeSystem`NestedGrid`PackagePrivate`path$, 
+            TypeSystem`NestedGrid`PackagePrivate`makePathElements]), Null :> 
+         Spacer[10], Blank[] :> Spacer[10]}], 
+       TrackedSymbols :> {
+        TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$}], FrameStyle -> 
+      None, ImageMargins -> 0, FrameMargins -> 0, Alignment -> Top, 
+      ImageSize -> {Automatic, 15}], FontSize -> 1], 
+    TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = Null}, 
+    DynamicWrapperBox[
+     DynamicBox[ToBoxes[
+       Dataset`DatasetContent[
+       2, "Path" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$path$$], 
+        "Grid" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$grid$$], "State" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$state$$], "VPos" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$vPos$$], "HPos" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$hPos$$], "TopBar" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$topBar$$], "BottomBar" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$], "OutputID" -> 
+        Hold[
+          TypeSystem`NestedGrid`PackagePrivate`localHold[
+          TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]], StandardForm],
+      ImageSizeCache->{474., {300.634033203125, 306.365966796875}},
+      TrackedSymbols:>{
+       TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$grid$$}], 
+     TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = 
+     MouseAnnotation[],
+     ImageSizeCache->{474., {300.634033203125, 306.365966796875}}],
+    BaseStyle->{LineBreakWithin -> False},
+    DynamicModuleValues:>{},
+    Initialization:>(TypeSystem`NestedGrid`PackagePrivate`$outputID$$ = 
+     CreateUUID[]),
+    UnsavedVariables:>{TypeSystem`NestedGrid`PackagePrivate`$outputID$$}],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  Dataset`InterpretDataset[1],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.926272592144258*^9},
+ CellLabel->
+  "Out[109]=",ExpressionUUID->"f82a4244-4c02-4998-9374-9bffe9564e35"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"modelLetalaBrezPre\[ZHacek]ivelih", "=", 
+   RowBox[{
+    RowBox[{"nesre\[CHacek]eCSV", "//", 
+     RowBox[{"Query", "[", 
+      RowBox[{"Select", "[", 
+       RowBox[{
+        RowBox[{"StringContainsQ", "[", 
+         RowBox[{
+          RowBox[{"#", "[", 
+           RowBox[{"[", "8", "]"}], "]"}], ",", "\"\<No\>\""}], "]"}], "&"}], 
+       "]"}], "]"}]}], "//", 
+    RowBox[{"Query", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"GroupBy", "[", "\"\<Aircraft\>\"", "]"}], "/*", 
+       RowBox[{"Map", "[", 
+        RowBox[{
+         RowBox[{"<|", 
+          RowBox[{"#", ",", 
+           RowBox[{"\"\<Number of Accidents\>\"", "->", 
+            RowBox[{"Length", "[", "#", "]"}]}]}], "|>"}], "&"}], "]"}], "/*",
+        "Values"}], ",", 
+      RowBox[{"{", "3", "}"}]}], "]"}]}]}], ";"}]], "Input",
+ CellLabel->
+  "In[110]:=",ExpressionUUID->"fd70ae42-3fe9-464d-8b99-13fdba917255"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"modelLetalaBrezPre\[ZHacek]ivelih", "=", 
+  RowBox[{"SortBy", "[", 
+   RowBox[{"modelLetalaBrezPre\[ZHacek]ivelih", ",", 
+    RowBox[{
+     RowBox[{"-", 
+      RowBox[{"#", "[", 
+       RowBox[{"[", "2", "]"}], "]"}]}], "&"}]}], "]"}]}]], "Input",
+ CellLabel->
+  "In[111]:=",ExpressionUUID->"fafb326f-634b-49d2-b1eb-afe3b690cba6"],
+
+Cell[BoxData[
+ TagBox[
+  TagBox[
+   DynamicModuleBox[{TypeSystem`NestedGrid`PackagePrivate`$state$$ = <|
+    "InitialData" -> {<|
+       "Aircraft" -> "Piper PA-46 (Malibu/Meridian/Mirage/Matrix/M-Class)", 
+        "Number of Accidents" -> 76|>, <|
+       "Aircraft" -> "Cessna 208B Grand Caravan", "Number of Accidents" -> 
+        63|>, <|"Aircraft" -> "Beechcraft 90 King Air", "Number of Accidents" -> 
+        52|>, <|"Aircraft" -> "Piper PA-31-350 Navajo Chieftain", 
+        "Number of Accidents" -> 41|>, <|
+       "Aircraft" -> "Piper PA-31-310 Navajo", "Number of Accidents" -> 
+        39|>, <|"Aircraft" -> "Beechcraft 200 Super King Air", 
+        "Number of Accidents" -> 37|>, <|
+       "Aircraft" -> "Cessna 340", "Number of Accidents" -> 30|>, <|
+       "Aircraft" -> "De Havilland DHC-6 Twin Otter", "Number of Accidents" -> 
+        30|>, <|"Aircraft" -> "Mitsubishi MU-2 Marquise", 
+        "Number of Accidents" -> 29|>, <|
+       "Aircraft" -> "PZL-Mielec AN-2", "Number of Accidents" -> 29|>, <|
+       "Aircraft" -> "Britten-Norman Islander", "Number of Accidents" -> 
+        28|>, <|"Aircraft" -> "De Havilland DHC-2 Beaver", 
+        "Number of Accidents" -> 28|>, <|
+       "Aircraft" -> "Lockheed C-130 Hercules", "Number of Accidents" -> 
+        28|>, <|"Aircraft" -> "Piper PA-31 Cheyenne", "Number of Accidents" -> 
+        28|>, <|"Aircraft" -> "Antonov AN-26", "Number of Accidents" -> 
+        24|>, <|"Aircraft" -> "Cessna 421C Golden Eagle III", 
+        "Number of Accidents" -> 24|>, <|
+       "Aircraft" -> "Antonov AN-12", "Number of Accidents" -> 23|>, <|
+       "Aircraft" -> "Let L-410", "Number of Accidents" -> 23|>, <|
+       "Aircraft" -> "Cessna 207 Skywagon/Stationair", "Number of Accidents" -> 
+        22|>, <|"Aircraft" -> "Piper PA-61 Aerostar (Ted Smith 601)", 
+        "Number of Accidents" -> 22|>, <|
+       "Aircraft" -> "Cessna 414 Chancellor", "Number of Accidents" -> 19|>, <|
+       "Aircraft" -> "Ilyushin II-76", "Number of Accidents" -> 19|>, <|
+       "Aircraft" -> "Cessna 402", "Number of Accidents" -> 18|>, <|
+       "Aircraft" -> "Pilatus PC-12", "Number of Accidents" -> 18|>, <|
+       "Aircraft" -> "Beechcraft 60 Duke", "Number of Accidents" -> 17|>, <|
+       "Aircraft" -> "Cessna 421B Golden Eagle II", "Number of Accidents" -> 
+        17|>, <|"Aircraft" -> "Rockwell Grand Commander 690", 
+        "Number of Accidents" -> 17|>, <|
+       "Aircraft" -> "Casa 212 Aviocar", "Number of Accidents" -> 16|>, <|
+       "Aircraft" -> "Fletcher FU-24", "Number of Accidents" -> 16|>, <|
+       "Aircraft" -> "Piper PA-60 Aerostar (Ted Smith 600)", 
+        "Number of Accidents" -> 16|>, <|
+       "Aircraft" -> "Cessna 441 Conquest", "Number of Accidents" -> 15|>, <|
+       "Aircraft" -> "Rockwell Shrike Commander 500", "Number of Accidents" -> 
+        15|>, <|"Aircraft" -> "Socata TBM-700", "Number of Accidents" -> 
+        15|>, <|"Aircraft" -> "BAe 125", "Number of Accidents" -> 14|>, <|
+       "Aircraft" -> "Learjet 35", "Number of Accidents" -> 14|>, <|
+       "Aircraft" -> "Pilatus PC-6 (Porter & Turbo Porter)", 
+        "Number of Accidents" -> 14|>, <|
+       "Aircraft" -> "PZL-Mielec AN-28", "Number of Accidents" -> 14|>, <|
+       "Aircraft" -> "Beechcraft 350 Super King Air", "Number of Accidents" -> 
+        13|>, <|"Aircraft" -> "Beechcraft 100 King Air", 
+        "Number of Accidents" -> 12|>, <|
+       "Aircraft" -> "Beechcraft 1900C", "Number of Accidents" -> 11|>, <|
+       "Aircraft" -> "Cessna 208A Caravan", "Number of Accidents" -> 10|>, <|
+       "Aircraft" -> "Partenavia P.68", "Number of Accidents" -> 10|>, <|
+       "Aircraft" -> "Cessna 500 Citation", "Number of Accidents" -> 9|>, <|
+       "Aircraft" -> "Cessna 501 Citation I", "Number of Accidents" -> 9|>, <|
+       "Aircraft" -> "Embraer EMB-820 Navajo/Caraj\[AAcute]", 
+        "Number of Accidents" -> 9|>, <|
+       "Aircraft" -> "Tupolev TU-154", "Number of Accidents" -> 9|>, <|
+       "Aircraft" -> "Cessna 303 Crusader", "Number of Accidents" -> 8|>, <|
+       "Aircraft" -> "Fokker F27 Friendship", "Number of Accidents" -> 8|>, <|
+       "Aircraft" -> "Rockwell Aero Commander 500", "Number of Accidents" -> 
+        8|>, <|"Aircraft" -> "Swearingen SA227 Metro III", 
+        "Number of Accidents" -> 8|>, <|
+       "Aircraft" -> "Airbus A320", "Number of Accidents" -> 7|>, <|
+       "Aircraft" -> "Antonov AN-32", "Number of Accidents" -> 7|>, <|
+       "Aircraft" -> "Casa-Nurtanio CN-235 (IPTN)", "Number of Accidents" -> 
+        7|>, <|"Aircraft" -> "Cessna 425 Conquest", "Number of Accidents" -> 
+        7|>, <|"Aircraft" -> "Cessna 525 CitationJet CJ1", 
+        "Number of Accidents" -> 7|>, <|
+       "Aircraft" -> "Douglas DC-3", "Number of Accidents" -> 7|>, <|
+       "Aircraft" -> "Embraer EMB-110 Bandeirante", "Number of Accidents" -> 
+        7|>, <|"Aircraft" -> "IAI 1124 Westwind", "Number of Accidents" -> 
+        7|>, <|"Aircraft" -> "Beechcraft 1900D", "Number of Accidents" -> 
+        6|>, <|"Aircraft" -> "Beechcraft 300 Super King Air", 
+        "Number of Accidents" -> 6|>, <|
+       "Aircraft" -> "Beechcraft 99 Airliner", "Number of Accidents" -> 6|>, <|
+       "Aircraft" -> "Boeing 737-200", "Number of Accidents" -> 6|>, <|
+       "Aircraft" -> "Boeing 737-800", "Number of Accidents" -> 6|>, <|
+       "Aircraft" -> "Cessna 421A Golden Eagle I", "Number of Accidents" -> 
+        6|>, <|"Aircraft" -> "Cessna 550 Citation II", "Number of Accidents" -> 
+        6|>, <|"Aircraft" -> "Dassault Falcon 20", "Number of Accidents" -> 
+        6|>, <|"Aircraft" -> "De Havilland DHC-3 Otter", 
+        "Number of Accidents" -> 6|>, <|
+       "Aircraft" -> "Dornier DO228", "Number of Accidents" -> 6|>, <|
+       "Aircraft" -> "Learjet 25", "Number of Accidents" -> 6|>, <|
+       "Aircraft" -> "Shaanxi Y-8", "Number of Accidents" -> 6|>, <|
+       "Aircraft" -> "Canadair RegionalJet CRJ-200", "Number of Accidents" -> 
+        5|>, <|"Aircraft" -> "Cessna 401", "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "Cessna 404 Titan", "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "Cessna 406 Caravan", "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "Cessna 560 Citation V", "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "Comp Air CA-8", "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "Embraer EMB-120 Bras\[IAcute]lia", 
+        "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "Grumman S-2 Tracker", "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "Piper PA-42 Cheyenne", "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "Short 360", "Number of Accidents" -> 5|>, <|
+       "Aircraft" -> "Swearingen SA226 Metro II", "Number of Accidents" -> 
+        5|>, <|"Aircraft" -> "Beechcraft C-12 Huron", "Number of Accidents" -> 
+        4|>, <|"Aircraft" -> "Beechcraft E18", "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "Boeing 747-400", "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "Cessna 411", "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "Convair CV-580", "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "Gulfstream GIII", "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "Gulfstream GIV", "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "Harbin Yunsunji Y-12", "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "Learjet 24", "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "Lockheed P-2 Neptune", "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "McDonnell Douglas MD-83", "Number of Accidents" -> 
+        4|>, <|"Aircraft" -> "PAC 750XL - Pacific Aerospace Corporation", 
+        "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "PAC Cresco 08-600 (08-750)", "Number of Accidents" -> 
+        4|>, <|"Aircraft" -> "Quest Kodiak 100", "Number of Accidents" -> 
+        4|>, <|"Aircraft" -> "Rockwell T-39 Sabreliner", 
+        "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "Socata TBM-850", "Number of Accidents" -> 4|>, <|
+       "Aircraft" -> "Antonov AN-2", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Antonov AN-24", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "ATR42-300", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "ATR72-200", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Beechcraft 80 Queen Air", "Number of Accidents" -> 
+        3|>, <|"Aircraft" -> "Beechcraft C-45 Expeditor", 
+        "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Boeing 737-500", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Boeing 757-200", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Canadair CL-415", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Canadair CL-604 Challenger", "Number of Accidents" -> 
+        3|>, <|"Aircraft" -> "Cessna 525 CitationJet CJ2", 
+        "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Douglas C-47 Skytrain (DC-3)", "Number of Accidents" -> 
+        3|>, <|"Aircraft" -> "GippsAero GA8 Airvan", "Number of Accidents" -> 
+        3|>, <|"Aircraft" -> "Learjet 45", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Rockwell Grand Commander 680", "Number of Accidents" -> 
+        3|>, <|"Aircraft" -> "Rockwell Gulfstream 690C Jetprop 840", 
+        "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Rockwell Sabreliner 40", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Rockwell Sabreliner 65", "Number of Accidents" -> 3|>, <|
+       "Aircraft" -> "Swearingen SA226AT Merlin IV", "Number of Accidents" -> 
+        3|>, <|"Aircraft" -> "Yakovlev Yak-40", "Number of Accidents" -> 
+        3|>, <|"Aircraft" -> "Airbus A300-600", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Airbus A321", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Antonov AN-140", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Antonov AN-148", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Antonov AN-72", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Antonov AN-74", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "BAe Jetstream 31", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Basler BT-67", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Beechcraft H18", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Beechcraft MC-12W Liberty", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Boeing 727-100", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Boeing 737-300", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Boeing 737 MAX 8", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Boeing 747-200", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Boeing 767-200", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Boeing 777-200", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Canadair CL-601 Challenger", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Casa C-295M", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Cessna 421 Golden Eagle", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Cessna 510 Citation Mustang", 
+        "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Cessna 560 Citation Encore", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Cessna 560XLS Citation Excel", 
+        "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Cessna 650 Citation III", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Convair CV-440 Metropolitan", 
+        "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "De Havilland DHC-8-400 (Dash-8)", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Embraer EMB-121 Xingu", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Epic LT", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Fairchild-Hiller FH-227", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Grumman G-159 Gulfstream I", 
+        "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Grumman G-21A Goose", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Grumman G-73 Mallard", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "HESA IrAn-140-100", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Ilyushin II-18", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Ilyushin II-38", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "McDonnell Douglas MD-82", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Piaggio P.166 Albatross", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Raytheon 390 Premier I", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Rockwell Aero Commander 560", 
+        "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Rockwell Gulfstream 695 Jetprop 980", 
+        "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Saab 340", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Short 330", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "Short SC.7 Skyvan Variant", "Number of Accidents" -> 
+        2|>, <|"Aircraft" -> "Socata TBM-900", "Number of Accidents" -> 2|>, <|
+       "Aircraft" -> "A\[EAcute]rospatiale-BAC Concorde", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Airbus A300", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Airbus A330", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Angel Aircraft Corporation Model 44 Angel", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Antonov AN-22", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Antonov AN-8", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "ATR42-500", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "ATR72-600", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Avro 748", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "BAe 146", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "BAe Nimrod", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Beechcraft 250 Super King Air", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Beechcraft 65 Queen Air", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Beechcraft D18", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Beechcraft G18S", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Beriev Be-200", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Boeing 707", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Boeing 737-400", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Boeing 767-300", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Boeing B-52 Stratofortress", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Boeing KC-135 Stratotanker", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Bombardier Global Express/XRS", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Britten-Norman Trislander", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Canadair CL-215", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Canadair CL-605 Challenger", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Casa 2.111", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Caudron C.635 Simoun", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Cessna 525 CitationJet CJ4", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Cessna 525 Citation M2", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Cessna 550 Citation Bravo", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Cessna 650 Citation VI", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Cessna 650 Citation VII", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Cessna 750 Citation X", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Comp Air CA-9", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Consolidated PB4Y-2 Privateer", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Curtiss C-46 Commando", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Dassault Falcon 50", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "De Havilland DH.84 Dragon", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "De Havilland DHC-4 Caribou", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Dornier DO.128 Skyservant", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Douglas DC-8", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Douglas DC-9", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Eclipse EA500", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Embraer EMB-500 Phenom 100", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Embraer EMB-505 Phenom 300", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Embraer ERJ-190", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Extra EA-400", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Fairchild C-123 Provider", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Fokker 50", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Fokker F28 Fellowship", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "GAF Nomad N.22", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "GAF Nomad N.24", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Gavil\[AAcute]n 358", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Grob G180 SPn", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Grumman C-1A Trader", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Grumman E-2C Hawkeye", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Grumman G-44 Widgeon", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Grumman G-64 Albatross", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Gulfstream G650", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Gulfstream GII", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Harbin SH-5 - Shuishang Hongzha 5", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Hawker 850XP", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "IAI Arava 201", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Ilyushin II-112", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Ilyushin II-20", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Junkers JU.52", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Kawasaki C-1", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Learjet 23", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Learjet 31", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Learjet 36", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Learjet 55 Longhorn", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Learjet 60", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Learjet C-21A", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Lockheed L-188 Electra", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Lockheed P-3 Orion", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "MBB HFB-320 Hansa Jet", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "McDonnell Douglas C-17 Globemaster III", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "McDonnell Douglas MD-11", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "McDonnell Douglas MD-87", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "NAL Saras", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Rockwell Aero Commander 685", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Rockwell Aero Commander 700 (Fuji FA-300)", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Rockwell Gulfstream 695A Jetprop 1000", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Rockwell Sabreliner 60", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Rockwell Sabreliner 75", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Rockwell Turbo Commander 680/681", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Sino Swearingen SJ30-2", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Spectrum FJ33", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Sukhoi Superjet 100-95", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Swearingen SA226T Merlin", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Swearingen SA226T Merlin III", 
+        "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Technoavia SM-92 Turbo Finist", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Travel Air 4000", "Number of Accidents" -> 
+        1|>, <|"Aircraft" -> "Tupolev TU-134", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Tupolev TU-142", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Xian MA60", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Xian Yunsunji Y-7-100", "Number of Accidents" -> 1|>, <|
+       "Aircraft" -> "Yakovlev Yak-42", "Number of Accidents" -> 1|>}, 
+     "AllowEmbedding" -> True, "InitialShape" -> 
+     TypeSystem`PackageScope`HeaderShape[<|{All, "Aircraft"} -> 
+        1, {All, "Number of Accidents"} -> 1|>, 
+       TypeSystem`PackageScope`Limited[
+        TypeSystem`PackageScope`ColumnShape[
+         TypeSystem`PackageScope`Limited[
+          
+          TypeSystem`PackageScope`RowShape[<|
+           "Aircraft" -> 
+            TypeSystem`PackageScope`AtomShape[403.20000000000005`], 
+            "Number of Accidents" -> TypeSystem`PackageScope`AtomShape[34]|>], 
+          DirectedInfinity[1], 2, {All}]], 20, 
+        DirectedInfinity[1], {}]], "InitialType" -> TypeSystem`Vector[
+       TypeSystem`Struct[{"Aircraft", "Number of Accidents"}, {
+         TypeSystem`Atom[String], 
+         TypeSystem`Atom[Integer]}], 258], "Meta" -> <||>, "RowTarget" -> 20, 
+     "ColumnTarget" -> 10, "Shape" -> 
+     TypeSystem`PackageScope`HeaderShape[<|{All, "Aircraft"} -> 
+        1, {All, "Number of Accidents"} -> 1|>, 
+       TypeSystem`PackageScope`Limited[
+        TypeSystem`PackageScope`ColumnShape[
+         TypeSystem`PackageScope`Limited[
+          
+          TypeSystem`PackageScope`RowShape[<|
+           "Aircraft" -> 
+            TypeSystem`PackageScope`AtomShape[403.20000000000005`], 
+            "Number of Accidents" -> TypeSystem`PackageScope`AtomShape[34]|>], 
+          DirectedInfinity[1], 2, {All}]], 20, 
+        DirectedInfinity[1], {}]], "Type" -> TypeSystem`Vector[
+       TypeSystem`Struct[{"Aircraft", "Number of Accidents"}, {
+         TypeSystem`Atom[String], 
+         TypeSystem`Atom[Integer]}], 258], "Path" -> {}, "DisplayedRowCount" -> 
+     20, "DisplayedColumnCount" -> 2, "DataRowCount" -> 258, 
+     "DataColumnCount" -> 2, "SortPaths" -> {}, "SortDirections" -> {}, 
+     "HiddenItemsMap" -> Null, "UpdateType" -> 1|>, 
+    TypeSystem`NestedGrid`PackagePrivate`$outputID$$, 
+    TypeSystem`NestedGrid`PackagePrivate`$path$$ = {}, 
+    TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 1, 
+    TypeSystem`NestedGrid`PackagePrivate`$hPos$$ = 1, 
+    TypeSystem`NestedGrid`PackagePrivate`$grid$$ = 
+    DynamicModule[{
+     TypeSystem`NestedGrid`PackagePrivate`renderedGrid = Deploy[
+        Style[
+         Grid[{{
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Aircraft", 
+                  Style[
+                  "Aircraft", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                   All, "Aircraft"}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                All, "Aircraft"}, "ColumnHeader", True], "Mouse"], 
+              ImageSize -> {{1, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Number of Accidents", 
+                  Style[
+                  "Number of Accidents", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                   All, "Number of Accidents"}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                All, "Number of Accidents"}, "ColumnHeader", True], "Mouse"], 
+              ImageSize -> {{1, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}]}, {
+            Item[
+             Pane[
+              Annotation[
+              "Piper PA-46 (Malibu/Meridian/Mirage/Matrix/M-Class)", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{1, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{403.20000000000005`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["76"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{1, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Cessna 208B Grand Caravan", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{2, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{403.20000000000005`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["63"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{2, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Beechcraft 90 King Air", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{3, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{403.20000000000005`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["52"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{3, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Piper PA-31-350 Navajo Chieftain", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{4, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{403.20000000000005`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["41"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{4, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Piper PA-31-310 Navajo", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{5, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{403.20000000000005`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["39"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{5, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Beechcraft 200 Super King Air", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{6, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{403.20000000000005`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["37"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{6, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Cessna 340", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{7, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{403.20000000000005`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["30"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{7, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["De Havilland DHC-6 Twin Otter", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{8, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{403.20000000000005`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["30"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{8, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Mitsubishi MU-2 Marquise", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{9, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{403.20000000000005`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["29"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{9, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["PZL-Mielec AN-2", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{10, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{403.20000000000005`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["29"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{10, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Britten-Norman Islander", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{11, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{403.20000000000005`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["28"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{11, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["De Havilland DHC-2 Beaver", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{12, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{403.20000000000005`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["28"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{12, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Lockheed C-130 Hercules", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{13, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{403.20000000000005`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["28"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{13, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Piper PA-31 Cheyenne", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{14, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{403.20000000000005`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["28"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{14, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Antonov AN-26", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{15, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{403.20000000000005`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["24"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{15, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Cessna 421C Golden Eagle III", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{16, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{403.20000000000005`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["24"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{16, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Antonov AN-12", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{17, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{403.20000000000005`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["23"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{17, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Let L-410", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{18, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{403.20000000000005`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["23"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{18, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Cessna 207 Skywagon/Stationair", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{19, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{403.20000000000005`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["22"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{19, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Piper PA-61 Aerostar (Ted Smith 601)", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{20, 
+                 Key["Aircraft"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{403.20000000000005`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["22"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{20, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Deploy[
+              Pane[
+               Row[{
+                 Spacer[2], 
+                 Style[
+                  Row[{
+                    Button[
+                    MouseAppearance[
+                    Mouseover[
+                    Graphics[{{
+                    EdgeForm[None], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}], 
+                    Line[{{0, 5}, {8, 5}}]}, {5, 6.5}], 0, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35], BaseStyle -> 
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843]], 
+                    Graphics[{{
+                    EdgeForm[
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549]], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}], 
+                    Line[{{0, 5}, {8, 5}}]}, {5, 6.5}], 0, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35]]], "LinkHand"], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    If[True, 258, 1], {1, 258 - -20 + 1}]; 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]], True][
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$]], 
+                    Appearance -> None], 
+                    Button[
+                    MouseAppearance[
+                    Mouseover[
+                    Graphics[{{
+                    EdgeForm[None], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}]}, {5, 6.5}], 0, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35], BaseStyle -> 
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843]], 
+                    Graphics[{{
+                    EdgeForm[
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549]], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}]}, {5, 6.5}], 0, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35]]], "LinkHand"], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    If[False, 258, 1], {1, 258 - -20 + 1}]; 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]], True][
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$]], 
+                    Appearance -> None], " ", 
+                    Style[
+                    Mouseover[
+                    Style[
+                    Row[{"rows ", 1, "\[Dash]", 20, " of ", 
+                    Style[258, FontWeight -> Bold]}], FontSize -> 
+                    9.333333333333332, FontColor -> 
+                    RGBColor[
+                    0.5098039215686274, 0.5098039215686274, 
+                    0.5098039215686274]], 
+                    Style[
+                    Row[{"rows ", 1, "\[Dash]", 20, " of ", 
+                    Style[258, FontWeight -> Bold]}], FontSize -> 
+                    9.333333333333332, FontColor -> 
+                    RGBColor[
+                    0.5098039215686274, 0.5098039215686274, 
+                    0.5098039215686274]]], ContextMenu -> {
+                    MenuItem["Hide", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 1, {}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show up to 10 Rows", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 10, {}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show up to 30 Rows", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 30, {}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show up to 100 Rows", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 100, {}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show All", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 100000000, {}]], MenuEvaluator -> Automatic]}], 
+                    " ", 
+                    Button[
+                    MouseAppearance[
+                    Mouseover[
+                    Graphics[{{
+                    EdgeForm[None], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}]}, {5, 6.5}], 180 Degree, {
+                    9, 9}]}, ImageSize -> (1 -> 1), 
+                    ImagePadding -> {{0, 1}, {1, 0}}, BaselinePosition -> 
+                    Scaled[0.35], BaseStyle -> 
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843]], 
+                    Graphics[{{
+                    EdgeForm[
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549]], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}]}, {5, 6.5}], 180 Degree, {
+                    9, 9}]}, ImageSize -> (1 -> 1), 
+                    ImagePadding -> {{0, 1}, {1, 0}}, BaselinePosition -> 
+                    Scaled[0.35]]], "LinkHand"], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + 
+                    20 If[False, 258, 1], {1, 258 - 20 + 1}]; 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]], True][
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$]], 
+                    Appearance -> None], 
+                    Button[
+                    MouseAppearance[
+                    Mouseover[
+                    Graphics[{{
+                    EdgeForm[None], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}], 
+                    Line[{{0, 5}, {8, 5}}]}, {5, 6.5}], 180 Degree, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35], BaseStyle -> 
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843]], 
+                    Graphics[{{
+                    EdgeForm[
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549]], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}], 
+                    Line[{{0, 5}, {8, 5}}]}, {5, 6.5}], 180 Degree, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35]]], "LinkHand"], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + 
+                    20 If[True, 258, 1], {1, 258 - 20 + 1}]; 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]], True][
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$]], 
+                    Appearance -> None]}], ContextMenu -> {}]}], 
+               ImageMargins -> {{0, -1}, {-1, 1}}]], Background -> 
+             RGBColor[
+              0.9764705882352941, 0.9764705882352941, 0.9764705882352941], 
+             Alignment -> {Left, Top}], SpanFromLeft}}, 
+          BaseStyle -> {
+           ContextMenu -> 
+            Dynamic[TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger; 
+              Which[TypeSystem`NestedGrid`PackagePrivate`$lastOutputID =!= 
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$], {}, 
+                TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger === 
+                TypeSystem`NestedGrid`PackagePrivate`$lastContextMenuTrigger, 
+                TypeSystem`NestedGrid`PackagePrivate`$lastContextMenu, True, 
+                TypeSystem`NestedGrid`PackagePrivate`$lastContextMenuTrigger = 
+                 TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger; 
+                TypeSystem`NestedGrid`PackagePrivate`$lastContextMenu = 
+                 Block[{TypeSystem`NestedGrid`PackagePrivate`$globalScrollPos = \
+{TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$}}, 
+                   
+                   With[{TypeSystem`NestedGrid`PackagePrivate`lastPath$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPathType, 
+                    TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`$\
+lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
+                    MatchQ[TypeSystem`NestedGrid`PackagePrivate`$lastPathType, 
+                    Alternatives["RowHeader", "ColumnHeader"]], 
+                    TypeSystem`NestedGrid`PackagePrivate`headerHiddenQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$]], 
+                    TypeSystem`NestedGrid`PackagePrivate`allHidden$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`allHiddenQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`anyHidden$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`anyHiddenQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`columnSortDirection[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$[
+                    "SortPaths"], 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$[
+                    "SortDirections"]], 
+                    TypeSystem`NestedGrid`PackagePrivate`haveData$ = Not[
+                    FailureQ[
+                    TypeSystem`NestedGrid`PackagePrivate`datasetInitialData[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$]]], 
+                    TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$ = Not[
+                    FreeQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, Keys]]}, 
+                    Join[{
+                    If[
+                    Or[
+                    Not[TypeSystem`NestedGrid`PackagePrivate`haveData$], 
+                    Not[TypeSystem`NestedGrid`PackagePrivate`anyHidden$], 
+                    TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$], 
+                    Nothing, 
+                    MenuItem[
+                    "Show " <> 
+                    Which[TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "Item", "", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "RowHeader", "Row", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "ColumnHeader", "Column", True, ""], 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, 
+                    "remove"]], MenuEvaluator -> Automatic]], 
+                    If[
+                    Or[
+                    Not[TypeSystem`NestedGrid`PackagePrivate`haveData$], 
+                    TypeSystem`NestedGrid`PackagePrivate`pathEmptyQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$, 
+                    And[
+                    TypeSystem`NestedGrid`PackagePrivate`allHidden$, 
+                    TypeSystem`NestedGrid`PackagePrivate`headerHidden$]], 
+                    Nothing, 
+                    MenuItem[
+                    "Hide " <> 
+                    Which[TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "Item", "", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "RowHeader", "Row", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "ColumnHeader", "Column", True, ""], 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, "add"]], 
+                    MenuEvaluator -> Automatic]], Delimiter}, 
+                    If[
+                    And[TypeSystem`NestedGrid`PackagePrivate`haveData$, 
+                    MatchQ[TypeSystem`NestedGrid`PackagePrivate`lastPathType$, 
+                    Alternatives["ColumnHeader", "KeyDummy"]], 
+                    TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$, 
+                    Not[TypeSystem`NestedGrid`PackagePrivate`allHidden$]], {
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
+                    "Ascending", 
+                    MenuItem["Sort", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateSort[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, 
+                    "Ascending"]], MenuEvaluator -> Automatic], Nothing], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
+                    "Descending", 
+                    MenuItem["Reverse Sort", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateSort[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, 
+                    "Descending"]], MenuEvaluator -> Automatic], Nothing], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
+                    None, 
+                    MenuItem["Unsort", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateSort[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, None]], 
+                    MenuEvaluator -> Automatic], Nothing], Delimiter}, {}], {
+                    MenuItem["Copy Position to Clipboard", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[
+                    TypeSystem`NestedGrid`PackagePrivate`copyClip]], 
+                    MenuEvaluator -> Automatic], 
+                    If[TypeSystem`NestedGrid`PackagePrivate`haveData$, 
+                    MenuItem["Copy Data to Clipboard", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`copyClip]], 
+                    MenuEvaluator -> Automatic], Nothing], Delimiter, 
+                    MenuItem["Paste Position in New Cell", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[
+                    TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
+                    MenuEvaluator -> Automatic], 
+                    If[TypeSystem`NestedGrid`PackagePrivate`haveData$, 
+                    MenuItem["Paste Data in New Cell", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
+                    MenuEvaluator -> Automatic], Nothing]}]]]]], FontFamily -> 
+            "Source Sans Pro", FontSize -> 14, FontWeight -> Plain}, Dividers -> 
+          All, FrameStyle -> GrayLevel[0.7490196078431373], 
+          Spacings -> {0, 0}, Alignment -> Left, 
+          BaseStyle -> {
+           FontFamily -> "Source Sans Pro", FontSize -> 14, FontWeight -> 
+            Plain}], LineBreakWithin -> False, ContextMenu -> {}, NumberMarks -> 
+         False, ShowAutoStyles -> False]], 
+      TypeSystem`NestedGrid`PackagePrivate`initialQ = True}, 
+     Dynamic[
+      TypeSystem`NestedGrid`PackagePrivate`setupViewPath[
+      TypeSystem`NestedGrid`PackagePrivate`$path$$, If[
+         Not[TypeSystem`NestedGrid`PackagePrivate`initialQ], 
+         Module[{
+          TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = $Failed, 
+           TypeSystem`NestedGrid`PackagePrivate`tmpData$ = 
+           TypeSystem`NestedGrid`PackagePrivate`datasetData[
+            TypeSystem`NestedGrid`PackagePrivate`$state$$]}, 
+          TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = If[
+             FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpData$], 
+             TypeSystem`NestedGrid`PackagePrivate`renderedGrid, 
+             TypeSystem`NestedGrid`PackagePrivate`renderGrid[
+             TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+              TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+              TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+              TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+              TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+              TypeSystem`NestedGrid`PackagePrivate`localHold[
+              TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+             TypeSystem`NestedGrid`PackagePrivate`tmpData$]]; If[
+            Not[
+             FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]], 
+            TypeSystem`NestedGrid`PackagePrivate`renderedGrid = 
+            TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]; Null]]; 
+       TypeSystem`NestedGrid`PackagePrivate`initialQ = False; 
+       TypeSystem`NestedGrid`PackagePrivate`$vPos$$; 
+       TypeSystem`NestedGrid`PackagePrivate`$hPos$$; If[
+         FailureQ[TypeSystem`NestedGrid`PackagePrivate`renderedGrid], 
+         TypeSystem`SparseGrid[
+          TypeSystem`H["(data no longer present)"]], 
+         TypeSystem`NestedGrid`PackagePrivate`renderedGrid]], 
+      TrackedSymbols :> {
+       TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$hPos$$}], 
+     DynamicModuleValues :> {}], 
+    TypeSystem`NestedGrid`PackagePrivate`$topBar$$ = Dynamic[
+     TypeSystem`NestedGrid`PackagePrivate`makeFramedBar[
+      TypeSystem`PackageScope`SubViewPathbar[
+      TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+       TypeSystem`NestedGrid`PackagePrivate`updateState[
+       TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+        TypeSystem`NestedGrid`PackagePrivate`localHold[
+        TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]]], 
+     TrackedSymbols :> {TypeSystem`NestedGrid`PackagePrivate`$path$$}], 
+    TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$ = Style[
+     Framed[
+      Dynamic[
+       Replace[
+       TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$, {
+        TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+           TypeSystem`NestedGrid`PackagePrivate`localHold[
+           TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][Null, 
+           Blank[]] -> "", TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+           TypeSystem`NestedGrid`PackagePrivate`localHold[
+           TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+           Pattern[TypeSystem`NestedGrid`PackagePrivate`path$, 
+            Blank[]], 
+           Pattern[TypeSystem`NestedGrid`PackagePrivate`pathType$, 
+            Blank[]], 
+           Pattern[TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$, 
+            Blank[]]] :> (
+          Increment[TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger]; 
+          TypeSystem`NestedGrid`PackagePrivate`$lastPath = 
+           TypeSystem`NestedGrid`PackagePrivate`path$; 
+          TypeSystem`NestedGrid`PackagePrivate`$lastPathType = 
+           TypeSystem`NestedGrid`PackagePrivate`pathType$; 
+          TypeSystem`NestedGrid`PackagePrivate`$lastPathIsLeafHeader = 
+           TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$; 
+          TypeSystem`NestedGrid`PackagePrivate`$lastOutputID = 
+           TypeSystem`NestedGrid`PackagePrivate`localHold[
+            TypeSystem`NestedGrid`PackagePrivate`$outputID$$]; 
+          TypeSystem`NestedGrid`PackagePrivate`makePathTrail[
+           TypeSystem`NestedGrid`PackagePrivate`path$, 
+            TypeSystem`NestedGrid`PackagePrivate`makePathElements]), Null :> 
+         Spacer[10], Blank[] :> Spacer[10]}], 
+       TrackedSymbols :> {
+        TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$}], FrameStyle -> 
+      None, ImageMargins -> 0, FrameMargins -> 0, Alignment -> Top, 
+      ImageSize -> {Automatic, 15}], FontSize -> 1], 
+    TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = Null}, 
+    DynamicWrapperBox[
+     DynamicBox[ToBoxes[
+       Dataset`DatasetContent[
+       2, "Path" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$path$$], 
+        "Grid" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$grid$$], "State" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$state$$], "VPos" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$vPos$$], "HPos" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$hPos$$], "TopBar" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$topBar$$], "BottomBar" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$], "OutputID" -> 
+        Hold[
+          TypeSystem`NestedGrid`PackagePrivate`localHold[
+          TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]], StandardForm],
+      ImageSizeCache->{563., {300.634033203125, 306.365966796875}},
+      TrackedSymbols:>{
+       TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$grid$$}], 
+     TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = 
+     MouseAnnotation[],
+     ImageSizeCache->{563., {300.634033203125, 306.365966796875}}],
+    BaseStyle->{LineBreakWithin -> False},
+    DynamicModuleValues:>{},
+    Initialization:>(TypeSystem`NestedGrid`PackagePrivate`$outputID$$ = 
+     CreateUUID[]),
+    UnsavedVariables:>{TypeSystem`NestedGrid`PackagePrivate`$outputID$$}],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  Dataset`InterpretDataset[1],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.926272608303061*^9},
+ CellLabel->
+  "Out[111]=",ExpressionUUID->"114d5c95-18d1-4bf4-bfe3-2646a7b9e9f8"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -15883,7 +18960,20 @@ Cell[766117, 14582, 157, 3, 54, "Subsection",ExpressionUUID->"75efddcd-a4b4-4c6a
 Cell[766277, 14587, 618, 17, 30, "Input",ExpressionUUID->"f6387e0f-f199-4527-a9ac-8767a940615b"],
 Cell[CellGroupData[{
 Cell[766920, 14608, 302, 9, 30, "Input",ExpressionUUID->"231bc9ed-0cb4-45c1-b720-ccf11634773b"],
-Cell[767225, 14619, 62198, 1163, 627, "Output",ExpressionUUID->"158bc277-c0e1-49e2-ae37-977249eb6817"]
+Cell[767225, 14619, 62055, 1160, 627, "Output",ExpressionUUID->"158bc277-c0e1-49e2-ae37-977249eb6817"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[829329, 15785, 216, 4, 54, "Subsection",ExpressionUUID->"d4de1c5a-014b-4407-b605-16c4da821052"],
+Cell[829548, 15791, 714, 19, 30, "Input",ExpressionUUID->"ae49e75d-2326-492e-93a0-1506b9ba3619"],
+Cell[CellGroupData[{
+Cell[830287, 15814, 378, 10, 30, "Input",ExpressionUUID->"39dacbbd-b57d-4935-b759-ee07b4627a05"],
+Cell[830668, 15826, 89324, 1558, 627, "Output",ExpressionUUID->"f82a4244-4c02-4998-9374-9bffe9564e35"]
+}, Open  ]],
+Cell[920007, 17387, 925, 26, 52, "Input",ExpressionUUID->"fd70ae42-3fe9-464d-8b99-13fdba917255"],
+Cell[CellGroupData[{
+Cell[920957, 17417, 354, 9, 30, "Input",ExpressionUUID->"fafb326f-634b-49d2-b1eb-afe3b690cba6"],
+Cell[921314, 17428, 80653, 1431, 627, "Output",ExpressionUUID->"114d5c95-18d1-4bf4-bfe3-2646a7b9e9f8"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
