@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1128481,      21403]
-NotebookOptionsPosition[   1122299,      21287]
-NotebookOutlinePosition[   1122697,      21303]
-CellTagsIndexPosition[   1122654,      21300]
+NotebookDataLength[   1127368,      21381]
+NotebookOptionsPosition[   1121186,      21265]
+NotebookOutlinePosition[   1121584,      21281]
+CellTagsIndexPosition[   1121541,      21278]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -15811,7 +15811,13 @@ Cell[BoxData[
 
 Cell[CellGroupData[{
 
-Cell[BoxData[
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"podatkiTipLetalaBrezPre\[ZHacek]ivelih", "=", 
+   RowBox[{
+    RowBox[{"tipLetaBrezPre\[ZHacek]ivelih", "//", 
+     RowBox[{"Query", "[", 
+      RowBox[{"All", ",", "2"}], "]"}]}], "//", "Normal"}]}], ";"}], "\n", 
  RowBox[{"PieChart3D", "[", 
   RowBox[{
    RowBox[{
@@ -15825,40 +15831,42 @@ Cell[BoxData[
        RowBox[{"tipLetaBrezPre\[ZHacek]ivelih", "//", 
         RowBox[{"Query", "[", 
          RowBox[{"All", ",", "1"}], "]"}]}], "//", "Normal"}], ",", 
-      "\"\<VerticalCallout\>\""}], "]"}]}]}], "]"}]], "Input",
- CellChangeTimes->{{3.926272915783806*^9, 3.926272921507593*^9}},
+      "\"\<VerticalCallout\>\""}], "]"}]}]}], "]"}], "\n"}], "Input",
+ CellChangeTimes->{{3.926272915783806*^9, 3.926272921507593*^9}, {
+   3.926273055322391*^9, 3.926273104244856*^9}, {3.9262731627290287`*^9, 
+   3.926273200432612*^9}, 3.926273241429428*^9},
  CellLabel->
-  "In[115]:=",ExpressionUUID->"9a82acba-8dc9-447a-9942-7f77bced42e5"],
+  "In[131]:=",ExpressionUUID->"9a82acba-8dc9-447a-9942-7f77bced42e5"],
 
 Cell[BoxData[
  Graphics3DBox[
-  DynamicModuleBox[{DynamicChart`click$172855$174697 = False, 
-   DynamicChart`click$172883$174697 = False, 
-   DynamicChart`click$172911$174697 = False, 
-   DynamicChart`click$172939$174697 = False, 
-   DynamicChart`click$172967$174697 = False, 
-   DynamicChart`click$172995$174697 = False, 
-   DynamicChart`click$173023$174697 = False, 
-   DynamicChart`click$173051$174697 = False, 
-   DynamicChart`click$173079$174697 = False, 
-   DynamicChart`click$173107$174697 = False, 
-   DynamicChart`click$173135$174697 = False, 
-   DynamicChart`click$173163$174697 = False, 
-   DynamicChart`click$173191$174697 = False, 
-   DynamicChart`click$173219$174697 = False, 
-   DynamicChart`click$173247$174697 = False, 
-   DynamicChart`click$173275$174697 = False, 
-   DynamicChart`click$173303$174697 = False, 
-   DynamicChart`click$173331$174697 = False, 
-   DynamicChart`click$173359$174697 = False, 
-   DynamicChart`click$173387$174697 = False, 
-   DynamicChart`click$173415$174697 = False, 
-   DynamicChart`click$173443$174697 = False, 
-   DynamicChart`click$173471$174697 = False, 
-   DynamicChart`click$173499$174697 = False, 
-   DynamicChart`click$173527$174697 = False, 
-   DynamicChart`click$173555$174697 = False, 
-   DynamicChart`click$173583$174697 = False}, 
+  DynamicModuleBox[{DynamicChart`click$190337$192179 = False, 
+   DynamicChart`click$190365$192179 = False, 
+   DynamicChart`click$190393$192179 = False, 
+   DynamicChart`click$190421$192179 = False, 
+   DynamicChart`click$190449$192179 = False, 
+   DynamicChart`click$190477$192179 = False, 
+   DynamicChart`click$190505$192179 = False, 
+   DynamicChart`click$190533$192179 = False, 
+   DynamicChart`click$190561$192179 = False, 
+   DynamicChart`click$190589$192179 = False, 
+   DynamicChart`click$190617$192179 = False, 
+   DynamicChart`click$190645$192179 = False, 
+   DynamicChart`click$190673$192179 = False, 
+   DynamicChart`click$190701$192179 = False, 
+   DynamicChart`click$190729$192179 = False, 
+   DynamicChart`click$190757$192179 = False, 
+   DynamicChart`click$190785$192179 = False, 
+   DynamicChart`click$190813$192179 = False, 
+   DynamicChart`click$190841$192179 = False, 
+   DynamicChart`click$190869$192179 = False, 
+   DynamicChart`click$190897$192179 = False, 
+   DynamicChart`click$190925$192179 = False, 
+   DynamicChart`click$190953$192179 = False, 
+   DynamicChart`click$190981$192179 = False, 
+   DynamicChart`click$191009$192179 = False, 
+   DynamicChart`click$191037$192179 = False, 
+   DynamicChart`click$191065$192179 = False}, 
    {RGBColor[0.5, 0.5, 1.], EdgeForm[{GrayLevel[0], Opacity[0.1]}], {{{}, {
        {RGBColor[0.980722, 0.7110406, 0.2420506], EdgeForm[{GrayLevel[0], 
         Opacity[0.1]}], 
@@ -15911,9 +15919,8 @@ zhNkdP4go/Mq+g9kviGj8xAZnZ/I6LxFRuczMjrPkdH5j4zeF8jo/YKM3kfI
                     1.2246467991473532`*^-16, 1.}, {-1., 
                     1.2246467991473532`*^-16, 0.}}}]}},
                  
-                 ImageSizeCache->{{201.88675903819697`, 
-                  406.32442268876093`}, {-187.99756387267985`, \
--1.1743933451847113`}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.7102933234425803, 0.7039058137797229, 
@@ -15941,15 +15948,15 @@ zhNkdP4go/Mq+g9kviGj8xAZnZ/I6LxFRuczMjrPkdH5j4zeF8jo/YKM3kfI
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$172855$174697, 
-               FEPrivate`Not[DynamicChart`click$172855$174697]], 
+             FEPrivate`Set[DynamicChart`click$190337$192179, 
+               FEPrivate`Not[DynamicChart`click$190337$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$172855$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190337$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {-0.14205866468851608`, 0.1407811627559446, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$172855$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$190337$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[
         0.9836878461538462, 0.6765728153846154, 0.22019666153846154`], 
@@ -15998,9 +16005,8 @@ vX2wBwDQQ7Hw
                     1.}, {-0.009033210654212347, 0.9999591997203069, 0.}}}]}},
                  
                  
-                 ImageSizeCache->{{387.706760535817, 
-                  503.9448814967244}, {-182.80190242454222`, 
-                  0.25736937534367144`}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{0.25121668085166915`, 0.9679308752498138, 0.5}, {
@@ -16028,15 +16034,15 @@ vX2wBwDQQ7Hw
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$172883$174697, 
-               FEPrivate`Not[DynamicChart`click$172883$174697]], 
+             FEPrivate`Set[DynamicChart`click$190365$192179, 
+               FEPrivate`Not[DynamicChart`click$190365$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$172883$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190365$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {0.05024333617033383, 0.19358617504996278`, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$172883$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$190365$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[
         0.9866536923076923, 0.6421050307692308, 0.19834272307692308`], 
@@ -16082,9 +16088,8 @@ vX2wBwDQQ7Hw
                     0.4941939635691035, 0.8693516701380746, 1.}, {
                     0.4941939635691035, 0.8693516701380746, 0.}}}]}},
                  
-                 ImageSizeCache->{{390.57709995089795`, 
-                  550.9982111893443}, {-163.6750696022334, 
-                  0.9476905319524462}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{0.6221436329986747, 0.7829031229463901, 0.5}, {
@@ -16109,18 +16114,17 @@ vX2wBwDQQ7Hw
             Annotation[#, 
              Style[77, {
                GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
-           
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$172911$174697, 
-               FEPrivate`Not[DynamicChart`click$172911$174697]], 
+             FEPrivate`Set[DynamicChart`click$190393$192179, 
+               FEPrivate`Not[DynamicChart`click$190393$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$172911$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190393$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {0.12442872659973495`, 0.15658062458927802`, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$172911$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$190393$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[
         0.9896195384615385, 0.6076372461538462, 0.17648878461538461`], 
@@ -16166,9 +16170,8 @@ Y3fnB3vs/vpgjz0cPthjD7cP9tjD+YM99nj5YA8Axp9vjA==
                     0.7352586177216054, 0.6777866663383945, 1.}, {
                     0.7352586177216054, 0.6777866663383945, 0.}}}]}},
                  
-                 ImageSizeCache->{{392.3977185219922, 
-                  587.3556051525404}, {-135.56124376052173`, 
-                  1.4811837279787028`}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{0.8418450028189544, 0.5397193633998643, 0.5}, {
@@ -16198,15 +16201,15 @@ Y3fnB3vs/vpgjz0cPthjD7cP9tjD+YM99nj5YA8Axp9vjA==
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$172939$174697, 
-               FEPrivate`Not[DynamicChart`click$172939$174697]], 
+             FEPrivate`Set[DynamicChart`click$190421$192179, 
+               FEPrivate`Not[DynamicChart`click$190421$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$172939$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190421$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {0.1683690005637909, 0.10794387267997285`, 0.}}, {{
             1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 
-            1}}], TrackedSymbols :> {DynamicChart`click$172939$174697}]],
+            1}}], TrackedSymbols :> {DynamicChart`click$190421$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[
         0.9925853846153846, 0.5731694615384615, 0.15463484615384615`], 
@@ -16254,9 +16257,8 @@ wR57PH6wxx7vH+yxp5MP9tjT1Qd77Onwgz32dPvBHgDuwMVk
                     0.9228197373488906, 0.38523205001573346`, 1.}, {
                     0.9228197373488906, 0.38523205001573346`, 0.}}}]}},
                  
-                 ImageSizeCache->{{395.2750875847073, 
-                  615.9254884009654}, {-91.09137134597438, 
-                  35.138145489146865`}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{0.9955525139018988, 0.09420823776936679, 0.5}, {
@@ -16286,15 +16288,15 @@ Flight)\"\>", "Graphics3DLabel",
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$172967$174697, 
-               FEPrivate`Not[DynamicChart`click$172967$174697]], 
+             FEPrivate`Set[DynamicChart`click$190449$192179, 
+               FEPrivate`Not[DynamicChart`click$190449$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$172967$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190449$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {0.19911050278037978`, 0.01884164755387336, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$172967$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$190449$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[0.9955512307692308, 0.5387016769230769, 0.1327809076923077], 
         EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
@@ -16340,9 +16342,8 @@ Flight)\"\>", "Graphics3DLabel",
                     0.9787005810386912, -0.20529289484667565`, 1.}, {
                     0.9787005810386912, -0.20529289484667565`, 0.}}}]}},
                  
-                 ImageSizeCache->{{399.254219187533, 
-                  606.1221310824163}, {-29.517292575354332`, 
-                  51.747496490459696`}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{0.9666579560523325, -0.25607107607210683`, 0.5}, {
@@ -16370,15 +16371,15 @@ Flight)\"\>", "Graphics3DLabel",
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$172995$174697, 
-               FEPrivate`Not[DynamicChart`click$172995$174697]], 
+             FEPrivate`Set[DynamicChart`click$190477$192179, 
+               FEPrivate`Not[DynamicChart`click$190477$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$172995$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190477$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {0.1933315912104665, -0.05121421521442137, 0.}}, {{
             1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 
-            1}}], TrackedSymbols :> {DynamicChart`click$172995$174697}]],
+            1}}], TrackedSymbols :> {DynamicChart`click$190477$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[
         0.9985170769230769, 0.5042338923076923, 0.11092696923076922`], 
@@ -16425,9 +16426,8 @@ rPH7wR4Ad7eO5A==
                     0.9519826879005961, -0.30615186090820384`, 1.}, {
                     0.9519826879005961, -0.30615186090820384`, 0.}}}]}},
                  
-                 ImageSizeCache->{{399.254219187533, 
-                  609.7230148622741}, {-29.517292575354332`, 
-                  108.22422378808986`}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{0.8776571239269182, -0.47928902847898586`, 0.5}, {
@@ -16455,15 +16455,15 @@ rPH7wR4Ad7eO5A==
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$173023$174697, 
-               FEPrivate`Not[DynamicChart`click$173023$174697]], 
+             FEPrivate`Set[DynamicChart`click$190505$192179, 
+               FEPrivate`Not[DynamicChart`click$190505$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$173023$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190505$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {0.17553142478538364`, -0.09585780569579717, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173023$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$190505$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[0.9813076923076922, 0.48104615384615385`, 0.1], EdgeForm[{
         GrayLevel[0], Opacity[0.1]}], 
@@ -16512,9 +16512,8 @@ dP7BHnu++GCPPR99sMee7z7YY8+nH+yx5+sP9gCPwBM5
                     0.7721740577898539, -0.6354110673228405, 1.}, {
                     0.7721740577898539, -0.6354110673228405, 0.}}}]}},
                  
-                 ImageSizeCache->{{399.254219187533, 
-                  582.5142174942177}, {-29.517292575354332`, 
-                  174.0100206065046}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{0.448167886611158, -0.8939494087533635, 0.5}, {
@@ -16542,15 +16541,15 @@ dP7BHnu++GCPPR99sMee7z7YY8+nH+yx5+sP9gCPwBM5
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$173051$174697, 
-               FEPrivate`Not[DynamicChart`click$173051$174697]], 
+             FEPrivate`Set[DynamicChart`click$190533$192179, 
+               FEPrivate`Not[DynamicChart`click$190533$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$173051$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190533$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {0.0896335773222316, -0.1787898817506727, 0.}}, {{
             1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 
-            1}}], TrackedSymbols :> {DynamicChart`click$173051$174697}]],
+            1}}], TrackedSymbols :> {DynamicChart`click$190533$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[0.9439230769230769, 0.4691384615384615, 0.1], EdgeForm[{
         GrayLevel[0], Opacity[0.1]}], 
@@ -16595,9 +16594,8 @@ Hru/PthjD4cP9tjD7YM99nD+YI89Xj7YAwDR+3uG
                     0.047156580124629296`, -0.9988875096580943, 1.}, {
                     0.047156580124629296`, -0.9988875096580943, 0.}}}]}},
                  
-                 ImageSizeCache->{{340.4559433848451, 
-                  428.78496403101735`}, {-30.554988278505334`, 
-                  175.5014838010077}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.12911631180386843`, -0.9916294560097366, 
@@ -16627,15 +16625,15 @@ Hru/PthjD4cP9tjD7YM99nD+YI89Xj7YAwDR+3uG
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$173079$174697, 
-               FEPrivate`Not[DynamicChart`click$173079$174697]], 
+             FEPrivate`Set[DynamicChart`click$190561$192179, 
+               FEPrivate`Not[DynamicChart`click$190561$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$173079$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190561$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {-0.02582326236077369, -0.19832589120194732`, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173079$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$190561$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[0.9065384615384615, 0.4572307692307692, 0.1], EdgeForm[{
         GrayLevel[0], Opacity[0.1]}], 
@@ -16672,6 +16670,7 @@ Hru/PthjD4cP9tjD7YM99nD+YI89Xj7YAwDR+3uG
                     SplineWeights -> {{1., 0.9991941713187474, 1.}, {1., 
                     0.9991941713187474, 1.}}, 
                     SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
                    Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
                     1.}, {-0.3768803073570083, -0.9262619683040467, 
                     1.}, {-0.3768803073570083, -0.9262619683040467, 0.}}}], 
@@ -16680,9 +16679,8 @@ Hru/PthjD4cP9tjD7YM99nD+YI89Xj7YAwDR+3uG
                     1.}, {-0.30137048283082774`, -0.9535071221959036, 
                     1.}, {-0.30137048283082774`, -0.9535071221959036, 0.}}}]}},
                  
-                 ImageSizeCache->{{325.6347922935713, 
-                  417.9260036092718}, {-30.816598990187742`, 
-                  165.3432229835293}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.33939889245584426`, -0.9406425419891162, 
@@ -16712,15 +16710,15 @@ Hru/PthjD4cP9tjD7YM99nD+YI89Xj7YAwDR+3uG
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$173107$174697, 
-               FEPrivate`Not[DynamicChart`click$173107$174697]], 
+             FEPrivate`Set[DynamicChart`click$190589$192179, 
+               FEPrivate`Not[DynamicChart`click$190589$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$173107$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190589$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {-0.06787977849116886, -0.18812850839782325`, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173107$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$190589$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[0.8691538461538462, 0.4453230769230769, 0.1], EdgeForm[{
         GrayLevel[0], Opacity[0.1]}], 
@@ -16766,9 +16764,8 @@ Hru/PthjD4cP9tjD7YM99nD+YI89Xj7YAwDR+3uG
                     1.}, {-0.3768803073570083, -0.9262619683040467, 
                     1.}, {-0.3768803073570083, -0.9262619683040467, 0.}}}]}},
                  
-                 ImageSizeCache->{{306.3460471499504, 
-                  417.56939794257244`}, {-31.157092741085307`, 
-                  160.23465839191624`}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.426505696851628, -0.9044848758011972, 
@@ -16800,15 +16797,15 @@ Hru/PthjD4cP9tjD7YM99nD+YI89Xj7YAwDR+3uG
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$173135$174697, 
-               FEPrivate`Not[DynamicChart`click$173135$174697]], 
+             FEPrivate`Set[DynamicChart`click$190617$192179, 
+               FEPrivate`Not[DynamicChart`click$190617$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$173135$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190617$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {-0.0853011393703256, -0.18089697516023945`, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173135$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$190617$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[0.8317692307692307, 0.4334153846153846, 0.1], EdgeForm[{
         GrayLevel[0], Opacity[0.1]}], 
@@ -16854,9 +16851,8 @@ Hru/PthjD4cP9tjD7YM99nD+YI89Xj7YAwDR+3uG
                     1.}, {-0.47487847279132633`, -0.8800513826359103, 
                     1.}, {-0.47487847279132633`, -0.8800513826359103, 0.}}}]}},
                  
-                 ImageSizeCache->{{302.88149810811063`, 
-                  416.96817709586935`}, {-31.218253512186806`, 
-                  151.6204472521384}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.4836875130442059, -0.8752407610052855, 
@@ -16886,15 +16882,15 @@ Hru/PthjD4cP9tjD7YM99nD+YI89Xj7YAwDR+3uG
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$173163$174697, 
-               FEPrivate`Not[DynamicChart`click$173163$174697]], 
+             FEPrivate`Set[DynamicChart`click$190645$192179, 
+               FEPrivate`Not[DynamicChart`click$190645$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$173163$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190645$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {-0.09673750260884117, -0.1750481522010571, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173163$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$190645$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[0.7943846153846154, 0.42150769230769225`, 0.1], EdgeForm[{
         GrayLevel[0], Opacity[0.1]}], 
@@ -16937,9 +16933,8 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.4924478260024238, -0.8703419665082722, 
                     1.}, {-0.4924478260024238, -0.8703419665082722, 0.}}}]}},
                  
-                 ImageSizeCache->{{270.51613301532166`, 
-                  416.84242811708697`}, {-31.78965310630784, 
-                  149.8185098035516}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.5771793422895712, -0.8166174176651989, 
@@ -16966,18 +16961,17 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
             Annotation[#, 
              Style[50, {
                GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
-           
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$173191$174697, 
-               FEPrivate`Not[DynamicChart`click$173191$174697]], 
+             FEPrivate`Set[DynamicChart`click$190673$192179, 
+               FEPrivate`Not[DynamicChart`click$190673$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$173191$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190673$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {-0.11543586845791426`, -0.1633234835330398, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173191$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$190673$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[0.757, 0.40959999999999996`, 0.1], EdgeForm[{GrayLevel[0], 
         Opacity[0.1]}], 
@@ -17024,9 +17018,8 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.6561011115714016, -0.7546729963333597, 
                     1.}, {-0.6561011115714016, -0.7546729963333597, 0.}}}]}},
                  
-                 ImageSizeCache->{{244.55781443115845`, 
-                  415.35951651736985`}, {-32.23670799196498, 
-                  128.56309936475125`}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.7228939452759663, -0.6909590030409534, 
@@ -17056,15 +17049,15 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$173219$174697, 
-               FEPrivate`Not[DynamicChart`click$173219$174697]], 
+             FEPrivate`Set[DynamicChart`click$190701$192179, 
+               FEPrivate`Not[DynamicChart`click$190701$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$173219$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190701$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {-0.14457878905519325`, -0.13819180060819067`, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173219$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$190701$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[
         0.7382143692307692, 0.41126153846153846`, 0.1904290923076925], 
@@ -17110,9 +17103,8 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.7835271763657892, -0.6213575169709091, 
                     1.}, {-0.7835271763657892, -0.6213575169709091, 0.}}}]}},
                  
-                 ImageSizeCache->{{230.69342197777067`, 
-                  413.6843201785821}, {-32.472089016572724`, 
-                  104.53864227356674`}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.8183516641566279, -0.5747178035976245, 
@@ -17142,15 +17134,15 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$173247$174697, 
-               FEPrivate`Not[DynamicChart`click$173247$174697]], 
+             FEPrivate`Set[DynamicChart`click$190729$192179, 
+               FEPrivate`Not[DynamicChart`click$190729$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$173247$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190729$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {-0.1636703328313256, -0.1149435607195249, 0.}}, {{
             1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 
-            1}}], TrackedSymbols :> {DynamicChart`click$173247$174697}]],
+            1}}], TrackedSymbols :> {DynamicChart`click$190729$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[0.7194287384615384, 0.4129230769230769, 0.2808581846153848], 
         EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
@@ -17196,9 +17188,8 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.8504035701151653, -0.5261309418152302, 
                     1.}, {-0.8504035701151653, -0.5261309418152302, 0.}}}]}},
                  
-                 ImageSizeCache->{{227.04602267654377`, 
-                  412.50938783740514`}, {-32.537124044761555`, 
-                  87.68042592821055}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.8597697015715856, -0.510681956073941, 
@@ -17228,15 +17219,15 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$173275$174697, 
-               FEPrivate`Not[DynamicChart`click$173275$174697]], 
+             FEPrivate`Set[DynamicChart`click$190757$192179, 
+               FEPrivate`Not[DynamicChart`click$190757$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$173275$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190757$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {-0.17195394031431713`, -0.1021363912147882, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173275$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$190757$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[
         0.7006431076923078, 0.4145846153846154, 0.37128727692307706`], 
@@ -17283,9 +17274,8 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.8688552079985464, -0.49506628599996844`, 
                     1.}, {-0.8688552079985464, -0.49506628599996844`, 0.}}}]}},
                  
-                 ImageSizeCache->{{219.81138003527073`, 
-                  412.12992645065344`}, {-32.66130507386549, 
-                  82.23437883009603}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.8871009332742043, -0.4615754913164648, 
@@ -17315,15 +17305,15 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$173303$174697, 
-               FEPrivate`Not[DynamicChart`click$173303$174697]], 
+             FEPrivate`Set[DynamicChart`click$190785$192179, 
+               FEPrivate`Not[DynamicChart`click$190785$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$173303$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190785$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {-0.17742018665484086`, -0.09231509826329297, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173303$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$190785$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[0.681857476923077, 0.4162461538461538, 0.4617163692307693], 
         EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
@@ -17341,6 +17331,7 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     0.6666666666666666, 0.6666666666666666, 
                     0.6666666666666666], 
                     AbsoluteThickness[1.5]}], {}, {}], {
+                   
                    Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
                     0.}, {-0.9040563349186167, -0.4274133167011973, 
                     0.}, {-0.9157096546509434, -0.4018405509391129, 0.}}, {{
@@ -17367,9 +17358,8 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.9040563349186167, -0.4274133167011973, 
                     1.}, {-0.9040563349186167, -0.4274133167011973, 0.}}}]}},
                  
-                 ImageSizeCache->{{217.59343405280077`, 
-                  411.30994000668375`}, {-32.70244710860436, 
-                  70.46348992662712}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.9099728324437498, -0.4146678721751894, 
@@ -17399,15 +17389,15 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$173331$174697, 
-               FEPrivate`Not[DynamicChart`click$173331$174697]], 
+             FEPrivate`Set[DynamicChart`click$190813$192179, 
+               FEPrivate`Not[DynamicChart`click$190813$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$173331$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190813$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {-0.18199456648874998`, -0.08293357443503789, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173331$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$190813$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[0.6630718461538462, 0.4179076923076923, 0.5521454615384616], 
         EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
@@ -17448,14 +17438,12 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.9325575162479366, -0.36102143826853195`, 
                     1.}, {-0.9325575162479366, -0.36102143826853195`, 0.}}}], 
                    
-                   
                    Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
                     1.}, {-0.9157096546509434, -0.4018405509391129, 
                     1.}, {-0.9157096546509434, -0.4018405509391129, 0.}}}]}},
                  
-                 ImageSizeCache->{{214.19419482431834`, 
-                  411.0022513393756}, {-32.761956598396296`, 
-                  66.0457762396936}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.9243589312304181, -0.381524004820875, 
@@ -17485,15 +17473,15 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$173359$174697, 
-               FEPrivate`Not[DynamicChart`click$173359$174697]], 
+             FEPrivate`Set[DynamicChart`click$190841$192179, 
+               FEPrivate`Not[DynamicChart`click$190841$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$173359$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190841$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {-0.18487178624608364`, -0.07630480096417501, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173359$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$190841$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[0.6442862153846154, 0.41956923076923075`, 0.642574553846154],
          EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
@@ -17530,6 +17518,7 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     SplineWeights -> {{1., 0.999709876734453, 1.}, {1., 
                     0.999709876734453, 1.}}, 
                     SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
                    Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
                     1.}, {-0.9488619298953358, -0.31569136509461077`, 
                     1.}, {-0.9488619298953358, -0.31569136509461077`, 0.}}}], 
@@ -17539,9 +17528,8 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.9325575162479366, -0.36102143826853195`, 
                     1.}, {-0.9325575162479366, -0.36102143826853195`, 0.}}}]}},
                  
-                 ImageSizeCache->{{210.97143702631078`, 
-                  410.5136686785762}, {-32.819578226645234`, 
-                  59.02988147145808}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.9409827240523615, -0.33845459523398, 
@@ -17573,15 +17561,15 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$173387$174697, 
-               FEPrivate`Not[DynamicChart`click$173387$174697]], 
+             FEPrivate`Set[DynamicChart`click$190869$192179, 
+               FEPrivate`Not[DynamicChart`click$190869$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$173387$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190869$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {-0.18819654481047232`, -0.06769091904679601, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173387$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$190869$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[0.6196400615384615, 0.4264923076923077, 0.6971743], 
         EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
@@ -17627,9 +17615,9 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                    Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
                     1.}, {-0.9488619298953358, -0.31569136509461077`, 
                     1.}, {-0.9488619298953358, -0.31569136509461077`, 0.}}}]}},
-                 ImageSizeCache->{{205.43956428889052`, 
-                  409.9747324504502}, {-32.91764676775742, 
-                  51.289569389996444`}}],
+                 
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.9640391131066538, -0.265760396599148, 
@@ -17661,15 +17649,15 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$173415$174697, 
-               FEPrivate`Not[DynamicChart`click$173415$174697]], 
+             FEPrivate`Set[DynamicChart`click$190897$192179, 
+               FEPrivate`Not[DynamicChart`click$190897$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$173415$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190897$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {-0.19280782262133078`, -0.053152079319829605`, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173415$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$190897$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[0.5891333846153847, 0.4386769230769231, 0.7159447000000001], 
         EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
@@ -17715,9 +17703,8 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.9765907854364996, -0.21510564334884597`, 
                     1.}, {-0.9765907854364996, -0.21510564334884597`, 0.}}}]}},
                  
-                 ImageSizeCache->{{204.22912376651826`, 
-                  408.7923370985734}, {-32.94541494312193, 
-                  34.302781225271616`}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.9807117811007634, -0.19545946487742247`, 
@@ -17747,15 +17734,15 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$173443$174697, 
-               FEPrivate`Not[DynamicChart`click$173443$174697]], 
+             FEPrivate`Set[DynamicChart`click$190925$192179, 
+               FEPrivate`Not[DynamicChart`click$190925$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$173443$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190925$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {-0.1961423562201527, -0.039091892975484495`, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173443$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$190925$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[
         0.5586267076923076, 0.45086153846153854`, 0.7347151000000001], 
@@ -17803,8 +17790,8 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.984437594114201, -0.1757345250502695, 
                     1.}, {-0.984437594114201, -0.1757345250502695, 0.}}}]}},
                  
-                 ImageSizeCache->{{201.38600261115488`, 
-                  408.3345156269287}, {-32.99639965982868, 27.7236858505037}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.9936881056603953, -0.11217820050729513`, 
@@ -17834,15 +17821,15 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$173471$174697, 
-               FEPrivate`Not[DynamicChart`click$173471$174697]], 
+             FEPrivate`Set[DynamicChart`click$190953$192179, 
+               FEPrivate`Not[DynamicChart`click$190953$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$173471$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190953$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {-0.19873762113207907`, -0.02243564010145903, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173471$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$190953$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[0.5281200307692308, 0.4630461538461539, 0.7534855], 
         EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
@@ -17888,8 +17875,8 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.9988396752808307, -0.04815914331551843, 0.}}}]}},
                  
                  
-                 ImageSizeCache->{{201.88660957593274`, 
-                  406.8699171429043}, {-32.99705579644103, 6.66986105353277}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.9989343377350247, -0.04615396942720744, 
@@ -17919,15 +17906,15 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$173499$174697, 
-               FEPrivate`Not[DynamicChart`click$173499$174697]], 
+             FEPrivate`Set[DynamicChart`click$190981$192179, 
+               FEPrivate`Not[DynamicChart`click$190981$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$173499$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$190981$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {-0.19978686754700495`, -0.009230793885441489, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173499$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$190981$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[0.4976133538461538, 0.4752307692307693, 0.7722559000000001], 
         EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
@@ -17972,9 +17959,8 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.9990249748001975, -0.0441486095530165, 
                     1.}, {-0.9990249748001975, -0.0441486095530165, 0.}}}]}},
                  
-                 ImageSizeCache->{{201.76195459695666`, 
-                  406.8243372220154}, {-32.99948103603393, 
-                  6.014473998149981}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.9994177670752079, -0.03411930325205174, 
@@ -18004,15 +17990,15 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$173527$174697, 
-               FEPrivate`Not[DynamicChart`click$173527$174697]], 
+             FEPrivate`Set[DynamicChart`click$191009$192179, 
+               FEPrivate`Not[DynamicChart`click$191009$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$173527$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$191009$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {-0.1998835534150416, -0.006823860650410348, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173527$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$191009$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[0.4671066769230769, 0.4874153846153847, 0.7910263000000001], 
         EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
@@ -18059,9 +18045,8 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.9997098767344531, -0.02408655972912368, 0.}}}]}},
                  
                  
-                 ImageSizeCache->{{201.79278473069036`, 
-                  406.5967489559913}, {-33.000394225219225`, 
-                  2.741862910940256}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.9998710528623372, -0.016058569299947, 
@@ -18091,15 +18076,15 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$173555$174697, 
-               FEPrivate`Not[DynamicChart`click$173555$174697]], 
+             FEPrivate`Set[DynamicChart`click$191037$192179, 
+               FEPrivate`Not[DynamicChart`click$191037$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$173555$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$191037$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {-0.19997421057246745`, -0.0032117138599894, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173555$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$191037$192179}]],
          "DelayedClickEffect3D"]}, 
        {RGBColor[0.4366, 0.49960000000000004`, 0.8097967], EdgeForm[{
         GrayLevel[0], Opacity[0.1]}], 
@@ -18124,7 +18109,6 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {0., 0., 1.}, {-1., -1.2246467991473532`*^-16, 
                     1.}, {-0.9999677626959624, -0.008029543500808457, 1.}}}], 
                    
-                   
                    BSplineSurface3DBox[{{{-1., -1.2246467991473532`*^-16, 
                     0.}, {-1., -0.004014836464157299, 
                     0.}, {-0.9999677626959624, -0.008029543500808459, 
@@ -18144,9 +18128,8 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.9999677626959624, -0.008029543500808457, 
                     1.}, {-0.9999677626959624, -0.008029543500808457, 0.}}}]}},
                  
-                 ImageSizeCache->{{201.85325740566572`, 
-                  406.4150950491826}, {-33.000508379937486`, 
-                  0.1295837073045334}}],
+                 ImageSizeCache->{{164.5614973262032, 
+                  166.5614973262032}, {-3.5, -1.5}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.999991940641514, -0.0040148041071498405`, 
@@ -18176,31 +18159,26 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
            
            EventHandlerTag[{
             "MouseClicked" :> 
-             FEPrivate`Set[DynamicChart`click$173583$174697, 
-               FEPrivate`Not[DynamicChart`click$173583$174697]], 
+             FEPrivate`Set[DynamicChart`click$191065$192179, 
+               FEPrivate`Not[DynamicChart`click$191065$192179]], 
              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
              True}]], Dynamic[
           FEPrivate`If[
-           DynamicChart`click$173583$174697, {{{1., 0., 0.}, {0., 1., 0.}, {
+           DynamicChart`click$191065$192179, {{{1., 0., 0.}, {0., 1., 0.}, {
              0., 0., 1.}}, {-0.1999983881283028, -0.0008029608214299681, 
              0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
-            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$173583$174697}]],
+            0, 0, 1}}], TrackedSymbols :> {DynamicChart`click$191065$192179}]],
          "DelayedClickEffect3D"]}}}, {}}, {}},
    DynamicModuleValues:>{}],
   BoxRatios->{1, 1, 0.1},
   Boxed->False,
   FaceGridsStyle->Automatic,
-  ImageSize->{822.0793978837249, 511.06337340023674`},
-  ImageSizeRaw->Automatic,
   Lighting->"Neutral",
   PlotRange->{{1.2, -1.2}, {1.2, -1.2}, {0., 1.02}},
-  ViewPoint->{-0.37793604605658004`, -1.7580403040121635`, 
-   2.5546934521699347`},
-  ViewVertical->{-0.009366485134073205, 0.028530531761534268`, 
-   0.999549037173083}]], "Output",
- CellChangeTimes->{3.926272923161413*^9},
+  ViewPoint->{0, -2.4, 2}]], "Output",
+ CellChangeTimes->{{3.926273260343604*^9, 3.926273273459944*^9}},
  CellLabel->
-  "Out[115]=",ExpressionUUID->"27d7f3af-1709-41c1-82f2-bf51fa23fcb5"]
+  "Out[132]=",ExpressionUUID->"09689c31-5d00-4a6a-8533-12f4e8f00690"]
 }, Open  ]]
 }, Open  ]],
 
@@ -21387,21 +21365,21 @@ Cell[767225, 14619, 62055, 1160, 627, "Output",ExpressionUUID->"158bc277-c0e1-49
 }, Open  ]],
 Cell[829295, 15782, 990, 27, 52, "Input",ExpressionUUID->"f46c085a-064c-450c-bafc-646fa0e38165"],
 Cell[CellGroupData[{
-Cell[830310, 15813, 668, 17, 52, "Input",ExpressionUUID->"9a82acba-8dc9-447a-9942-7f77bced42e5"],
-Cell[830981, 15832, 118591, 2370, 528, "Output",ExpressionUUID->"27d7f3af-1709-41c1-82f2-bf51fa23fcb5"]
+Cell[830310, 15813, 1036, 25, 94, "Input",ExpressionUUID->"9a82acba-8dc9-447a-9942-7f77bced42e5"],
+Cell[831349, 15840, 117110, 2340, 58, "Output",ExpressionUUID->"09689c31-5d00-4a6a-8533-12f4e8f00690"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[949621, 18208, 216, 4, 54, "Subsection",ExpressionUUID->"d4de1c5a-014b-4407-b605-16c4da821052"],
-Cell[949840, 18214, 714, 19, 30, "Input",ExpressionUUID->"ae49e75d-2326-492e-93a0-1506b9ba3619"],
+Cell[948508, 18186, 216, 4, 54, "Subsection",ExpressionUUID->"d4de1c5a-014b-4407-b605-16c4da821052"],
+Cell[948727, 18192, 714, 19, 30, "Input",ExpressionUUID->"ae49e75d-2326-492e-93a0-1506b9ba3619"],
 Cell[CellGroupData[{
-Cell[950579, 18237, 378, 10, 30, "Input",ExpressionUUID->"39dacbbd-b57d-4935-b759-ee07b4627a05"],
-Cell[950960, 18249, 89324, 1558, 627, "Output",ExpressionUUID->"f82a4244-4c02-4998-9374-9bffe9564e35"]
+Cell[949466, 18215, 378, 10, 30, "Input",ExpressionUUID->"39dacbbd-b57d-4935-b759-ee07b4627a05"],
+Cell[949847, 18227, 89324, 1558, 627, "Output",ExpressionUUID->"f82a4244-4c02-4998-9374-9bffe9564e35"]
 }, Open  ]],
-Cell[1040299, 19810, 925, 26, 52, "Input",ExpressionUUID->"fd70ae42-3fe9-464d-8b99-13fdba917255"],
+Cell[1039186, 19788, 925, 26, 52, "Input",ExpressionUUID->"fd70ae42-3fe9-464d-8b99-13fdba917255"],
 Cell[CellGroupData[{
-Cell[1041249, 19840, 354, 9, 30, "Input",ExpressionUUID->"fafb326f-634b-49d2-b1eb-afe3b690cba6"],
-Cell[1041606, 19851, 80653, 1431, 627, "Output",ExpressionUUID->"114d5c95-18d1-4bf4-bfe3-2646a7b9e9f8"]
+Cell[1040136, 19818, 354, 9, 30, "Input",ExpressionUUID->"fafb326f-634b-49d2-b1eb-afe3b690cba6"],
+Cell[1040493, 19829, 80653, 1431, 627, "Output",ExpressionUUID->"114d5c95-18d1-4bf4-bfe3-2646a7b9e9f8"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
