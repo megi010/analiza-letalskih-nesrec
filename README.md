@@ -4,6 +4,9 @@ Ta repozitorij vsebuje projekt, v katerem analiziram letalske nesreče, s prva s
 Za projekt pri predmetu uporabljamo računalniški program Mathematica.
 
 ### Načrt projekta
-1. Za pridobivanje podatkov bom uporabila podatke iz interneta.
+1. Pridobila bom podatke za zgodovino letalskih nesreč.
+2. Analizirala bom kako se podatki spreminjajo glede na polete z preživelimi in brez preživelih. Podatke bom vizualirala na grafih in diagramih.
+3. Naredila bom
 
-Pripravila: Megi
+   
+Pripravila: *Megi Škander*
