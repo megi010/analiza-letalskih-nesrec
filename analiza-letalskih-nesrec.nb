@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   2453019,      45486]
-NotebookOptionsPosition[   2439218,      45248]
-NotebookOutlinePosition[   2439618,      45264]
-CellTagsIndexPosition[   2439575,      45261]
+NotebookDataLength[   2593195,      48230]
+NotebookOptionsPosition[   2578786,      47981]
+NotebookOutlinePosition[   2579186,      47997]
+CellTagsIndexPosition[   2579143,      47994]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -3708,7 +3708,7 @@ resource=download"},
  CellChangeTimes->{3.926271365855535*^9},
  CellLabel->"Out[90]=",ExpressionUUID->"3d999037-1b92-47f6-a3c0-69b036d3795a"]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -3725,9 +3725,10 @@ Cell[BoxData["s"], "Input",
 
 Cell[CellGroupData[{
 
-Cell["Vzroki  za  nesre\[CHacek]e", "Section",
- CellChangeTimes->{{3.926271431553003*^9, 
-  3.92627143280284*^9}},ExpressionUUID->"59116dfb-8676-403e-9b26-\
+Cell["Vzroki za nesre\[CHacek]e", "Section",
+ CellChangeTimes->{{3.926271431553003*^9, 3.92627143280284*^9}, {
+  3.926417018363962*^9, 
+  3.9264170204996843`*^9}},ExpressionUUID->"59116dfb-8676-403e-9b26-\
 dc70fbffba88"],
 
 Cell[BoxData[
@@ -44085,10 +44086,1817 @@ P7o9qOCDPbXEsdv7wR67Oz/YY/cX0Bys4fDBHgDk9k6g
 }, Open  ]]
 }, Closed]],
 
+Cell[CellGroupData[{
+
 Cell["Po  dr\[ZHacek]avah", "Subsection",
  CellChangeTimes->{{3.9264129010412703`*^9, 
   3.9264129096815033`*^9}},ExpressionUUID->"c3422a6f-416d-40bd-8217-\
 b8ed5d1638ae"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"poDr\[ZHacek]avah", "=", 
+   RowBox[{
+    RowBox[{"nesre\[CHacek]eCSV", "//", 
+     RowBox[{"Query", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"GroupBy", "[", "\"\<Country\>\"", "]"}], "/*", 
+        RowBox[{"Map", "[", 
+         RowBox[{
+          RowBox[{"<|", 
+           RowBox[{"#", ",", 
+            RowBox[{"\"\<Number of Accidents\>\"", "->", 
+             RowBox[{"Length", "[", "#", "]"}]}]}], "|>"}], "&"}], "]"}], "/*",
+         "Values"}], ",", 
+       RowBox[{"{", "15", "}"}]}], "]"}]}], "//", 
+    RowBox[{"Query", "[", 
+     RowBox[{"All", ",", 
+      RowBox[{
+       RowBox[{"<|", 
+        RowBox[{"#", ",", 
+         RowBox[{"\"\<Precentage\>\"", "->", 
+          RowBox[{"N", "[", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"#", "[", 
+               RowBox[{"[", "2", "]"}], "]"}], "/", 
+              RowBox[{"Length", "[", "nesre\[CHacek]eCSV", "]"}]}], ")"}], 
+            "*", "100"}], "]"}]}]}], "|>"}], "&"}]}], "]"}]}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.926417480273952*^9, 3.926417502103525*^9}, {
+   3.926417554320953*^9, 3.926417566929043*^9}, {3.9264178010730886`*^9, 
+   3.926417810831378*^9}, {3.926417895113253*^9, 3.9264179171916943`*^9}, {
+   3.926417988173358*^9, 3.9264181202253227`*^9}, 3.926418306340321*^9},
+ CellLabel->
+  "In[865]:=",ExpressionUUID->"0789a472-3dd7-4cc2-8ab8-d222439f36df"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SortBy", "[", 
+  RowBox[{"poDr\[ZHacek]avah", ",", 
+   RowBox[{
+    RowBox[{"-", 
+     RowBox[{"#", "[", 
+      RowBox[{"[", "\"\<Number of Accidents\>\"", "]"}], "]"}]}], "&"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.9264175051069*^9, 3.926417543870688*^9}, {
+  3.9264176173720407`*^9, 3.926417645726605*^9}, {3.9264177942961693`*^9, 
+  3.926417797922196*^9}},
+ CellLabel->
+  "In[864]:=",ExpressionUUID->"06be5941-5fa4-4beb-8a1f-8f37fc0a9f3f"],
+
+Cell[BoxData[
+ TagBox[
+  TagBox[
+   DynamicModuleBox[{TypeSystem`NestedGrid`PackagePrivate`$state$$ = <|
+    "InitialData" -> {<|
+       "Country" -> "United States of America", "Number of Accidents" -> 1131,
+         "Precentage" -> 28.239700374531836`|>, <|
+       "Country" -> "Russia", "Number of Accidents" -> 205, "Precentage" -> 
+        5.118601747815231|>, <|
+       "Country" -> "Canada", "Number of Accidents" -> 202, "Precentage" -> 
+        5.043695380774032|>, <|
+       "Country" -> "Brazil", "Number of Accidents" -> 136, "Precentage" -> 
+        3.3957553058676653`|>, <|
+       "Country" -> "Mexico", "Number of Accidents" -> 123, "Precentage" -> 
+        3.0711610486891385`|>, <|
+       "Country" -> "Indonesia", "Number of Accidents" -> 114, "Precentage" -> 
+        2.846441947565543|>, <|
+       "Country" -> "Democratic Republic of Congo", "Number of Accidents" -> 
+        102, "Precentage" -> 2.546816479400749|>, <|
+       "Country" -> "Venezuela", "Number of Accidents" -> 95, "Precentage" -> 
+        2.3720349563046192`|>, <|
+       "Country" -> "Colombia", "Number of Accidents" -> 88, "Precentage" -> 
+        2.1972534332084894`|>, <|
+       "Country" -> "France", "Number of Accidents" -> 66, "Precentage" -> 
+        1.647940074906367|>, <|
+       "Country" -> "Germany", "Number of Accidents" -> 60, "Precentage" -> 
+        1.4981273408239701`|>, <|
+       "Country" -> "Australia", "Number of Accidents" -> 59, "Precentage" -> 
+        1.4731585518102372`|>, <|
+       "Country" -> "United Kingdom", "Number of Accidents" -> 54, 
+        "Precentage" -> 1.348314606741573|>, <|
+       "Country" -> "South Sudan", "Number of Accidents" -> 47, "Precentage" -> 
+        1.1735330836454432`|>, <|
+       "Country" -> "Italy", "Number of Accidents" -> 42, "Precentage" -> 
+        1.048689138576779|>, <|
+       "Country" -> "India", "Number of Accidents" -> 41, "Precentage" -> 
+        1.0237203495630463`|>, <|
+       "Country" -> "Afghanistan", "Number of Accidents" -> 39, "Precentage" -> 
+        0.9737827715355806|>, <|
+       "Country" -> "Bahamas", "Number of Accidents" -> 39, "Precentage" -> 
+        0.9737827715355806|>, <|
+       "Country" -> "Iran", "Number of Accidents" -> 39, "Precentage" -> 
+        0.9737827715355806|>, <|
+       "Country" -> "New Zealand", "Number of Accidents" -> 36, "Precentage" -> 
+        0.898876404494382|>, <|
+       "Country" -> "South Africa", "Number of Accidents" -> 35, "Precentage" -> 
+        0.8739076154806492|>, <|
+       "Country" -> "Spain", "Number of Accidents" -> 35, "Precentage" -> 
+        0.8739076154806492|>, <|
+       "Country" -> "Ukraine", "Number of Accidents" -> 35, "Precentage" -> 
+        0.8739076154806492|>, <|
+       "Country" -> "Argentina", "Number of Accidents" -> 34, "Precentage" -> 
+        0.8489388264669163|>, <|
+       "Country" -> "Kenya", "Number of Accidents" -> 34, "Precentage" -> 
+        0.8489388264669163|>, <|
+       "Country" -> "Sudan", "Number of Accidents" -> 32, "Precentage" -> 
+        0.7990012484394506|>, <|
+       "Country" -> "Philippines", "Number of Accidents" -> 31, "Precentage" -> 
+        0.7740324594257179|>, <|
+       "Country" -> "Angola", "Number of Accidents" -> 30, "Precentage" -> 
+        0.7490636704119851|>, <|
+       "Country" -> "Nigeria", "Number of Accidents" -> 30, "Precentage" -> 
+        0.7490636704119851|>, <|
+       "Country" -> "China", "Number of Accidents" -> 29, "Precentage" -> 
+        0.7240948813982522|>, <|
+       "Country" -> "Nepal", "Number of Accidents" -> 27, "Precentage" -> 
+        0.6741573033707865|>, <|
+       "Country" -> "World", "Number of Accidents" -> 25, "Precentage" -> 
+        0.6242197253433208|>, <|
+       "Country" -> "Guatemala", "Number of Accidents" -> 24, "Precentage" -> 
+        0.599250936329588|>, <|
+       "Country" -> "Peru", "Number of Accidents" -> 23, "Precentage" -> 
+        0.5742821473158551|>, <|
+       "Country" -> "Tanzania", "Number of Accidents" -> 23, "Precentage" -> 
+        0.5742821473158551|>, <|
+       "Country" -> "Turkey", "Number of Accidents" -> 23, "Precentage" -> 
+        0.5742821473158551|>, <|
+       "Country" -> "Somalia", "Number of Accidents" -> 21, "Precentage" -> 
+        0.5243445692883895|>, <|
+       "Country" -> "Pakistan", "Number of Accidents" -> 20, "Precentage" -> 
+        0.4993757802746567|>, <|
+       "Country" -> "Papua New Guinea", "Number of Accidents" -> 20, 
+        "Precentage" -> 0.4993757802746567|>, <|
+       "Country" -> "Switzerland", "Number of Accidents" -> 20, "Precentage" -> 
+        0.4993757802746567|>, <|
+       "Country" -> "Bolivia", "Number of Accidents" -> 19, "Precentage" -> 
+        0.47440699126092384`|>, <|
+       "Country" -> "Kazakhstan", "Number of Accidents" -> 19, "Precentage" -> 
+        0.47440699126092384`|>, <|
+       "Country" -> "Puerto Rico", "Number of Accidents" -> 19, "Precentage" -> 
+        0.47440699126092384`|>, <|
+       "Country" -> "Dominican Republic", "Number of Accidents" -> 18, 
+        "Precentage" -> 0.449438202247191|>, <|
+       "Country" -> "Ecuador", "Number of Accidents" -> 18, "Precentage" -> 
+        0.449438202247191|>, <|
+       "Country" -> "Honduras", "Number of Accidents" -> 18, "Precentage" -> 
+        0.449438202247191|>, <|
+       "Country" -> "Thailand", "Number of Accidents" -> 18, "Precentage" -> 
+        0.449438202247191|>, <|
+       "Country" -> "Chile", "Number of Accidents" -> 17, "Precentage" -> 
+        0.42446941323345816`|>, <|
+       "Country" -> "Japan", "Number of Accidents" -> 17, "Precentage" -> 
+        0.42446941323345816`|>, <|
+       "Country" -> "Iraq", "Number of Accidents" -> 14, "Precentage" -> 
+        0.3495630461922597|>, <|
+       "Country" -> "Romania", "Number of Accidents" -> 14, "Precentage" -> 
+        0.3495630461922597|>, <|
+       "Country" -> "Kyrgyzstan", "Number of Accidents" -> 13, "Precentage" -> 
+        0.32459425717852686`|>, <|
+       "Country" -> "Belize", "Number of Accidents" -> 12, "Precentage" -> 
+        0.299625468164794|>, <|
+       "Country" -> "Egypt", "Number of Accidents" -> 12, "Precentage" -> 
+        0.299625468164794|>, <|
+       "Country" -> "Guyana", "Number of Accidents" -> 12, "Precentage" -> 
+        0.299625468164794|>, <|
+       "Country" -> "Haiti", "Number of Accidents" -> 12, "Precentage" -> 
+        0.299625468164794|>, <|
+       "Country" -> "United Arab Emirates", "Number of Accidents" -> 12, 
+        "Precentage" -> 0.299625468164794|>, <|
+       "Country" -> "Congo", "Number of Accidents" -> 11, "Precentage" -> 
+        0.2746566791510612|>, <|
+       "Country" -> "Panama", "Number of Accidents" -> 11, "Precentage" -> 
+        0.2746566791510612|>, <|
+       "Country" -> "Poland", "Number of Accidents" -> 11, "Precentage" -> 
+        0.2746566791510612|>, <|
+       "Country" -> "Costa Rica", "Number of Accidents" -> 10, "Precentage" -> 
+        0.24968789013732834`|>, <|
+       "Country" -> "Greece", "Number of Accidents" -> 10, "Precentage" -> 
+        0.24968789013732834`|>, <|
+       "Country" -> "Myanmar", "Number of Accidents" -> 10, "Precentage" -> 
+        0.24968789013732834`|>, <|
+       "Country" -> "Mozambique", "Number of Accidents" -> 9, "Precentage" -> 
+        0.2247191011235955|>, <|
+       "Country" -> "Algeria", "Number of Accidents" -> 8, "Precentage" -> 
+        0.19975031210986266`|>, <|
+       "Country" -> "Cameroon", "Number of Accidents" -> 8, "Precentage" -> 
+        0.19975031210986266`|>, <|
+       "Country" -> "Ethiopia", "Number of Accidents" -> 8, "Precentage" -> 
+        0.19975031210986266`|>, <|
+       "Country" -> "Gabon", "Number of Accidents" -> 8, "Precentage" -> 
+        0.19975031210986266`|>, <|
+       "Country" -> "Norway", "Number of Accidents" -> 8, "Precentage" -> 
+        0.19975031210986266`|>, <|
+       "Country" -> "Sweden", "Number of Accidents" -> 8, "Precentage" -> 
+        0.19975031210986266`|>, <|
+       "Country" -> "Bangladesh", "Number of Accidents" -> 7, "Precentage" -> 
+        0.17478152309612985`|>, <|
+       "Country" -> "Botswana", "Number of Accidents" -> 7, "Precentage" -> 
+        0.17478152309612985`|>, <|
+       "Country" -> "Denmark", "Number of Accidents" -> 7, "Precentage" -> 
+        0.17478152309612985`|>, <|
+       "Country" -> "Dutch Antilles", "Number of Accidents" -> 7, 
+        "Precentage" -> 0.17478152309612985`|>, <|
+       "Country" -> "Estonia", "Number of Accidents" -> 7, "Precentage" -> 
+        0.17478152309612985`|>, <|
+       "Country" -> "Portugal", "Number of Accidents" -> 7, "Precentage" -> 
+        0.17478152309612985`|>, <|
+       "Country" -> "Saudi Arabia", "Number of Accidents" -> 7, "Precentage" -> 
+        0.17478152309612985`|>, <|
+       "Country" -> "South Korea", "Number of Accidents" -> 7, "Precentage" -> 
+        0.17478152309612985`|>, <|
+       "Country" -> "Sri Lanka", "Number of Accidents" -> 7, "Precentage" -> 
+        0.17478152309612985`|>, <|
+       "Country" -> "Taiwan", "Number of Accidents" -> 7, "Precentage" -> 
+        0.17478152309612985`|>, <|
+       "Country" -> "Uganda", "Number of Accidents" -> 7, "Precentage" -> 
+        0.17478152309612985`|>, <|
+       "Country" -> "Austria", "Number of Accidents" -> 6, "Precentage" -> 
+        0.149812734082397|>, <|
+       "Country" -> "Belgium", "Number of Accidents" -> 6, "Precentage" -> 
+        0.149812734082397|>, <|
+       "Country" -> "Comoros Islands", "Number of Accidents" -> 6, 
+        "Precentage" -> 0.149812734082397|>, <|
+       "Country" -> "Cuba", "Number of Accidents" -> 6, "Precentage" -> 
+        0.149812734082397|>, <|
+       "Country" -> "Greenland", "Number of Accidents" -> 6, "Precentage" -> 
+        0.149812734082397|>, <|
+       "Country" -> "Ireland", "Number of Accidents" -> 6, "Precentage" -> 
+        0.149812734082397|>, <|
+       "Country" -> "Mali", "Number of Accidents" -> 6, "Precentage" -> 
+        0.149812734082397|>, <|
+       "Country" -> "Netherlands", "Number of Accidents" -> 6, "Precentage" -> 
+        0.149812734082397|>, <|
+       "Country" -> "Suriname", "Number of Accidents" -> 6, "Precentage" -> 
+        0.149812734082397|>, <|
+       "Country" -> "Yemen", "Number of Accidents" -> 6, "Precentage" -> 
+        0.149812734082397|>, <|
+       "Country" -> "Laos", "Number of Accidents" -> 5, "Precentage" -> 
+        0.12484394506866417`|>, <|
+       "Country" -> "Libya", "Number of Accidents" -> 5, "Precentage" -> 
+        0.12484394506866417`|>, <|
+       "Country" -> "Malaysia", "Number of Accidents" -> 5, "Precentage" -> 
+        0.12484394506866417`|>, <|
+       "Country" -> "Namibia", "Number of Accidents" -> 5, "Precentage" -> 
+        0.12484394506866417`|>, <|
+       "Country" -> "Nicaragua", "Number of Accidents" -> 5, "Precentage" -> 
+        0.12484394506866417`|>, <|
+       "Country" -> "Paraguay", "Number of Accidents" -> 5, "Precentage" -> 
+        0.12484394506866417`|>, <|
+       "Country" -> "Chad", "Number of Accidents" -> 4, "Precentage" -> 
+        0.09987515605493133|>, <|
+       "Country" -> "Czech Republic", "Number of Accidents" -> 4, 
+        "Precentage" -> 0.09987515605493133|>, <|
+       "Country" -> "Ghana", "Number of Accidents" -> 4, "Precentage" -> 
+        0.09987515605493133|>, <|
+       "Country" -> "Iceland", "Number of Accidents" -> 4, "Precentage" -> 
+        0.09987515605493133|>, <|
+       "Country" -> "Maldivian Islands", "Number of Accidents" -> 4, 
+        "Precentage" -> 0.09987515605493133|>, <|
+       "Country" -> "Morocco", "Number of Accidents" -> 4, "Precentage" -> 
+        0.09987515605493133|>, <|
+       "Country" -> "S\[ATilde]o Tom\[EAcute] and Principe", 
+        "Number of Accidents" -> 4, "Precentage" -> 0.09987515605493133|>, <|
+       "Country" -> "Slovakia", "Number of Accidents" -> 4, "Precentage" -> 
+        0.09987515605493133|>, <|
+       "Country" -> "Syria", "Number of Accidents" -> 4, "Precentage" -> 
+        0.09987515605493133|>, <|
+       "Country" -> "Uruguay", "Number of Accidents" -> 4, "Precentage" -> 
+        0.09987515605493133|>, <|
+       "Country" -> "Uzbekistan", "Number of Accidents" -> 4, "Precentage" -> 
+        0.09987515605493133|>, <|
+       "Country" -> "Zambia", "Number of Accidents" -> 4, "Precentage" -> 
+        0.09987515605493133|>, <|
+       "Country" -> "Antarctica", "Number of Accidents" -> 3, "Precentage" -> 
+        0.0749063670411985|>, <|
+       "Country" -> "British Virgin Islands", "Number of Accidents" -> 3, 
+        "Precentage" -> 0.0749063670411985|>, <|
+       "Country" -> "Bulgaria", "Number of Accidents" -> 3, "Precentage" -> 
+        0.0749063670411985|>, <|
+       "Country" -> "Cambodia", "Number of Accidents" -> 3, "Precentage" -> 
+        0.0749063670411985|>, <|
+       "Country" -> "Croatia", "Number of Accidents" -> 3, "Precentage" -> 
+        0.0749063670411985|>, <|
+       "Country" -> "Dominica", "Number of Accidents" -> 3, "Precentage" -> 
+        0.0749063670411985|>, <|
+       "Country" -> "French Polynesia", "Number of Accidents" -> 3, 
+        "Precentage" -> 0.0749063670411985|>, <|
+       "Country" -> "Guam Island", "Number of Accidents" -> 3, "Precentage" -> 
+        0.0749063670411985|>, <|
+       "Country" -> "Guinea", "Number of Accidents" -> 3, "Precentage" -> 
+        0.0749063670411985|>, <|
+       "Country" -> "Israel", "Number of Accidents" -> 3, "Precentage" -> 
+        0.0749063670411985|>, <|
+       "Country" -> "Ivory Coast", "Number of Accidents" -> 3, "Precentage" -> 
+        0.0749063670411985|>, <|
+       "Country" -> "Jamaica", "Number of Accidents" -> 3, "Precentage" -> 
+        0.0749063670411985|>, <|
+       "Country" -> "Liberia", "Number of Accidents" -> 3, "Precentage" -> 
+        0.0749063670411985|>, <|
+       "Country" -> "Madagascar", "Number of Accidents" -> 3, "Precentage" -> 
+        0.0749063670411985|>, <|
+       "Country" -> "Niger", "Number of Accidents" -> 3, "Precentage" -> 
+        0.0749063670411985|>, <|
+       "Country" -> "Rwanda", "Number of Accidents" -> 3, "Precentage" -> 
+        0.0749063670411985|>, <|
+       "Country" -> "Sierra Leone", "Number of Accidents" -> 3, "Precentage" -> 
+        0.0749063670411985|>, <|
+       "Country" -> "Tajikistan", "Number of Accidents" -> 3, "Precentage" -> 
+        0.0749063670411985|>, <|
+       "Country" -> "Tunisia", "Number of Accidents" -> 3, "Precentage" -> 
+        0.0749063670411985|>, <|
+       "Country" -> "Turks and Caicos Islands", "Number of Accidents" -> 3, 
+        "Precentage" -> 0.0749063670411985|>, <|
+       "Country" -> "Vietnam", "Number of Accidents" -> 3, "Precentage" -> 
+        0.0749063670411985|>, <|
+       "Country" -> "Zimbabwe", "Number of Accidents" -> 3, "Precentage" -> 
+        0.0749063670411985|>, <|
+       "Country" -> "Azerbaijan", "Number of Accidents" -> 2, "Precentage" -> 
+        0.049937578027465665`|>, <|
+       "Country" -> "Bosnia and Herzegovina", "Number of Accidents" -> 2, 
+        "Precentage" -> 0.049937578027465665`|>, <|
+       "Country" -> "Central African Republic", "Number of Accidents" -> 2, 
+        "Precentage" -> 0.049937578027465665`|>, <|
+       "Country" -> "Djibouti", "Number of Accidents" -> 2, "Precentage" -> 
+        0.049937578027465665`|>, <|
+       "Country" -> "Equatorial Guinea", "Number of Accidents" -> 2, 
+        "Precentage" -> 0.049937578027465665`|>, <|
+       "Country" -> "Eritrea", "Number of Accidents" -> 2, "Precentage" -> 
+        0.049937578027465665`|>, <|
+       "Country" -> "Federated States of Micronesia", "Number of Accidents" -> 
+        2, "Precentage" -> 0.049937578027465665`|>, <|
+       "Country" -> "Fiji Islands", "Number of Accidents" -> 2, "Precentage" -> 
+        0.049937578027465665`|>, <|
+       "Country" -> "Finland", "Number of Accidents" -> 2, "Precentage" -> 
+        0.049937578027465665`|>, <|
+       "Country" -> "French Guyana", "Number of Accidents" -> 2, "Precentage" -> 
+        0.049937578027465665`|>, <|
+       "Country" -> "Georgia", "Number of Accidents" -> 2, "Precentage" -> 
+        0.049937578027465665`|>, <|
+       "Country" -> "Hungary", "Number of Accidents" -> 2, "Precentage" -> 
+        0.049937578027465665`|>, <|
+       "Country" -> "Mauritania", "Number of Accidents" -> 2, "Precentage" -> 
+        0.049937578027465665`|>, <|
+       "Country" -> "Saint Vincent and Grenadines", "Number of Accidents" -> 
+        2, "Precentage" -> 0.049937578027465665`|>, <|
+       "Country" -> "Salvador", "Number of Accidents" -> 2, "Precentage" -> 
+        0.049937578027465665`|>, <|
+       "Country" -> "Serbia", "Number of Accidents" -> 2, "Precentage" -> 
+        0.049937578027465665`|>, <|
+       "Country" -> "Singapore", "Number of Accidents" -> 2, "Precentage" -> 
+        0.049937578027465665`|>, <|
+       "Country" -> "Solomon Islands", "Number of Accidents" -> 2, 
+        "Precentage" -> 0.049937578027465665`|>, <|
+       "Country" -> "Swaziland", "Number of Accidents" -> 2, "Precentage" -> 
+        0.049937578027465665`|>, <|
+       "Country" -> "US Virgin Islands", "Number of Accidents" -> 2, 
+        "Precentage" -> 0.049937578027465665`|>, <|
+       "Country" -> "Vanuatu", "Number of Accidents" -> 2, "Precentage" -> 
+        0.049937578027465665`|>, <|
+       "Country" -> "Albania", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Anguilla", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Antigua", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Armenia", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Bahrain", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Barbados", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Belarus", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Benin", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Jordan", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Kuwait", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Latvia", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Lebanon", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Lesotho", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Lithuania", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Luxembourg", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Malawi", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Malta", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Martinique", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Moldova", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Montserrat", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "New Caledonia", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Oman", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Saint-Barth\[EAcute]lemy", "Number of Accidents" -> 1, 
+        "Precentage" -> 0.024968789013732832`|>, <|
+       "Country" -> "Saint Kitts and Nevis", "Number of Accidents" -> 1, 
+        "Precentage" -> 0.024968789013732832`|>, <|
+       "Country" -> "Saint Lucia", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Senegal", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Slovenia", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Timor Leste", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>, <|
+       "Country" -> "Togo", "Number of Accidents" -> 1, "Precentage" -> 
+        0.024968789013732832`|>}, "AllowEmbedding" -> True, "InitialShape" -> 
+     TypeSystem`PackageScope`HeaderShape[<|{All, "Country"} -> 
+        1, {All, "Number of Accidents"} -> 1, {All, "Precentage"} -> 1|>, 
+       TypeSystem`PackageScope`Limited[
+        TypeSystem`PackageScope`ColumnShape[
+         TypeSystem`PackageScope`Limited[
+          
+          TypeSystem`PackageScope`RowShape[<|
+           "Country" -> 
+            TypeSystem`PackageScope`AtomShape[179.20000000000002`], 
+            "Number of Accidents" -> TypeSystem`PackageScope`AtomShape[34], 
+            "Precentage" -> TypeSystem`PackageScope`AtomShape[60]|>], 
+          DirectedInfinity[1], 3, {All}]], 20, 
+        DirectedInfinity[1], {}]], "InitialType" -> TypeSystem`Vector[
+       TypeSystem`Struct[{"Country", "Number of Accidents", "Precentage"}, {
+         TypeSystem`Atom[String], 
+         TypeSystem`Atom[Integer], 
+         TypeSystem`Atom[Real]}], 181], "Meta" -> <||>, "RowTarget" -> 20, 
+     "ColumnTarget" -> 10, "Shape" -> 
+     TypeSystem`PackageScope`HeaderShape[<|{All, "Country"} -> 
+        1, {All, "Number of Accidents"} -> 1, {All, "Precentage"} -> 1|>, 
+       TypeSystem`PackageScope`Limited[
+        TypeSystem`PackageScope`ColumnShape[
+         TypeSystem`PackageScope`Limited[
+          
+          TypeSystem`PackageScope`RowShape[<|
+           "Country" -> 
+            TypeSystem`PackageScope`AtomShape[179.20000000000002`], 
+            "Number of Accidents" -> TypeSystem`PackageScope`AtomShape[34], 
+            "Precentage" -> TypeSystem`PackageScope`AtomShape[60]|>], 
+          DirectedInfinity[1], 3, {All}]], 20, 
+        DirectedInfinity[1], {}]], "Type" -> TypeSystem`Vector[
+       TypeSystem`Struct[{"Country", "Number of Accidents", "Precentage"}, {
+         TypeSystem`Atom[String], 
+         TypeSystem`Atom[Integer], 
+         TypeSystem`Atom[Real]}], 181], "Path" -> {}, "DisplayedRowCount" -> 
+     20, "DisplayedColumnCount" -> 3, "DataRowCount" -> 181, 
+     "DataColumnCount" -> 3, "SortPaths" -> {}, "SortDirections" -> {}, 
+     "HiddenItemsMap" -> Null, "UpdateType" -> 1|>, 
+    TypeSystem`NestedGrid`PackagePrivate`$outputID$$, 
+    TypeSystem`NestedGrid`PackagePrivate`$path$$ = {}, 
+    TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 1, 
+    TypeSystem`NestedGrid`PackagePrivate`$hPos$$ = 1, 
+    TypeSystem`NestedGrid`PackagePrivate`$grid$$ = 
+    DynamicModule[{
+     TypeSystem`NestedGrid`PackagePrivate`renderedGrid = Deploy[
+        Style[
+         Grid[{{
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Country", 
+                  Style[
+                  "Country", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                   All, "Country"}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                All, "Country"}, "ColumnHeader", True], "Mouse"], 
+              ImageSize -> {{1, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Number of Accidents", 
+                  Style[
+                  "Number of Accidents", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                   All, "Number of Accidents"}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                All, "Number of Accidents"}, "ColumnHeader", True], "Mouse"], 
+              ImageSize -> {{1, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Precentage", 
+                  Style[
+                  "Precentage", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                   All, "Precentage"}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                All, "Precentage"}, "ColumnHeader", True], "Mouse"], 
+              ImageSize -> {{1, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}]}, {
+            Item[
+             Pane[
+              Annotation["United States of America", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{1, 
+                 Key["Country"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{179.20000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["1131"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{1, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["28.2397"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{1, 
+                 Key["Precentage"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Russia", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{2, 
+                 Key["Country"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{179.20000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["205"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{2, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["5.1186"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{2, 
+                 Key["Precentage"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Canada", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{3, 
+                 Key["Country"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{179.20000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["202"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{3, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["5.0437"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{3, 
+                 Key["Precentage"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Brazil", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{4, 
+                 Key["Country"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{179.20000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["136"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{4, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["3.39576"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{4, 
+                 Key["Precentage"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Mexico", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{5, 
+                 Key["Country"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{179.20000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["123"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{5, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["3.07116"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{5, 
+                 Key["Precentage"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Indonesia", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{6, 
+                 Key["Country"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{179.20000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["114"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{6, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["2.84644"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{6, 
+                 Key["Precentage"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Democratic Republic of Congo", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{7, 
+                 Key["Country"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{179.20000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["102"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{7, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["2.54682"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{7, 
+                 Key["Precentage"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Venezuela", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{8, 
+                 Key["Country"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{179.20000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["95"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{8, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["2.37203"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{8, 
+                 Key["Precentage"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Colombia", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{9, 
+                 Key["Country"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{179.20000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["88"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{9, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["2.19725"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{9, 
+                 Key["Precentage"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["France", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{10, 
+                 Key["Country"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{179.20000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["66"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{10, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["1.64794"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{10, 
+                 Key["Precentage"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Germany", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{11, 
+                 Key["Country"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{179.20000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["60"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{11, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["1.49813"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{11, 
+                 Key["Precentage"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Australia", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{12, 
+                 Key["Country"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{179.20000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["59"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{12, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["1.47316"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{12, 
+                 Key["Precentage"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["United Kingdom", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{13, 
+                 Key["Country"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{179.20000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["54"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{13, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["1.34831"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{13, 
+                 Key["Precentage"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["South Sudan", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{14, 
+                 Key["Country"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{179.20000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["47"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{14, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["1.17353"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{14, 
+                 Key["Precentage"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Italy", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{15, 
+                 Key["Country"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{179.20000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["42"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{15, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["1.04869"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{15, 
+                 Key["Precentage"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["India", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{16, 
+                 Key["Country"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{179.20000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["41"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{16, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["1.02372"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{16, 
+                 Key["Precentage"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Afghanistan", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{17, 
+                 Key["Country"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{179.20000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["39"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{17, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["0.973783"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{17, 
+                 Key["Precentage"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Bahamas", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{18, 
+                 Key["Country"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{179.20000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["39"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{18, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["0.973783"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{18, 
+                 Key["Precentage"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["Iran", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{19, 
+                 Key["Country"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{179.20000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["39"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{19, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["0.973783"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{19, 
+                 Key["Precentage"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation["New Zealand", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{20, 
+                 Key["Country"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{179.20000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["36"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{20, 
+                 Key["Number of Accidents"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["0.898876"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{20, 
+                 Key["Precentage"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Deploy[
+              Pane[
+               Row[{
+                 Spacer[2], 
+                 Style[
+                  Row[{
+                    Button[
+                    MouseAppearance[
+                    Mouseover[
+                    Graphics[{{
+                    EdgeForm[None], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}], 
+                    Line[{{0, 5}, {8, 5}}]}, {5, 6.5}], 0, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35], BaseStyle -> 
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843]], 
+                    Graphics[{{
+                    EdgeForm[
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549]], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}], 
+                    Line[{{0, 5}, {8, 5}}]}, {5, 6.5}], 0, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35]]], "LinkHand"], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    If[True, 181, 1], {1, 181 - -20 + 1}]; 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]], True][
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$]], 
+                    Appearance -> None], 
+                    Button[
+                    MouseAppearance[
+                    Mouseover[
+                    Graphics[{{
+                    EdgeForm[None], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}]}, {5, 6.5}], 0, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35], BaseStyle -> 
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843]], 
+                    Graphics[{{
+                    EdgeForm[
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549]], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}]}, {5, 6.5}], 0, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35]]], "LinkHand"], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    If[False, 181, 1], {1, 181 - -20 + 1}]; 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]], True][
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$]], 
+                    Appearance -> None], " ", 
+                    Style[
+                    Mouseover[
+                    Style[
+                    Row[{"rows ", 1, "\[Dash]", 20, " of ", 
+                    Style[181, FontWeight -> Bold]}], FontSize -> 
+                    9.333333333333332, FontColor -> 
+                    RGBColor[
+                    0.5098039215686274, 0.5098039215686274, 
+                    0.5098039215686274]], 
+                    Style[
+                    Row[{"rows ", 1, "\[Dash]", 20, " of ", 
+                    Style[181, FontWeight -> Bold]}], FontSize -> 
+                    9.333333333333332, FontColor -> 
+                    RGBColor[
+                    0.5098039215686274, 0.5098039215686274, 
+                    0.5098039215686274]]], ContextMenu -> {
+                    MenuItem["Hide", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 1, {}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show up to 10 Rows", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 10, {}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show up to 30 Rows", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 30, {}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show up to 100 Rows", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 100, {}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show All", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 100000000, {}]], MenuEvaluator -> Automatic]}], 
+                    " ", 
+                    Button[
+                    MouseAppearance[
+                    Mouseover[
+                    Graphics[{{
+                    EdgeForm[None], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}]}, {5, 6.5}], 180 Degree, {
+                    9, 9}]}, ImageSize -> (1 -> 1), 
+                    ImagePadding -> {{0, 1}, {1, 0}}, BaselinePosition -> 
+                    Scaled[0.35], BaseStyle -> 
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843]], 
+                    Graphics[{{
+                    EdgeForm[
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549]], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}]}, {5, 6.5}], 180 Degree, {
+                    9, 9}]}, ImageSize -> (1 -> 1), 
+                    ImagePadding -> {{0, 1}, {1, 0}}, BaselinePosition -> 
+                    Scaled[0.35]]], "LinkHand"], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + 
+                    20 If[False, 181, 1], {1, 181 - 20 + 1}]; 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]], True][
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$]], 
+                    Appearance -> None], 
+                    Button[
+                    MouseAppearance[
+                    Mouseover[
+                    Graphics[{{
+                    EdgeForm[None], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}], 
+                    Line[{{0, 5}, {8, 5}}]}, {5, 6.5}], 180 Degree, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35], BaseStyle -> 
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843]], 
+                    Graphics[{{
+                    EdgeForm[
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549]], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}], 
+                    Line[{{0, 5}, {8, 5}}]}, {5, 6.5}], 180 Degree, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35]]], "LinkHand"], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + 
+                    20 If[True, 181, 1], {1, 181 - 20 + 1}]; 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]], True][
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$]], 
+                    Appearance -> None]}], ContextMenu -> {}]}], 
+               ImageMargins -> {{0, -1}, {-1, 1}}]], Background -> 
+             RGBColor[
+              0.9764705882352941, 0.9764705882352941, 0.9764705882352941], 
+             Alignment -> {Left, Top}], SpanFromLeft, SpanFromLeft}}, 
+          BaseStyle -> {
+           ContextMenu -> 
+            Dynamic[TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger; 
+              Which[TypeSystem`NestedGrid`PackagePrivate`$lastOutputID =!= 
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$], {}, 
+                TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger === 
+                TypeSystem`NestedGrid`PackagePrivate`$lastContextMenuTrigger, 
+                TypeSystem`NestedGrid`PackagePrivate`$lastContextMenu, True, 
+                TypeSystem`NestedGrid`PackagePrivate`$lastContextMenuTrigger = 
+                 TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger; 
+                TypeSystem`NestedGrid`PackagePrivate`$lastContextMenu = 
+                 Block[{TypeSystem`NestedGrid`PackagePrivate`$globalScrollPos = \
+{TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$}}, 
+                   
+                   With[{TypeSystem`NestedGrid`PackagePrivate`lastPath$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPathType, 
+                    TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`$\
+lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
+                    MatchQ[TypeSystem`NestedGrid`PackagePrivate`$lastPathType, 
+                    Alternatives["RowHeader", "ColumnHeader"]], 
+                    TypeSystem`NestedGrid`PackagePrivate`headerHiddenQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$]], 
+                    TypeSystem`NestedGrid`PackagePrivate`allHidden$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`allHiddenQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`anyHidden$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`anyHiddenQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`columnSortDirection[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$[
+                    "SortPaths"], 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$[
+                    "SortDirections"]], 
+                    TypeSystem`NestedGrid`PackagePrivate`haveData$ = Not[
+                    FailureQ[
+                    TypeSystem`NestedGrid`PackagePrivate`datasetInitialData[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$]]], 
+                    TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$ = Not[
+                    FreeQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, Keys]]}, 
+                    Join[{
+                    If[
+                    Or[
+                    Not[TypeSystem`NestedGrid`PackagePrivate`haveData$], 
+                    Not[TypeSystem`NestedGrid`PackagePrivate`anyHidden$], 
+                    TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$], 
+                    Nothing, 
+                    MenuItem[
+                    "Show " <> 
+                    Which[TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "Item", "", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "RowHeader", "Row", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "ColumnHeader", "Column", True, ""], 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, 
+                    "remove"]], MenuEvaluator -> Automatic]], 
+                    If[
+                    Or[
+                    Not[TypeSystem`NestedGrid`PackagePrivate`haveData$], 
+                    TypeSystem`NestedGrid`PackagePrivate`pathEmptyQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$, 
+                    And[
+                    TypeSystem`NestedGrid`PackagePrivate`allHidden$, 
+                    TypeSystem`NestedGrid`PackagePrivate`headerHidden$]], 
+                    Nothing, 
+                    MenuItem[
+                    "Hide " <> 
+                    Which[TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "Item", "", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "RowHeader", "Row", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "ColumnHeader", "Column", True, ""], 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, "add"]], 
+                    MenuEvaluator -> Automatic]], Delimiter}, 
+                    If[
+                    And[TypeSystem`NestedGrid`PackagePrivate`haveData$, 
+                    MatchQ[TypeSystem`NestedGrid`PackagePrivate`lastPathType$, 
+                    Alternatives["ColumnHeader", "KeyDummy"]], 
+                    TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$, 
+                    Not[TypeSystem`NestedGrid`PackagePrivate`allHidden$]], {
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
+                    "Ascending", 
+                    MenuItem["Sort", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateSort[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, 
+                    "Ascending"]], MenuEvaluator -> Automatic], Nothing], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
+                    "Descending", 
+                    MenuItem["Reverse Sort", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateSort[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, 
+                    "Descending"]], MenuEvaluator -> Automatic], Nothing], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
+                    None, 
+                    MenuItem["Unsort", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateSort[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, None]], 
+                    MenuEvaluator -> Automatic], Nothing], Delimiter}, {}], {
+                    MenuItem["Copy Position to Clipboard", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[
+                    TypeSystem`NestedGrid`PackagePrivate`copyClip]], 
+                    MenuEvaluator -> Automatic], 
+                    If[TypeSystem`NestedGrid`PackagePrivate`haveData$, 
+                    MenuItem["Copy Data to Clipboard", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`copyClip]], 
+                    MenuEvaluator -> Automatic], Nothing], Delimiter, 
+                    MenuItem["Paste Position in New Cell", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[
+                    TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
+                    MenuEvaluator -> Automatic], 
+                    If[TypeSystem`NestedGrid`PackagePrivate`haveData$, 
+                    MenuItem["Paste Data in New Cell", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
+                    MenuEvaluator -> Automatic], Nothing]}]]]]], FontFamily -> 
+            "Source Sans Pro", FontSize -> 14, FontWeight -> Plain}, Dividers -> 
+          All, FrameStyle -> GrayLevel[0.7490196078431373], 
+          Spacings -> {0, 0}, Alignment -> Left, 
+          BaseStyle -> {
+           FontFamily -> "Source Sans Pro", FontSize -> 14, FontWeight -> 
+            Plain}], LineBreakWithin -> False, ContextMenu -> {}, NumberMarks -> 
+         False, ShowAutoStyles -> False]], 
+      TypeSystem`NestedGrid`PackagePrivate`initialQ = True}, 
+     Dynamic[
+      TypeSystem`NestedGrid`PackagePrivate`setupViewPath[
+      TypeSystem`NestedGrid`PackagePrivate`$path$$, If[
+         Not[TypeSystem`NestedGrid`PackagePrivate`initialQ], 
+         Module[{
+          TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = $Failed, 
+           TypeSystem`NestedGrid`PackagePrivate`tmpData$ = 
+           TypeSystem`NestedGrid`PackagePrivate`datasetData[
+            TypeSystem`NestedGrid`PackagePrivate`$state$$]}, 
+          TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = If[
+             FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpData$], 
+             TypeSystem`NestedGrid`PackagePrivate`renderedGrid, 
+             TypeSystem`NestedGrid`PackagePrivate`renderGrid[
+             TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+              TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+              TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+              TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+              TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+              TypeSystem`NestedGrid`PackagePrivate`localHold[
+              TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+             TypeSystem`NestedGrid`PackagePrivate`tmpData$]]; If[
+            Not[
+             FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]], 
+            TypeSystem`NestedGrid`PackagePrivate`renderedGrid = 
+            TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]; Null]]; 
+       TypeSystem`NestedGrid`PackagePrivate`initialQ = False; 
+       TypeSystem`NestedGrid`PackagePrivate`$vPos$$; 
+       TypeSystem`NestedGrid`PackagePrivate`$hPos$$; If[
+         FailureQ[TypeSystem`NestedGrid`PackagePrivate`renderedGrid], 
+         TypeSystem`SparseGrid[
+          TypeSystem`H["(data no longer present)"]], 
+         TypeSystem`NestedGrid`PackagePrivate`renderedGrid]], 
+      TrackedSymbols :> {
+       TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$hPos$$}], 
+     DynamicModuleValues :> {}], 
+    TypeSystem`NestedGrid`PackagePrivate`$topBar$$ = Dynamic[
+     TypeSystem`NestedGrid`PackagePrivate`makeFramedBar[
+      TypeSystem`PackageScope`SubViewPathbar[
+      TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+       TypeSystem`NestedGrid`PackagePrivate`updateState[
+       TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+        TypeSystem`NestedGrid`PackagePrivate`localHold[
+        TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]]], 
+     TrackedSymbols :> {TypeSystem`NestedGrid`PackagePrivate`$path$$}], 
+    TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$ = Style[
+     Framed[
+      Dynamic[
+       Replace[
+       TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$, {
+        TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+           TypeSystem`NestedGrid`PackagePrivate`localHold[
+           TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][Null, 
+           Blank[]] -> "", TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+           TypeSystem`NestedGrid`PackagePrivate`localHold[
+           TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+           Pattern[TypeSystem`NestedGrid`PackagePrivate`path$, 
+            Blank[]], 
+           Pattern[TypeSystem`NestedGrid`PackagePrivate`pathType$, 
+            Blank[]], 
+           Pattern[TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$, 
+            Blank[]]] :> (
+          Increment[TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger]; 
+          TypeSystem`NestedGrid`PackagePrivate`$lastPath = 
+           TypeSystem`NestedGrid`PackagePrivate`path$; 
+          TypeSystem`NestedGrid`PackagePrivate`$lastPathType = 
+           TypeSystem`NestedGrid`PackagePrivate`pathType$; 
+          TypeSystem`NestedGrid`PackagePrivate`$lastPathIsLeafHeader = 
+           TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$; 
+          TypeSystem`NestedGrid`PackagePrivate`$lastOutputID = 
+           TypeSystem`NestedGrid`PackagePrivate`localHold[
+            TypeSystem`NestedGrid`PackagePrivate`$outputID$$]; 
+          TypeSystem`NestedGrid`PackagePrivate`makePathTrail[
+           TypeSystem`NestedGrid`PackagePrivate`path$, 
+            TypeSystem`NestedGrid`PackagePrivate`makePathElements]), Null :> 
+         Spacer[10], Blank[] :> Spacer[10]}], 
+       TrackedSymbols :> {
+        TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$}], FrameStyle -> 
+      None, ImageMargins -> 0, FrameMargins -> 0, Alignment -> Top, 
+      ImageSize -> {Automatic, 15}], FontSize -> 1], 
+    TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = Null}, 
+    DynamicWrapperBox[
+     DynamicBox[ToBoxes[
+       Dataset`DatasetContent[
+       2, "Path" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$path$$], 
+        "Grid" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$grid$$], "State" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$state$$], "VPos" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$vPos$$], "HPos" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$hPos$$], "TopBar" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$topBar$$], "BottomBar" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$], "OutputID" -> 
+        Hold[
+          TypeSystem`NestedGrid`PackagePrivate`localHold[
+          TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]], StandardForm],
+      ImageSizeCache->{414., {300.634033203125, 306.365966796875}},
+      TrackedSymbols:>{
+       TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$grid$$}], 
+     TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = 
+     MouseAnnotation[],
+     ImageSizeCache->{414., {300.634033203125, 306.365966796875}}],
+    BaseStyle->{LineBreakWithin -> False},
+    DynamicModuleValues:>{},
+    Initialization:>(TypeSystem`NestedGrid`PackagePrivate`$outputID$$ = 
+     CreateUUID[]),
+    UnsavedVariables:>{TypeSystem`NestedGrid`PackagePrivate`$outputID$$}],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  Dataset`InterpretDataset[1],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.926417798470065*^9, 3.9264182980579233`*^9},
+ CellLabel->
+  "Out[864]=",ExpressionUUID->"46be74bb-1afc-4042-9273-00a339834bf7"]
+}, Open  ]]
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -44736,9 +46544,923 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
  CellChangeTimes->{3.926412998543242*^9, 3.926413036346353*^9},
  CellLabel->
   "Out[754]=",ExpressionUUID->"305c734d-f28f-4701-b8af-2ac6fa541acc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PieChart3D", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"poKontinentih", "//", 
+     RowBox[{"Query", "[", 
+      RowBox[{"All", ",", "\"\<Number of Accidents\>\""}], "]"}]}], "//", 
+    "Normal"}], ",", 
+   RowBox[{"ChartLabels", "->", 
+    RowBox[{"Placed", "[", 
+     RowBox[{
+      RowBox[{"MapThread", "[", 
+       RowBox[{
+        RowBox[{"Function", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"vzrok", ",", "vrednost"}], "}"}], ",", 
+          RowBox[{"Row", "[", 
+           RowBox[{"{", 
+            RowBox[{"vzrok", ",", "\"\<: \>\"", ",", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"NumberForm", "[", 
+               RowBox[{
+                RowBox[{"100.0", "*", 
+                 RowBox[{"vrednost", "/", 
+                  RowBox[{"Total", "[", 
+                   RowBox[{
+                    RowBox[{"poKontinentih", "//", 
+                    RowBox[{"Query", "[", 
+                    RowBox[{"All", ",", "\"\<Number of Accidents\>\""}], 
+                    "]"}]}], "//", "Normal"}], "]"}]}]}], ",", 
+                RowBox[{"{", 
+                 RowBox[{"3", ",", "1"}], "}"}]}], "]"}], "]"}], ",", 
+             "\"\<%\>\""}], "}"}], "]"}]}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"poKontinentih", "//", 
+            RowBox[{"Query", "[", 
+             RowBox[{"All", ",", "1"}], "]"}]}], "//", "Normal"}], ",", 
+          RowBox[{
+           RowBox[{"poKontinentih", "//", 
+            RowBox[{"Query", "[", 
+             RowBox[{"All", ",", "\"\<Number of Accidents\>\""}], "]"}]}], "//",
+            "Normal"}]}], "}"}]}], "]"}], ",", "\"\<VerticalCallout\>\""}], 
+     "]"}]}], ",", 
+   RowBox[{"PlotLabel", "->", 
+    RowBox[{"Style", "[", 
+     RowBox[{
+      RowBox[{"Framed", "[", "\"\<Kontinenti\>\"", "]"}], ",", "30", ",", 
+      RowBox[{"Darker", "[", 
+       RowBox[{"Gray", ",", "0.4"}], "]"}], ",", 
+      RowBox[{"Background", "->", 
+       RowBox[{"Lighter", "[", 
+        RowBox[{"Gray", ",", " ", "0.8"}], "]"}]}]}], "]"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.92641839544627*^9, 3.926418442925837*^9}},
+ CellLabel->
+  "In[866]:=",ExpressionUUID->"8e1dae76-e190-4545-8634-b9c3e28ab329"],
+
+Cell[BoxData[
+ Graphics3DBox[
+  DynamicModuleBox[{DynamicChart`click$1247339$1247724 = False, 
+   DynamicChart`click$1247377$1247724 = False, 
+   DynamicChart`click$1247405$1247724 = False, 
+   DynamicChart`click$1247433$1247724 = False, 
+   DynamicChart`click$1247461$1247724 = False, 
+   DynamicChart`click$1247489$1247724 = False, 
+   DynamicChart`click$1247517$1247724 = False, 
+   DynamicChart`click$1247545$1247724 = False, 
+   DynamicChart`click$1247573$1247724 = False}, 
+   {RGBColor[0.5, 0.5, 1.], EdgeForm[{GrayLevel[0], Opacity[0.1]}], {{{}, {
+       {RGBColor[0.980722, 0.7110406, 0.2420506], EdgeForm[{GrayLevel[0], 
+        Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   Polygon3DBox[CompressedData["
+1:eJzt1mtIU2EYB/BVlhVDwjIp7A5GF7TUlVH4mKRSJuuypOgiWIkzu1DGSpeM
+SsrWoiCxLKMoyiCsTArNerWJbJo6mFhqa7Utt+kuD2JMpZt98D0QTx/63F44
+cPidT+ccnv//mZdxeMv+cSKRaOzItW7k+n3vP/7jP/96kAXumhYdfv/OmlG5
+27l+3yWvl11QLzPIVjyBUY9WFSo2vPYyo2pSqCiijvtU66HuzBwvq1+jscYs
+03HPOz+9euWwh7W/KTc1ig3cu+wZ2VFZHlaZEHdxAI3csxOOj3E/d7OFcxUV
+d+veCe4+WDHL7mIZLlmhU9HNXX85IqB0qI+Jmk5mDQSbudfpu8LSvL1MvE3R
+GZj8mbu1cfDWXr2TKaeI9cZ+C/eWyuh7eN7BKh2KHeFqG/ebvk+nkyLtrEhj
+su0M6uFeefRcvu7VFzZhvvRET56de3tuQ0q/xMZetjblSNsc3IOaxpenXbew
+ld8THbGTe7mrLQ/LypyfWNKZ1Ynpi/u4F7v3vB6/+SPrWJGSXhrh4l4fJh98
+8LiL/ZhSrP0Y4uY+Y050kKm/gyVMK9HGmQUfqkmXKWcb2cQTx+R9RR7usrdP
+q3tzWtmw+N5GSYiX+6PIko6SU42sID4+SaMS/EZL0Vapp5bFnAwLKGwW3O3p
+yc8895BdvLYkr+2r4FETzPJVt9VgmFmxfO1Pwb/5IsWS8meQmms6brALnu2T
+Xwm11UOw9svu4seCz2sIVz79rIeqqwuq9GmCJx/R+bZbDLA0itXoTMJ7jT1w
++2vBm3aIUFpaghIFP1vaKZZq3sOsWqc1ViN8nzJJqMoa9wFSG4Jd414I39ks
+aVYdMZqhbdEm8Uat8F/og3957ne//99OzxECPXcI9Jwi0HONQOcAAp0bCHTO
+INC5hEDnGAKdewh0TiLQuYpA5zACndsIdM4j0L2AQPcIAt07CHRPIdC9hkD3
+IALdmwh0zyLQvYxA9zgC3fsj/5fcE0ac3CsQ6D0Egd5bEOg9B4HeixDoPWp0
+Xv7cuxB+AZQ+nnA=
+                    "]], 
+                   
+                   BSplineSurface3DBox[{{{0.4972802407981742, 
+                    0.8675899734965301, 0.}, {-0.37030973269835593`, 
+                    1.3648702142947042`, 0.}, {-0.8675899734965301, 
+                    0.4972802407981742, 0.}, {-1., 0.2662684250050661, 
+                    0.}, {-1., 7.709536333063144*^-17, 
+                    0.}}, {{
+                    0.4972802407981742, 0.8675899734965301, 
+                    1}, {-0.37030973269835593`, 1.3648702142947042`, 
+                    1}, {-0.8675899734965301, 0.4972802407981742, 1}, {-1., 
+                    0.2662684250050661, 1}, {-1., 7.709536333063144*^-17, 
+                    1}}}, SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.7071067811865475, 1., 
+                    0.9663306818828972, 1.}, {1., 0.7071067811865475, 1., 
+                    0.9663306818828972, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 2, 2, 2}}], 
+                   
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
+                    0.4972802407981742, 0.8675899734965301, 1.}, {
+                    0.4972802407981742, 0.8675899734965301, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {-1., 
+                    1.2246467991473532`*^-16, 1.}, {-1., 
+                    1.2246467991473532`*^-16, 0.}}}]}},
+                 
+                 ImageSizeCache->{{163.66913625527255`, 
+                  402.70550113571255`}, {-178.4980177331829, 
+                  44.69224023787331}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.5013580353409257, 0.8652399207151085, 
+                 0.5}, {-0.5514938388750183, 0.9517639127866194, 0.5}}], 
+                Line3DBox[{{-0.5514938388750183, 0.9517639127866194, 
+                 0.5}, {-1.1, 0.9517639127866194, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.5013580353409257, 0.8652399207151085, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox[
+                 
+                 TemplateBox[{
+                  "\"North America\"", "\": \"", "\"33.3\"", "\"%\""},
+                  "RowDefault"], "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 FontColor->GrayLevel[0]], {-1.1400000000000001`, 
+                0.9517639127866194, 0.5}, {1, 0}]},
+              StatusArea[#, 1333]& ,
+              TagBoxNote->"1333"],
+             StyleBox["1333", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[1333, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$1247339$1247724, 
+               FEPrivate`Not[DynamicChart`click$1247339$1247724]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$1247339$1247724, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.10027160706818515`, 0.1730479841430217, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], 
+           TrackedSymbols :> {DynamicChart`click$1247339$1247724}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.990361, 0.5990203000000001, 0.1710253], EdgeForm[{
+        GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   Polygon3DBox[CompressedData["
+1:eJxTTMoPSmVmYGBgAmIpIAaxRwF54L7p6YaCy/ftz2sG8Pgcfm0PEw+7VdIY
+cvCh/bEOiaVh81/BxU+FLfeSanls73rZbYVSzEu4eHZO2uQf+k/tD749mKb9
++zlcXIlrlsnPQ8/szxW0y/PXPYOLG5n8M3W2fmE/069RsvfZE7i43DKLnzLT
+X9r3VEyf1mz2GC6eLK/s8O7KK3uzaamL3uY/hIv/FnnF7fT5tb2BqH/dQc37
+cHGPqrNBJz68sS8O13su4n8bLl73oLEr/Mxb+yB2k8rokOtwcUbhZNZ3Le/s
+a3jrTjvYXYaLP429p7BZ8r29wKtleorK5+Di2MEHHPKj4jBx7OH5wR57+H+w
+xx5fH+yxx+8He+zp4YM99vTzwR57evtgjz19frDHnp4/2GNP/x/sseeXD/bY
+89cHe+z58YM9AAmd6xA=
+                    "]], 
+                   
+                   BSplineSurface3DBox[{{{0.9718871728863944, 
+                    0.23544707086496475`, 0.}, {0.8705806822806655, 
+                    0.6536237692971677, 0.}, {0.4972802407981742, 
+                    0.8675899734965301, 
+                    0.}}, {{0.9718871728863944, 0.23544707086496475`, 1}, {
+                    0.8705806822806655, 0.6536237692971677, 1}, {
+                    0.4972802407981742, 0.8675899734965301, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9185781962721445, 1.}, {1., 
+                    0.9185781962721445, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
+                    0.9718871728863944, 0.23544707086496475`, 1.}, {
+                    0.9718871728863944, 0.23544707086496475`, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
+                    0.4972802407981742, 0.8675899734965301, 1.}, {
+                    0.4972802407981742, 0.8675899734965301, 0.}}}]}},
+                 
+                 ImageSizeCache->{{312.96171060384006`, 
+                  468.29099724012104`}, {-120.14921622334202`, 
+                  23.230056472333473`}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{0.7996964328387468, 0.6004045430415927, 0.5}, {
+                 0.8796660761226216, 0.660444997345752, 0.5}}], 
+                Line3DBox[{{0.8796660761226216, 0.660444997345752, 0.5}, {1.1,
+                  0.660444997345752, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{0.7996964328387468, 0.6004045430415927, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox[
+                 TemplateBox[{"\"Africa\"", "\": \"", "\"12.9\"", "\"%\""},
+                  "RowDefault"], "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 FontColor->GrayLevel[0]], {1.1400000000000001`, 
+                0.660444997345752, 0.5}, {-1, 0}]},
+              StatusArea[#, 518]& ,
+              TagBoxNote->"518"],
+             StyleBox["518", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[518, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$1247377$1247724, 
+               FEPrivate`Not[DynamicChart`click$1247377$1247724]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$1247377$1247724, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {0.15993928656774936`, 0.12008090860831855`, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], 
+           TrackedSymbols :> {DynamicChart`click$1247377$1247724}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[1., 0.487, 0.1], EdgeForm[{GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   Polygon3DBox[CompressedData["
+1:eJxTTMoPSmVmYGBgAmIJIAaxRwF+8DT2nsJmyff2Aq+W6Skqn7OHib9yfrJk
+dst7+5TKoPwPisfg4n/VuhKnnXtv33r2g4OD8B64uNaBEJ6w7+/to9pPhE7t
+Wg4Xv3ZymdCGf+/tN969FXcneNJ+mHhomfWxOU/e21+R/JeY/2oLXHzKDp1U
+85Xv7eM6Nx5nm3oILj71T83fvT7v7S/efvs8e+EpuLg6j5POxPPv7Hcv5rP8
+73ERLv7t9pYdxkbv7NklOXMs9a/Cxbdv7ef2Kn1rr+l2aXHg/xtwcZ56z+aZ
+M9/Yhz37IOaz9Q5cHDv4YD8qDhHHHm4f7LGH8wd77PHywR57PH6wxx7vH+yx
+p5MP9tjT1Qd77Onwgz32dPvBHns6/2CPPV98sMeejz7YAwALle7+
+                    "]], 
+                   
+                   BSplineSurface3DBox[{{{
+                    0.8937499584389754, -0.44856550445874654`, 0.}, {
+                    1.0582109035790603`, -0.12088323414876224`, 0.}, {
+                    0.9718871728863945, 0.23544707086496472`, 
+                    0.}}, {{0.8937499584389754, -0.44856550445874654`, 1}, {
+                    1.0582109035790603`, -0.12088323414876224`, 1}, {
+                    0.9718871728863945, 0.23544707086496472`, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9388851597130267, 1.}, {1., 
+                    0.9388851597130267, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
+                    0.8937499584389754, -0.44856550445874654`, 1.}, {
+                    0.8937499584389754, -0.44856550445874654`, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
+                    0.9718871728863944, 0.23544707086496475`, 1.}, {
+                    0.9718871728863944, 0.23544707086496475`, 0.}}}]}},
+                 
+                 ImageSizeCache->{{326.61004524909504`, 
+                  490.093117581198}, {-34.76234464601532, 84.99490344967995}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{0.9935385132168922, -0.11349547460038782`, 0.5}, {
+                 1.0928923645385815`, -0.12484502206042661`, 0.5}}], 
+                Line3DBox[{{1.0928923645385815`, -0.12484502206042661`, 
+                 0.5}, {1.1, -0.12484502206042661`, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{0.9935385132168922, -0.11349547460038782`, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox[
+                 TemplateBox[{"\"Europe\"", "\": \"", "\"11.2\"", "\"%\""},
+                  "RowDefault"], "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 FontColor->GrayLevel[0]], {
+                1.1400000000000001`, -0.12484502206042661`, 0.5}, {-1, 0}]},
+              StatusArea[#, 448]& ,
+              TagBoxNote->"448"],
+             StyleBox["448", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[448, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$1247405$1247724, 
+               FEPrivate`Not[DynamicChart`click$1247405$1247724]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$1247405$1247724, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {0.19870770264337845`, -0.022699094920077566`, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], 
+           TrackedSymbols :> {DynamicChart`click$1247405$1247724}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.8785000000000001, 0.4483, 0.1], EdgeForm[{GrayLevel[0], 
+        Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   Polygon3DBox[CompressedData["
+1:eJxTTMoPSmVmYGBgAmIJIAaxRwF+wFPv2Txz5hv7kGcfxHy23tkPE59/8sTt
+jpmv7aOunJfZbfgALj5hUvsU4+pX9ldPXlvC+/0hXFyotGHjZfuX9vtaYmrX
+rHgMF++14Rc4/OK5fYxGnfQel6dw8Wv5i19Xlj+zX+muPbPi5DO4eImhqmPv
+2yf27El7lpibvoCLM3y5ILTW57H9/XvVIVltL+HiGeKFfYumPbS/fFrhzrzd
+r+Di9Wy/9OfMum+vPj1aqenya7i4nUF7qdfT2/ZpLDtMHp55Axf3rTzKlih4
+w9611WbGqmVvEfZiBR/sR8Uh4tjD7YM99nD+YI89Xj7YY49HoL1Y4/2DPfZ0
+8sEee7r6YI89HX6wx55uP9hjT+cf7LHniw/22PPRB3sAnwfvnA==
+                    "]], 
+                   
+                   BSplineSurface3DBox[{{{
+                    0.3760607305647639, -0.9265950177543024, 0.}, {
+                    0.7248841962946794, -0.7850242075869327, 0.}, {
+                    0.8937499584389754, -0.44856550445874654`, 
+                    0.}}, {{0.3760607305647639, -0.9265950177543024, 1}, {
+                    0.7248841962946794, -0.7850242075869327, 1}, {
+                    0.8937499584389754, -0.44856550445874654`, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.935880020056179, 1.}, {1., 
+                    0.935880020056179, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
+                    0.3760607305647639, -0.9265950177543024, 1.}, {
+                    0.3760607305647639, -0.9265950177543024, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
+                    0.8937499584389754, -0.44856550445874643`, 1.}, {
+                    0.8937499584389754, -0.44856550445874643`, 0.}}}]}},
+                 
+                 ImageSizeCache->{{331.59217050681474`, 477.9034727263386}, {
+                  1.3534459536803922`, 151.3268579143796}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{0.6784046361666718, -0.7346884711410447, 0.5}, {
+                 0.7462450997833391, -0.8081573182551492, 0.5}}], 
+                Line3DBox[{{0.7462450997833391, -0.8081573182551492, 0.5}, {
+                 1.1, -0.8081573182551492, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{0.6784046361666718, -0.7346884711410447, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox[
+                 
+                 TemplateBox[{
+                  "\"South America\"", "\": \"", "\"11.5\"", "\"%\""},
+                  "RowDefault"], "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 FontColor->GrayLevel[0]], {
+                1.1400000000000001`, -0.8081573182551492, 0.5}, {-1, 0}]},
+              StatusArea[#, 459]& ,
+              TagBoxNote->"459"],
+             StyleBox["459", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[459, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$1247433$1247724, 
+               FEPrivate`Not[DynamicChart`click$1247433$1247724]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$1247433$1247724, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {0.13568092723333436`, -0.14693769422820896`, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], 
+           TrackedSymbols :> {DynamicChart`click$1247433$1247724}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.757, 0.40959999999999996`, 0.1], EdgeForm[{GrayLevel[0], 
+        Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   Polygon3DBox[CompressedData["
+1:eJxTTMoPSmVmYGBgAmIhIAaxhyvwrTzKlih4w9611WbGqmVv98PERTOljLfr
+XbE38m66whD3Di4u9lH9V7bZBXvh68HBp78gxCU/rFJsjDxh7z5/S0VG1nu4
++F+tHdMEdQ7Ym/2ONI/ahxB3e7f7vPHW9fYpvYenu31AiEsYfNu0pDZtv4jS
+cokf/xHib318Yzc7bty/bbXHi9i3CHG9KtWK2nsH9j943vCtewdCHDv4YD/U
+xbH794M99vD5YI89PD/YYw//D/bY4+uDPfb4/WCPPT18sMeefj7YY09vH+wB
+zNGzwg==
+                    "]], 
+                   
+                   BSplineSurface3DBox[{{{-0.13178985945246907`, \
+-0.9912776770136098, 0.}, {0.13069938423697947`, -1.026175487521999, 0.}, {
+                    0.37606073056476397`, -0.9265950177543025, 
+                    0.}}, {{-0.13178985945246907`, -0.9912776770136098, 1}, {
+                    0.13069938423697947`, -1.026175487521999, 1}, {
+                    0.37606073056476397`, -0.9265950177543025, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9666829795504692, 1.}, {1., 
+                    0.9666829795504692, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.13178985945246907`, -0.9912776770136098, 
+                    1.}, {-0.13178985945246907`, -0.9912776770136098, 0.}}}], 
+                   
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
+                    0.3760607305647639, -0.9265950177543024, 1.}, {
+                    0.3760607305647639, -0.9265950177543024, 0.}}}]}},
+                 
+                 ImageSizeCache->{{313.6331639446961, 408.451035032509}, {
+                  12.631166404690731`, 168.0652128133902}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{0.12634487017961496`, -0.9919863778194216, 0.5}, {
+                 0.13897935719757648`, -1.0911850156013638`, 0.5}}], 
+                Line3DBox[{{0.13897935719757648`, -1.0911850156013638`, 
+                 0.5}, {1.1, -1.0911850156013638`, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{0.12634487017961496`, -0.9919863778194216, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox[
+                 
+                 TemplateBox[{
+                  "\"Central America\"", "\": \"", "\"8.2\"", "\"%\""},
+                  "RowDefault"], "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 FontColor->GrayLevel[0]], {
+                1.1400000000000001`, -1.0911850156013638`, 0.5}, {-1, 0}]},
+              StatusArea[#, 330]& ,
+              TagBoxNote->"330"],
+             StyleBox["330", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[330, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$1247461$1247724, 
+               FEPrivate`Not[DynamicChart`click$1247461$1247724]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$1247461$1247724, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {0.025268974035922993`, -0.1983972755638843, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], 
+           TrackedSymbols :> {DynamicChart`click$1247461$1247724}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.6959467, 0.415, 0.39389455000000007`], EdgeForm[{GrayLevel[
+        0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   Polygon3DBox[CompressedData["
+1:eJxTTMoPSmVmYGBgAmINIAaxR8HwBnpVqhW19w7sf/C84Vv3jvf7YeI3mx2s
+Qy6c2H/vuWjAjBSE+I0o7m3NIRf2WxSqHLz24R1c3Kq1lCnI4Mr+H9P7+vfE
+IsR9A884rfl+ff8/bcbD91a/hYs7LV+Wv2/Z7f21kj96P95+Axfvv68sfdby
+/n6GHP3px9+9hov7p+XPmRP2cH/ic0uVwKev4OLnOSc8Ofjv0X7mHFG12Qde
+wsW3aJ7ZuGLyk/39hzZrnGt8ARc/vY/1/DbhZ/sTbnSr6Wo9R4gv26uaXvt8
+f8DpZEeR3U/h4nXpzh7e51/sL3GZn/jd9AlcPFH+wxMejlf7txWV702Y8wgu
+XtX9RSFf7fV+zdhZnu/fP4CLvzsRddNf883+/OAezVUp9+DiK2Z/O7GC/+1+
+njoRhdWnbsHFr+VLTZpw4+3+qvbrXe2i1+Hiu54yr7Zufrf/4crKvwyelxHh
+mSSg85fv/X4+e/GqhxfPwcWxgw/2o+LDQxx7vH+wx55OPthjT1cf7LGnww/2
+2NPtB3vs6fyDPfZ88cEeez76YI893wHFsebTD/bY8/UHe+zlwAd77OXGB3vs
+5QwwPLGWSx/ssZdjH+yxl3sf7LGXkx/ssZerH+yxl8Mf7AGxx6Sz
+                    "]], 
+                   
+                   BSplineSurface3DBox[{{{-0.9705797062516199, \
+-0.24078005277123576`, 0.}, {-0.80665568005234, -0.901554611813473, 
+                    0.}, {-0.13178985945246904`, -0.9912776770136098, 
+                    0.}}, {{-0.9705797062516199, -0.24078005277123576`, 
+                    1}, {-0.80665568005234, -0.901554611813473, 
+                    1}, {-0.13178985945246904`, -0.9912776770136098, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.826617340265919, 1.}, {1., 
+                    0.826617340265919, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9705797062516199, -0.24078005277123576`, 
+                    1.}, {-0.9705797062516199, -0.24078005277123576`, 0.}}}], 
+                   
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.13178985945246907`, -0.9912776770136098, 
+                    1.}, {-0.13178985945246907`, -0.9912776770136098, 0.}}}]}},
+                 
+                 ImageSizeCache->{{197.2805632121192, 355.5707708110162}, {
+                  20.834361293956874`, 181.7511566809383}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.6667955727552616, -0.7452406753217263, 
+                 0.5}, {-0.7334751300307878, -0.819764742853899, 0.5}}], 
+                Line3DBox[{{-0.7334751300307878, -0.819764742853899, 
+                 0.5}, {-1.1, -0.819764742853899, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.6667955727552616, -0.7452406753217263, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox[
+                 TemplateBox[{"\"Asia\"", "\": \"", "\"19.0\"", "\"%\""},
+                  "RowDefault"], "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -0.819764742853899, 0.5}, {1, 
+                0}]},
+              StatusArea[#, 762]& ,
+              TagBoxNote->"762"],
+             StyleBox["762", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[762, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$1247489$1247724, 
+               FEPrivate`Not[DynamicChart`click$1247489$1247724]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$1247489$1247724, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.13335911455105232`, -0.14904813506434528`, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], 
+           TrackedSymbols :> {DynamicChart`click$1247489$1247724}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.6348934, 0.4204, 0.6877891], EdgeForm[{GrayLevel[0], 
+        Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   Polygon3DBox[CompressedData["
+1:eJxTTMoPSmVmYGBgAmIOIAaxaQ2ckgR0/vK9389nL1718OK5/TDxmXqCorEN
+7/dvXtBYer7xGFw8lu+ct9659/uFZKa2rzbYAxevZJb4JfHj/X722f4Tz1Qv
+249uDyr4YE8tcez2frDH7s4P9tj99cEeezh8sAcAcFdMWg==
+                    "]], 
+                   
+                   BSplineSurface3DBox[{{{-0.9990353474278059, \
+-0.04391326211753293, 0.}, {-0.9946461329140034, -0.14376875531672842`, 
+                    0.}, {-0.9705797062516199, -0.24078005277123574`, 
+                    0.}}, {{-0.9990353474278059, -0.04391326211753293, 
+                    1}, {-0.9946461329140034, -0.14376875531672842`, 
+                    1}, {-0.9705797062516199, -0.24078005277123574`, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9950419266572341, 1.}, {1., 
+                    0.9950419266572341, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9990353474278059, -0.04391326211753293, 
+                    1.}, {-0.9990353474278059, -0.04391326211753293, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9705797062516199, -0.24078005277123576`, 
+                    1.}, {-0.9705797062516199, -0.24078005277123576`, 0.}}}]}},
+                 
+                 ImageSizeCache->{{193.32828055276994`, 339.1491584143979}, {
+                  20.834361293956874`, 78.08443397541481}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.9897146044369175, -0.14305593928347002`, 
+                 0.5}, {-1.0886860648806094`, -0.15736153321181703`, 0.5}}], 
+                Line3DBox[{{-1.0886860648806094`, -0.15736153321181703`, 
+                 0.5}, {-1.1, -0.15736153321181703`, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.9897146044369175, -0.14305593928347002`, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox[
+                 TemplateBox[{"\"Oceania\"", "\": \"", "\"3.2\"", "\"%\""},
+                  "RowDefault"], "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -0.15736153321181703`, 0.5}, {1,
+                 0}]},
+              StatusArea[#, 127]& ,
+              TagBoxNote->"127"],
+             StyleBox["127", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[127, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$1247517$1247724, 
+               FEPrivate`Not[DynamicChart`click$1247517$1247724]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$1247517$1247724, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.19794292088738352`, -0.028611187856694004`, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], 
+           TrackedSymbols :> {DynamicChart`click$1247517$1247724}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.5357467, 0.46, 0.7487929], EdgeForm[{GrayLevel[0], Opacity[
+        0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    0.}, {-0.9990353474278059, -0.04391326211753293, 
+                    0.}, {-0.9999889244217958, -0.0047064884723045115`, 
+                    0.}}, {{0., 0., 1.}, {0., 0., 
+                    1.}, {-0.9999889244217958, -0.0047064884723045115`, 
+                    1.}, {-0.9990353474278059, -0.04391326211753293, 1.}}}], 
+                   
+                   BSplineSurface3DBox[{{{-0.9999889244217958, \
+-0.0047064884723045115`, 0.}, {-0.9998966162738678, -0.024319226526387114`, 
+                    0.}, {-0.9990353474278058, -0.04391326211753293, 
+                    0.}}, {{-0.9999889244217958, -0.0047064884723045115`, 
+                    1}, {-0.9998966162738678, -0.024319226526387114`, 
+                    1}, {-0.9990353474278058, -0.04391326211753293, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.999807721463388, 1.}, {1., 
+                    0.999807721463388, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9999889244217958, -0.0047064884723045115`, 
+                    1.}, {-0.9999889244217958, -0.0047064884723045115`, 
+                    0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9990353474278059, -0.04391326211753293, 
+                    1.}, {-0.9990353474278059, -0.04391326211753293, 0.}}}]}},
+                 
+                 
+                 ImageSizeCache->{{193.19582984738378`, 334.8473927722456}, {
+                  20.834361293956874`, 50.784170799860334`}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.9997043576157276, -0.024314550461099753`, 
+                 0.5}, {-1.0996747933773006`, -0.02674600550720973, 0.5}}], 
+                Line3DBox[{{-1.0996747933773006`, -0.02674600550720973, 
+                 0.5}, {-1.1, -0.02674600550720973, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.9997043576157276, -0.024314550461099753`, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox[
+                 TemplateBox[{"\"World\"", "\": \"", "\"0.6\"", "\"%\""},
+                  "RowDefault"], "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -0.02674600550720973, 0.5}, {1, 
+                0}]},
+              StatusArea[#, 25]& ,
+              TagBoxNote->"25"],
+             StyleBox["25", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[25, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$1247545$1247724, 
+               FEPrivate`Not[DynamicChart`click$1247545$1247724]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$1247545$1247724, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.19994087152314555`, -0.004862910092219951, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], 
+           TrackedSymbols :> {DynamicChart`click$1247545$1247724}]],
+         "DelayedClickEffect3D"]}, 
+       {RGBColor[0.4366, 0.49960000000000004`, 0.8097967], EdgeForm[{
+        GrayLevel[0], Opacity[0.1]}], 
+        TagBox[GeometricTransformation3DBox[
+          TagBox[
+           TagBox[
+            TooltipBox[
+             TagBox[{
+               TagBox[
+                DynamicBox[{
+                  FEPrivate`If[
+                   CurrentValue["MouseOver"], 
+                   EdgeForm[{
+                    RGBColor[
+                    0.6666666666666666, 0.6666666666666666, 
+                    0.6666666666666666], 
+                    AbsoluteThickness[1.5]}], {}, {}], {
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    0.}, {-0.9999889244217958, -0.0047064884723045115`, 
+                    0.}, {-1., -1.2246467991473532`*^-16, 0.}}, {{0., 0., 
+                    1.}, {0., 0., 1.}, {-1., -1.2246467991473532`*^-16, 
+                    1.}, {-0.9999889244217958, -0.0047064884723045115`, 
+                    1.}}}], 
+                   
+                   BSplineSurface3DBox[{{{-1., -1.2246467991473532`*^-16, 
+                    0.}, {-1., -0.002353257267984053, 
+                    0.}, {-0.9999889244217958, -0.0047064884723045115`, 
+                    0.}}, {{-1., -1.2246467991473532`*^-16, 
+                    1}, {-1., -0.002353257267984053, 
+                    1}, {-0.9999889244217958, -0.0047064884723045115`, 1}}}, 
+                    SplineDegree -> {1, 2}, 
+                    SplineWeights -> {{1., 0.9999972311016154, 1.}, {1., 
+                    0.9999972311016154, 1.}}, 
+                    SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-1., -1.2246467991473532`*^-16, 
+                    1.}, {-1., -1.2246467991473532`*^-16, 0.}}}], 
+                   
+                   Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
+                    1.}, {-0.9999889244217958, -0.0047064884723045115`, 
+                    1.}, {-0.9999889244217958, -0.0047064884723045115`, 
+                    0.}}}]}},
+                 
+                 ImageSizeCache->{{193.1942914606065, 333.99097059177086`}, {
+                  20.834361293956874`, 45.34514375619477}}],
+                "DelayedMouseEffectStyle"], 
+               {GrayLevel[0], Thickness[0.0025], Opacity[1], 
+                Line3DBox[{{-0.9999972311016155, -0.002353250752064523, 
+                 0.5}, {-1.0999969542117771`, -0.0025885758272709753`, 0.5}}],
+                 Line3DBox[{{-1.0999969542117771`, -0.0025885758272709753`, 
+                 0.5}, {-1.1, -0.0025885758272709753`, 0.5}}]}, 
+               {GrayLevel[0], Opacity[1], 
+                SphereBox[{-0.9999972311016155, -0.002353250752064523, 0.5}, 
+                 0.016666666666666666`]}, Text3DBox[
+                StyleBox[
+                 
+                 TemplateBox[{"\"Antarctica\"", "\": \"", "\"0.1\"", "\"%\""},
+                  
+                  "RowDefault"], "Graphics3DLabel",
+                 StripOnInput->False,
+                 LineColor->GrayLevel[0],
+                 FrontFaceColor->GrayLevel[0],
+                 BackFaceColor->GrayLevel[0],
+                 GraphicsColor->GrayLevel[0],
+                 
+                 FontColor->GrayLevel[
+                  0]], {-1.1400000000000001`, -0.0025885758272709753`, 0.5}, {
+                1, 0}]},
+              StatusArea[#, 3]& ,
+              TagBoxNote->"3"],
+             StyleBox["3", {
+               GrayLevel[0], "Graphics3DLabel"}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[3, {
+               GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
+           EventHandlerTag[{
+            "MouseClicked" :> 
+             FEPrivate`Set[DynamicChart`click$1247573$1247724, 
+               FEPrivate`Not[DynamicChart`click$1247573$1247724]], 
+             PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+             True}]], Dynamic[
+          FEPrivate`If[
+           DynamicChart`click$1247573$1247724, {{{1., 0., 0.}, {0., 1., 0.}, {
+             0., 0., 1.}}, {-0.19999944622032312`, -0.0004706501504129046, 
+             0.}}, {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {{1, 0, 0}, {0, 1, 0}, {
+            0, 0, 1}}], 
+           TrackedSymbols :> {DynamicChart`click$1247573$1247724}]],
+         "DelayedClickEffect3D"]}}}, {}}, {}},
+   DynamicModuleValues:>{}],
+  BoxRatios->{1, 1, 0.1},
+  Boxed->False,
+  FaceGridsStyle->Automatic,
+  ImageSize->{671.398583295064, 434.},
+  Lighting->"Neutral",
+  PlotLabel->FormBox[
+    StyleBox[
+     FrameBox["\"Kontinenti\"", StripOnInput -> False], 30, 
+     RGBColor[0.3, 0.3, 0.3], Background -> RGBColor[0.9, 0.9, 0.9], 
+     StripOnInput -> False], TraditionalForm],
+  PlotRange->{{1.2, -1.2}, {1.2, -1.2}, {0., 1.02}},
+  ViewPoint->{-0.03406094463955678, -0.03317173556581654, 3.1237380632840868`},
+  ViewVertical->{0.017220863093552728`, 0.11500099062561613`, 
+   0.9932160963402878}]], "Output",
+ CellChangeTimes->{3.926418456661825*^9},
+ CellLabel->
+  "Out[866]=",ExpressionUUID->"5bd779c1-4cd3-4e90-86e9-d5528b83f72b"]
 }, Open  ]]
 }, Closed]]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -44833,7 +47555,7 @@ Cell[BoxData[
    3.926413639378458*^9}, {3.926413709666472*^9, 3.926413710950144*^9}, {
    3.926414619902906*^9, 3.926414740396996*^9}},
  CellLabel->
-  "In[791]:=",ExpressionUUID->"0fcb7344-d015-42a3-a592-bf417faddff7"],
+  "In[867]:=",ExpressionUUID->"0fcb7344-d015-42a3-a592-bf417faddff7"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -44907,7 +47629,7 @@ Cell[BoxData[
         "United States Virgin Islands", "Uruguay", "Uzbekistan", "Vanuatu", 
         "Vatican City", "Venezuela", "Vietnam", "Wallis and Futuna Islands", 
         "West Bank", "Western Sahara", "Yemen", "Zambia", "Zimbabwe"}, 
-      "Input" -> "~5f16edcb050517c3"|>, 
+      "Input" -> "~1f9b34ea35add7e2"|>, 
     "Crash cause" -> <|
      "Interpreter" -> {
        "Human factor", "Unknown", "Technical failure", "Other causes", 
@@ -45159,9 +47881,9 @@ Cell[BoxData[
    3.9264125121425457`*^9, 3.926412582680381*^9, 3.9264130978912077`*^9, 
    3.926413229914876*^9, {3.9264136320497017`*^9, 3.926413641040596*^9}, 
    3.92641371157697*^9, 3.926414621170878*^9, {3.926414668695528*^9, 
-   3.926414741032694*^9}},
+   3.926414741032694*^9}, 3.9264186131519547`*^9},
  CellLabel->
-  "Out[791]=",ExpressionUUID->"b8dc22d0-5281-422b-b468-fff8daec3118"]
+  "Out[867]=",ExpressionUUID->"31ff0bb8-5bfc-4b50-a374-80a451912b96"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -45182,17 +47904,24 @@ Cell[BoxData[
           RowBox[{
            RowBox[{"DateValue", "[", 
             RowBox[{
-             RowBox[{"#", "[", "\"\<Datum\>\"", "]"}], ",", "\"\<Year\>\""}], 
+             RowBox[{"#", "[", "\"\<Year\>\"", "]"}], ",", "\"\<Year\>\""}], 
             "]"}], "==", "leto"}], "&&", 
           RowBox[{"(", 
            RowBox[{
             RowBox[{
-             RowBox[{"#", "[", "\"\<Regija\>\"", "]"}], "==", "regija"}], "||", 
-            RowBox[{"regija", "==", "\"\<World\>\""}]}], ")"}], "&&", 
+             RowBox[{"#", "[", "\"\<Region\>\"", "]"}], "==", "regija"}], "||", 
+            RowBox[{"regija", "==", 
+             RowBox[{"{", 
+              RowBox[{
+              "\"\<North America\>\"", ",", "\"\<Africa\>\"", ",", 
+               "\"\<Europe\>\"", ",", "\"\<South America\>\"", ",", 
+               "\"\<Central America\>\"", ",", "\"\<Asia\>\"", ",", 
+               "\"\<Oceania\>\"", ",", "\"\<World\>\"", ",", 
+               "\"\<Antarctica\>\""}], "}"}]}]}], ")"}], "&&", 
           RowBox[{"(", 
            RowBox[{
             RowBox[{
-             RowBox[{"#", "[", "\"\<Pre\[ZHacek]iveli\>\"", "]"}], "==", 
+             RowBox[{"#", "[", "\"\<Survivors\>\"", "]"}], "==", 
              "pre\[ZHacek]iveli"}], "||", 
             RowBox[{"pre\[ZHacek]iveli", "==", "\"\<Yes\>\""}], "||", 
             RowBox[{"pre\[ZHacek]iveli", "==", "\"\<No\>\""}]}], ")"}], "&&", 
@@ -45200,20 +47929,21 @@ Cell[BoxData[
           RowBox[{"(", 
            RowBox[{
             RowBox[{
-             RowBox[{"#", "[", "\"\<Faza\>\"", "]"}], "==", "faza"}], "||", 
+             RowBox[{"#", "[", "\"\<Flight phase\>\"", "]"}], "==", "faza"}], 
+            "||", 
             RowBox[{"faza", "==", "\"\<\>\""}]}], ")"}], "&&", 
           RowBox[{"(", 
            RowBox[{
             RowBox[{"StringContainsQ", "[", 
              RowBox[{
-              RowBox[{"#", "[", "\"\<Dr\[ZHacek]ava\>\"", "]"}], ",", 
+              RowBox[{"#", "[", "\"\<Country\>\"", "]"}], ",", 
               "dr\[ZHacek]ava"}], "]"}], "||", 
             RowBox[{"dr\[ZHacek]ava", "==", "\"\<\>\""}]}], ")"}], "&&", 
           RowBox[{"(", 
            RowBox[{
             RowBox[{
-             RowBox[{"#", "[", "\"\<Vzrok\>\"", "]"}], "==", "vzrok"}], "||", 
-            
+             RowBox[{"#", "[", "\"\<Crash cause\>\"", "]"}], "==", "vzrok"}], 
+            "||", 
             RowBox[{"vzrok", "==", "\"\<\>\""}]}], ")"}]}], "&"}]}], "]"}]}], 
      ";", "\[IndentingNewLine]", 
      RowBox[{"If", "[", 
@@ -45223,9 +47953,11 @@ Cell[BoxData[
        RowBox[{"Dataset", "[", "filteredData", "]"}], ",", 
        "\"\<Tak\[SHacek]na nesre\[CHacek]a se ni zgodila!\>\""}], "]"}]}]}], 
    "]"}]}]], "Input",
- CellChangeTimes->{{3.926416618863036*^9, 3.926416618865142*^9}},
+ CellChangeTimes->{{3.926416618863036*^9, 3.926416618865142*^9}, {
+  3.926416871059915*^9, 3.9264169248889437`*^9}, {3.926417082439274*^9, 
+  3.926417110592609*^9}},
  CellLabel->
-  "In[833]:=",ExpressionUUID->"7bf5637d-5f9d-4b3e-89f4-d82fa3bdd605"],
+  "In[837]:=",ExpressionUUID->"7bf5637d-5f9d-4b3e-89f4-d82fa3bdd605"],
 
 Cell[CellGroupData[{
 
@@ -45236,13 +47968,14 @@ Cell[BoxData[
    ",", "\"\<Sudan\>\"", ",", "\"\<Human factor\>\""}], "]"}]], "Input",
  CellChangeTimes->{{3.926416627463152*^9, 3.926416732227683*^9}},
  CellLabel->
-  "In[835]:=",ExpressionUUID->"d26b3443-e955-4775-a83c-70060451a64c"],
+  "In[838]:=",ExpressionUUID->"d26b3443-e955-4775-a83c-70060451a64c"],
 
 Cell[BoxData["\<\"Tak\[SHacek]na nesre\[CHacek]a se ni zgodila!\"\>"], \
 "Output",
- CellChangeTimes->{3.926416701123858*^9, 3.9264167327378187`*^9},
+ CellChangeTimes->{3.926416701123858*^9, 3.9264167327378187`*^9, 
+  3.926417117300037*^9},
  CellLabel->
-  "Out[835]=",ExpressionUUID->"7d0e6550-741d-47d3-b5a8-890600325ce9"]
+  "Out[838]=",ExpressionUUID->"8dfc888b-033c-4b66-9c73-a6a39017b3c0"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -45274,218 +48007,229 @@ Cell[CellGroupData[{
 Cell[197767, 3694, 239, 4, 30, "Input",ExpressionUUID->"82306002-00a4-422d-94ea-21f31ae07154"],
 Cell[198009, 3700, 374, 8, 36, "Output",ExpressionUUID->"3d999037-1b92-47f6-a3c0-69b036d3795a"]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 Cell[CellGroupData[{
-Cell[198432, 3714, 155, 3, 67, "Section",ExpressionUUID->"71a8a7bf-70ef-4d30-95aa-2eba443b31b6"],
+Cell[198432, 3714, 155, 3, 53, "Section",ExpressionUUID->"71a8a7bf-70ef-4d30-95aa-2eba443b31b6"],
 Cell[198590, 3719, 153, 3, 30, "Input",ExpressionUUID->"24288512-f029-4166-a1b5-11d962dd67b5"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[198780, 3727, 171, 3, 53, "Section",ExpressionUUID->"59116dfb-8676-403e-9b26-dc70fbffba88"],
-Cell[198954, 3732, 675, 18, 30, "Input",ExpressionUUID->"260db97d-f093-49de-aadb-b8c85025c6f9"],
+Cell[198780, 3727, 220, 4, 53, "Section",ExpressionUUID->"59116dfb-8676-403e-9b26-dc70fbffba88"],
+Cell[199003, 3733, 675, 18, 30, "Input",ExpressionUUID->"260db97d-f093-49de-aadb-b8c85025c6f9"],
 Cell[CellGroupData[{
-Cell[199654, 3754, 2576, 64, 157, "Input",ExpressionUUID->"710beaa7-34af-4e89-8a4f-a19f94949ec3"],
-Cell[202233, 3820, 72768, 1300, 551, 29998, 597, "CachedBoxData", "BoxData", "Output",ExpressionUUID->"f877aa9d-8d48-4748-85eb-3ec9205e199a"]
+Cell[199703, 3755, 2576, 64, 157, "Input",ExpressionUUID->"710beaa7-34af-4e89-8a4f-a19f94949ec3"],
+Cell[202282, 3821, 72768, 1300, 551, 29998, 597, "CachedBoxData", "BoxData", "Output",ExpressionUUID->"f877aa9d-8d48-4748-85eb-3ec9205e199a"]
 }, Open  ]],
-Cell[275016, 5123, 1118, 31, 52, "Input",ExpressionUUID->"41eee0d3-146e-42f8-8266-f8f8bd8feed1"],
+Cell[275065, 5124, 1118, 31, 52, "Input",ExpressionUUID->"41eee0d3-146e-42f8-8266-f8f8bd8feed1"],
 Cell[CellGroupData[{
-Cell[276159, 5158, 2561, 64, 178, "Input",ExpressionUUID->"c0739519-442a-4713-8779-077fecda9dc4"],
-Cell[278723, 5224, 30016, 602, 609, "Output",ExpressionUUID->"eb2b84fa-d8e2-4891-b66b-aa7ec7b3e0fb"]
+Cell[276208, 5159, 2561, 64, 178, "Input",ExpressionUUID->"c0739519-442a-4713-8779-077fecda9dc4"],
+Cell[278772, 5225, 30016, 602, 609, "Output",ExpressionUUID->"eb2b84fa-d8e2-4891-b66b-aa7ec7b3e0fb"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[308776, 5831, 272, 6, 54, "Subsection",ExpressionUUID->"d58f03d5-fec1-471b-a1ab-55740df3ffbb"],
-Cell[309051, 5839, 1070, 30, 52, "Input",ExpressionUUID->"f93903ea-d96f-4e40-9884-0eab7f03250b"],
+Cell[308825, 5832, 272, 6, 54, "Subsection",ExpressionUUID->"d58f03d5-fec1-471b-a1ab-55740df3ffbb"],
+Cell[309100, 5840, 1070, 30, 52, "Input",ExpressionUUID->"f93903ea-d96f-4e40-9884-0eab7f03250b"],
 Cell[CellGroupData[{
-Cell[310146, 5873, 428, 10, 30, "Input",ExpressionUUID->"60b9cf59-26b5-45d6-a32d-7e1d75fa832b"],
-Cell[310577, 5885, 30409, 550, 227, "Output",ExpressionUUID->"01424bb0-9c66-4e9a-8ed5-96416dd08f6f"]
+Cell[310195, 5874, 428, 10, 30, "Input",ExpressionUUID->"60b9cf59-26b5-45d6-a32d-7e1d75fa832b"],
+Cell[310626, 5886, 30409, 550, 227, "Output",ExpressionUUID->"01424bb0-9c66-4e9a-8ed5-96416dd08f6f"]
 }, Open  ]],
-Cell[341001, 6438, 408, 11, 30, "Input",ExpressionUUID->"4eac3314-cd54-4975-8711-8fdd8f1e4f31"]
+Cell[341050, 6439, 408, 11, 30, "Input",ExpressionUUID->"4eac3314-cd54-4975-8711-8fdd8f1e4f31"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[341446, 6454, 173, 3, 38, "Subsection",ExpressionUUID->"d930c5b9-f39a-4ddd-9b67-1f327df12dad"],
-Cell[341622, 6459, 547, 14, 30, "Input",ExpressionUUID->"944542e3-6477-4e4d-9c52-a92ac21ff5ea"],
-Cell[342172, 6475, 880, 15, 73, "Input",ExpressionUUID->"e3fe11c7-41be-4c5a-8646-bd804dbb1530"],
+Cell[341495, 6455, 173, 3, 38, "Subsection",ExpressionUUID->"d930c5b9-f39a-4ddd-9b67-1f327df12dad"],
+Cell[341671, 6460, 547, 14, 30, "Input",ExpressionUUID->"944542e3-6477-4e4d-9c52-a92ac21ff5ea"],
+Cell[342221, 6476, 880, 15, 73, "Input",ExpressionUUID->"e3fe11c7-41be-4c5a-8646-bd804dbb1530"],
 Cell[CellGroupData[{
-Cell[343077, 6494, 1357, 36, 94, "Input",ExpressionUUID->"76ef12c3-e06a-4d5b-8d0a-7979f085da1e"],
-Cell[344437, 6532, 44727, 835, 579, "Output",ExpressionUUID->"d3214a87-27f7-4db2-a948-64457f018839"]
+Cell[343126, 6495, 1357, 36, 94, "Input",ExpressionUUID->"76ef12c3-e06a-4d5b-8d0a-7979f085da1e"],
+Cell[344486, 6533, 44727, 835, 579, "Output",ExpressionUUID->"d3214a87-27f7-4db2-a948-64457f018839"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[389201, 7372, 2376, 59, 178, "Input",ExpressionUUID->"4a5a87d6-9702-4148-ae67-2e40db5c10bc"],
-Cell[391580, 7433, 85988, 1736, 607, "Output",ExpressionUUID->"a396980f-82e4-4ec2-9a5b-58ea5d183344"]
+Cell[389250, 7373, 2376, 59, 178, "Input",ExpressionUUID->"4a5a87d6-9702-4148-ae67-2e40db5c10bc"],
+Cell[391629, 7434, 85988, 1736, 607, "Output",ExpressionUUID->"a396980f-82e4-4ec2-9a5b-58ea5d183344"]
 }, Open  ]]
 }, Closed]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[477629, 9176, 260, 4, 53, "Section",ExpressionUUID->"9b793cd2-1715-463b-b301-9c345296c8a7"],
+Cell[477678, 9177, 260, 4, 53, "Section",ExpressionUUID->"9b793cd2-1715-463b-b301-9c345296c8a7"],
 Cell[CellGroupData[{
-Cell[477914, 9184, 181, 3, 54, "Subsection",ExpressionUUID->"fb84a9e1-7dbd-40bc-858e-4a0d056246f6"],
+Cell[477963, 9185, 181, 3, 54, "Subsection",ExpressionUUID->"fb84a9e1-7dbd-40bc-858e-4a0d056246f6"],
 Cell[CellGroupData[{
-Cell[478120, 9191, 1313, 34, 52, "Input",ExpressionUUID->"db23d7bc-f05d-4276-a521-ec51d411f481",
+Cell[478169, 9192, 1313, 34, 52, "Input",ExpressionUUID->"db23d7bc-f05d-4276-a521-ec51d411f481",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[479436, 9227, 448, 11, 30, "Input",ExpressionUUID->"c2e7040e-b835-43a3-9038-0ff721671137",
+Cell[479485, 9228, 448, 11, 30, "Input",ExpressionUUID->"c2e7040e-b835-43a3-9038-0ff721671137",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[479887, 9240, 184900, 3417, 653, "Output",ExpressionUUID->"dd2f5f49-fce6-44cd-be86-05ba37a71d83",
+Cell[479936, 9241, 184900, 3417, 653, "Output",ExpressionUUID->"dd2f5f49-fce6-44cd-be86-05ba37a71d83",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[664824, 12662, 184, 3, 45, "Subsubsection",ExpressionUUID->"381f3303-a8d3-4f56-9d9f-2c92c48f1224"],
+Cell[664873, 12663, 184, 3, 45, "Subsubsection",ExpressionUUID->"381f3303-a8d3-4f56-9d9f-2c92c48f1224"],
 Cell[CellGroupData[{
-Cell[665033, 12669, 363, 7, 30, "Input",ExpressionUUID->"756fd459-4eaa-484f-8646-f94e44b395ca"],
-Cell[665399, 12678, 65476, 1168, 471, "Output",ExpressionUUID->"bdfcf910-edd6-49b4-bc4e-78606f1edf5c"]
+Cell[665082, 12670, 363, 7, 30, "Input",ExpressionUUID->"756fd459-4eaa-484f-8646-f94e44b395ca"],
+Cell[665448, 12679, 65476, 1168, 471, "Output",ExpressionUUID->"bdfcf910-edd6-49b4-bc4e-78606f1edf5c"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[730912, 13851, 283, 5, 35, "Text",ExpressionUUID->"f6aa3f78-08c0-4ae0-9793-07433f06a03b",
+Cell[730961, 13852, 283, 5, 35, "Text",ExpressionUUID->"f6aa3f78-08c0-4ae0-9793-07433f06a03b",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[731198, 13858, 337, 7, 30, "Input",ExpressionUUID->"01c81bf2-2c1b-40b7-a939-2c723578ee33",
+Cell[731247, 13859, 337, 7, 30, "Input",ExpressionUUID->"01c81bf2-2c1b-40b7-a939-2c723578ee33",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[731538, 13867, 3576, 48, 476, "Output",ExpressionUUID->"8a4319a6-289d-45b5-b9dc-86cb9d705617",
+Cell[731587, 13868, 3576, 48, 476, "Output",ExpressionUUID->"8a4319a6-289d-45b5-b9dc-86cb9d705617",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}]
 }, Closed]]
 }, Closed]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[735175, 13922, 208, 4, 38, "Subsection",ExpressionUUID->"34693d88-79f7-4afd-af7c-12f3ca71f785"],
+Cell[735224, 13923, 208, 4, 38, "Subsection",ExpressionUUID->"34693d88-79f7-4afd-af7c-12f3ca71f785"],
 Cell[CellGroupData[{
-Cell[735408, 13930, 1551, 41, 52, "Input",ExpressionUUID->"0beb4d32-d327-4816-91d1-e584476ef6a8"],
-Cell[736962, 13973, 29330, 528, 201, "Output",ExpressionUUID->"6acdec98-6f62-494a-9bed-e2c477429348"]
+Cell[735457, 13931, 1551, 41, 52, "Input",ExpressionUUID->"0beb4d32-d327-4816-91d1-e584476ef6a8"],
+Cell[737011, 13974, 29330, 528, 201, "Output",ExpressionUUID->"6acdec98-6f62-494a-9bed-e2c477429348"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[766329, 14506, 2235, 58, 157, "Input",ExpressionUUID->"6a93756d-fa3b-4273-9243-3fbfc221e220"],
-Cell[768567, 14566, 25423, 508, 614, "Output",ExpressionUUID->"ad45d9f8-1457-45e0-9ec8-57fc5744d5ff"]
+Cell[766378, 14507, 2235, 58, 157, "Input",ExpressionUUID->"6a93756d-fa3b-4273-9243-3fbfc221e220"],
+Cell[768616, 14567, 25423, 508, 614, "Output",ExpressionUUID->"ad45d9f8-1457-45e0-9ec8-57fc5744d5ff"]
 }, Open  ]],
-Cell[794005, 15077, 1246, 33, 73, "Input",ExpressionUUID->"2e87cde3-fddc-464a-9091-ad43a1342439"],
+Cell[794054, 15078, 1246, 33, 73, "Input",ExpressionUUID->"2e87cde3-fddc-464a-9091-ad43a1342439"],
 Cell[CellGroupData[{
-Cell[795276, 15114, 459, 12, 30, "Input",ExpressionUUID->"c47f619a-808e-41bb-9ca1-061e9dba0d76"],
-Cell[795738, 15128, 28348, 508, 173, "Output",ExpressionUUID->"cdfc1a94-8749-47f8-b003-136e5a2433f8"]
+Cell[795325, 15115, 459, 12, 30, "Input",ExpressionUUID->"c47f619a-808e-41bb-9ca1-061e9dba0d76"],
+Cell[795787, 15129, 28348, 508, 173, "Output",ExpressionUUID->"cdfc1a94-8749-47f8-b003-136e5a2433f8"]
 }, Open  ]],
-Cell[824101, 15639, 968, 27, 52, "Input",ExpressionUUID->"5fbc08ec-5d77-4883-998c-bda371145316"],
+Cell[824150, 15640, 968, 27, 52, "Input",ExpressionUUID->"5fbc08ec-5d77-4883-998c-bda371145316"],
 Cell[CellGroupData[{
-Cell[825094, 15670, 510, 12, 30, "Input",ExpressionUUID->"0e92385e-b795-4425-a331-76ef267733bb"],
-Cell[825607, 15684, 28412, 509, 173, "Output",ExpressionUUID->"26eb7b2d-5d57-4e1e-a08f-e201dd516116"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[854056, 16198, 348, 8, 30, "Input",ExpressionUUID->"8ead4d93-56ca-4837-a445-c71c61e2d1b0"],
-Cell[854407, 16208, 309, 7, 34, "Output",ExpressionUUID->"fa975813-57d3-4bab-8030-b7f18fad7e1d"]
+Cell[825143, 15671, 510, 12, 30, "Input",ExpressionUUID->"0e92385e-b795-4425-a331-76ef267733bb"],
+Cell[825656, 15685, 28412, 509, 173, "Output",ExpressionUUID->"26eb7b2d-5d57-4e1e-a08f-e201dd516116"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[854753, 16220, 503, 10, 30, "Input",ExpressionUUID->"8bfdaebd-985f-4ee7-91a9-0dcde609aa45"],
-Cell[855259, 16232, 459, 10, 34, "Output",ExpressionUUID->"7ea63871-149f-4975-a1c5-ec570c83dcc6"]
+Cell[854105, 16199, 348, 8, 30, "Input",ExpressionUUID->"8ead4d93-56ca-4837-a445-c71c61e2d1b0"],
+Cell[854456, 16209, 309, 7, 34, "Output",ExpressionUUID->"fa975813-57d3-4bab-8030-b7f18fad7e1d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[855755, 16247, 2468, 55, 79, "Input",ExpressionUUID->"f71b741f-41e4-48ca-8295-b9b8cbbcfd6f"],
-Cell[858226, 16304, 16322, 383, 679, "Output",ExpressionUUID->"b293cb5d-4e04-4759-b3bb-24d771b04afb"]
+Cell[854802, 16221, 503, 10, 30, "Input",ExpressionUUID->"8bfdaebd-985f-4ee7-91a9-0dcde609aa45"],
+Cell[855308, 16233, 459, 10, 34, "Output",ExpressionUUID->"7ea63871-149f-4975-a1c5-ec570c83dcc6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[855804, 16248, 2468, 55, 79, "Input",ExpressionUUID->"f71b741f-41e4-48ca-8295-b9b8cbbcfd6f"],
+Cell[858275, 16305, 16322, 383, 679, "Output",ExpressionUUID->"b293cb5d-4e04-4759-b3bb-24d771b04afb"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[874597, 16693, 233, 4, 38, "Subsection",ExpressionUUID->"75efddcd-a4b4-4c6a-861d-ade2fefc800b"],
+Cell[874646, 16694, 233, 4, 38, "Subsection",ExpressionUUID->"75efddcd-a4b4-4c6a-861d-ade2fefc800b"],
 Cell[CellGroupData[{
-Cell[874855, 16701, 676, 18, 30, "Input",ExpressionUUID->"f6387e0f-f199-4527-a9ac-8767a940615b"],
-Cell[875534, 16721, 62369, 1162, 627, "Output",ExpressionUUID->"421fc499-584d-44c7-9b7d-bf66e37ad8b9"]
+Cell[874904, 16702, 676, 18, 30, "Input",ExpressionUUID->"f6387e0f-f199-4527-a9ac-8767a940615b"],
+Cell[875583, 16722, 62369, 1162, 627, "Output",ExpressionUUID->"421fc499-584d-44c7-9b7d-bf66e37ad8b9"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[937940, 17888, 2285, 59, 157, "Input",ExpressionUUID->"2a0015f7-9720-4a05-af96-13afd32ac2ce"],
-Cell[940228, 17949, 281249, 5101, 687, 131148, 2639, "CachedBoxData", "BoxData", "Output",ExpressionUUID->"b2f2d258-032b-4ce5-aa96-657bad54b49f"]
+Cell[937989, 17889, 2285, 59, 157, "Input",ExpressionUUID->"2a0015f7-9720-4a05-af96-13afd32ac2ce"],
+Cell[940277, 17950, 281249, 5101, 687, 131148, 2639, "CachedBoxData", "BoxData", "Output",ExpressionUUID->"b2f2d258-032b-4ce5-aa96-657bad54b49f"]
 }, Open  ]],
-Cell[1221492, 23053, 1090, 29, 52, "Input",ExpressionUUID->"f46c085a-064c-450c-bafc-646fa0e38165"],
+Cell[1221541, 23054, 1090, 29, 52, "Input",ExpressionUUID->"f46c085a-064c-450c-bafc-646fa0e38165"],
 Cell[CellGroupData[{
-Cell[1222607, 23086, 2409, 61, 178, "Input",ExpressionUUID->"045f8b4b-e7a5-4b80-91b1-ec12a97be2ac"],
-Cell[1225019, 23149, 260803, 4737, 709, 121668, 2455, "CachedBoxData", "BoxData", "Output",ExpressionUUID->"eaeecef8-759a-4258-8c26-ec4021e6597e"]
+Cell[1222656, 23087, 2409, 61, 178, "Input",ExpressionUUID->"045f8b4b-e7a5-4b80-91b1-ec12a97be2ac"],
+Cell[1225068, 23150, 260803, 4737, 709, 121668, 2455, "CachedBoxData", "BoxData", "Output",ExpressionUUID->"eaeecef8-759a-4258-8c26-ec4021e6597e"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[1485871, 27892, 212, 4, 38, "Subsection",ExpressionUUID->"d4de1c5a-014b-4407-b605-16c4da821052"],
-Cell[1486086, 27898, 714, 19, 30, "Input",ExpressionUUID->"ae49e75d-2326-492e-93a0-1506b9ba3619"],
+Cell[1485920, 27893, 212, 4, 38, "Subsection",ExpressionUUID->"d4de1c5a-014b-4407-b605-16c4da821052"],
+Cell[1486135, 27899, 714, 19, 30, "Input",ExpressionUUID->"ae49e75d-2326-492e-93a0-1506b9ba3619"],
 Cell[CellGroupData[{
-Cell[1486825, 27921, 378, 10, 30, "Input",ExpressionUUID->"39dacbbd-b57d-4935-b759-ee07b4627a05"],
-Cell[1487206, 27933, 89318, 1558, 627, "Output",ExpressionUUID->"f82a4244-4c02-4998-9374-9bffe9564e35"]
+Cell[1486874, 27922, 378, 10, 30, "Input",ExpressionUUID->"39dacbbd-b57d-4935-b759-ee07b4627a05"],
+Cell[1487255, 27934, 89318, 1558, 627, "Output",ExpressionUUID->"f82a4244-4c02-4998-9374-9bffe9564e35"]
 }, Open  ]],
-Cell[1576539, 29494, 925, 26, 52, "Input",ExpressionUUID->"fd70ae42-3fe9-464d-8b99-13fdba917255"],
+Cell[1576588, 29495, 925, 26, 52, "Input",ExpressionUUID->"fd70ae42-3fe9-464d-8b99-13fdba917255"],
 Cell[CellGroupData[{
-Cell[1577489, 29524, 354, 9, 30, "Input",ExpressionUUID->"fafb326f-634b-49d2-b1eb-afe3b690cba6"],
-Cell[1577846, 29535, 80647, 1431, 627, "Output",ExpressionUUID->"114d5c95-18d1-4bf4-bfe3-2646a7b9e9f8"]
+Cell[1577538, 29525, 354, 9, 30, "Input",ExpressionUUID->"fafb326f-634b-49d2-b1eb-afe3b690cba6"],
+Cell[1577895, 29536, 80647, 1431, 627, "Output",ExpressionUUID->"114d5c95-18d1-4bf4-bfe3-2646a7b9e9f8"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[1658542, 30972, 181, 3, 38, "Subsection",ExpressionUUID->"7228806d-516d-4b7c-b919-eb0417716bf8"],
-Cell[1658726, 30977, 1135, 31, 52, "Input",ExpressionUUID->"d4bcce1f-5767-4ff8-95b7-751e577514b7"],
-Cell[1659864, 31010, 1472, 40, 52, "Input",ExpressionUUID->"43735b5a-4ad4-4bd9-89a9-1123b2a5eae7"],
+Cell[1658591, 30973, 181, 3, 38, "Subsection",ExpressionUUID->"7228806d-516d-4b7c-b919-eb0417716bf8"],
+Cell[1658775, 30978, 1135, 31, 52, "Input",ExpressionUUID->"d4bcce1f-5767-4ff8-95b7-751e577514b7"],
+Cell[1659913, 31011, 1472, 40, 52, "Input",ExpressionUUID->"43735b5a-4ad4-4bd9-89a9-1123b2a5eae7"],
 Cell[CellGroupData[{
-Cell[1661361, 31054, 1460, 37, 79, "Input",ExpressionUUID->"8e6054e0-bbbf-46fb-bd87-556aee4533ba"],
-Cell[1662824, 31093, 42632, 984, 593, "Output",ExpressionUUID->"49789f48-5bd3-4a3c-9306-5391c43dfa58"]
+Cell[1661410, 31055, 1460, 37, 79, "Input",ExpressionUUID->"8e6054e0-bbbf-46fb-bd87-556aee4533ba"],
+Cell[1662873, 31094, 42632, 984, 593, "Output",ExpressionUUID->"49789f48-5bd3-4a3c-9306-5391c43dfa58"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[1705505, 32083, 159, 3, 38, "Subsection",ExpressionUUID->"4e45dd7f-1d36-49c4-a4e7-dfec23a7a1ed"],
+Cell[1705554, 32084, 159, 3, 38, "Subsection",ExpressionUUID->"4e45dd7f-1d36-49c4-a4e7-dfec23a7a1ed"],
 Cell[CellGroupData[{
-Cell[1705689, 32090, 1009, 28, 52, "Input",ExpressionUUID->"47b53128-0dd9-4255-ac2c-69797e4a4df5"],
-Cell[1706701, 32120, 36784, 680, 389, "Output",ExpressionUUID->"fab4c564-30f5-4741-963c-619623ba3dd6"]
+Cell[1705738, 32091, 1009, 28, 52, "Input",ExpressionUUID->"47b53128-0dd9-4255-ac2c-69797e4a4df5"],
+Cell[1706750, 32121, 36784, 680, 389, "Output",ExpressionUUID->"fab4c564-30f5-4741-963c-619623ba3dd6"]
 }, Open  ]],
-Cell[1743500, 32803, 393, 11, 30, "Input",ExpressionUUID->"9d1b0f68-3f9c-40ef-a908-f25222fe41c5"],
+Cell[1743549, 32804, 393, 11, 30, "Input",ExpressionUUID->"9d1b0f68-3f9c-40ef-a908-f25222fe41c5"],
 Cell[CellGroupData[{
-Cell[1743918, 32818, 1482, 33, 56, "Input",ExpressionUUID->"6d662750-172b-4538-9b0a-ad3519677332"],
-Cell[1745403, 32853, 11726, 221, 638, "Output",ExpressionUUID->"b62d9826-8765-462a-86fb-5418c3e63e7d"]
+Cell[1743967, 32819, 1482, 33, 56, "Input",ExpressionUUID->"6d662750-172b-4538-9b0a-ad3519677332"],
+Cell[1745452, 32854, 11726, 221, 638, "Output",ExpressionUUID->"b62d9826-8765-462a-86fb-5418c3e63e7d"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[1757178, 33080, 194, 3, 38, "Subsection",ExpressionUUID->"a2f9899e-9b2d-4dee-b2b4-a6731f6b5a92"],
-Cell[1757375, 33085, 1299, 36, 52, "Input",ExpressionUUID->"9e1515d8-1031-413f-b492-bce96bc6dc8f"],
+Cell[1757227, 33081, 194, 3, 38, "Subsection",ExpressionUUID->"a2f9899e-9b2d-4dee-b2b4-a6731f6b5a92"],
+Cell[1757424, 33086, 1299, 36, 52, "Input",ExpressionUUID->"9e1515d8-1031-413f-b492-bce96bc6dc8f"],
 Cell[CellGroupData[{
-Cell[1758699, 33125, 410, 10, 30, "Input",ExpressionUUID->"78da33ce-658c-4651-8c9e-46b182cf45af"],
-Cell[1759112, 33137, 134312, 2245, 627, "Output",ExpressionUUID->"8368fd70-7030-4eb5-96f2-a38045fe3d65"]
+Cell[1758748, 33126, 410, 10, 30, "Input",ExpressionUUID->"78da33ce-658c-4651-8c9e-46b182cf45af"],
+Cell[1759161, 33138, 134312, 2245, 627, "Output",ExpressionUUID->"8368fd70-7030-4eb5-96f2-a38045fe3d65"]
 }, Open  ]],
-Cell[1893439, 35385, 1902, 51, 94, "Input",ExpressionUUID->"3398f343-5c2a-48d0-86fb-ea7fa88d8483"],
+Cell[1893488, 35386, 1902, 51, 94, "Input",ExpressionUUID->"3398f343-5c2a-48d0-86fb-ea7fa88d8483"],
 Cell[CellGroupData[{
-Cell[1895366, 35440, 454, 10, 30, "Input",ExpressionUUID->"ecdf25e4-9fa5-4527-9890-62f23cb6880b"],
-Cell[1895823, 35452, 82542, 1474, 627, "Output",ExpressionUUID->"c12f1819-b2c4-46d7-865c-7370f02e1c77"]
+Cell[1895415, 35441, 454, 10, 30, "Input",ExpressionUUID->"ecdf25e4-9fa5-4527-9890-62f23cb6880b"],
+Cell[1895872, 35453, 82542, 1474, 627, "Output",ExpressionUUID->"c12f1819-b2c4-46d7-865c-7370f02e1c77"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[1978414, 36932, 173, 3, 38, "Subsection",ExpressionUUID->"bda0ae55-3791-4bf5-8b87-10254c87c339"],
+Cell[1978463, 36933, 173, 3, 38, "Subsection",ExpressionUUID->"bda0ae55-3791-4bf5-8b87-10254c87c339"],
 Cell[CellGroupData[{
-Cell[1978612, 36939, 2801, 76, 136, "Input",ExpressionUUID->"12fbf3da-5027-446f-bf8a-595511731563"],
-Cell[1981416, 37017, 193605, 3101, 627, "Output",ExpressionUUID->"56b73901-68fb-418c-9b20-cc88bf2920b4"]
+Cell[1978661, 36940, 2801, 76, 136, "Input",ExpressionUUID->"12fbf3da-5027-446f-bf8a-595511731563"],
+Cell[1981465, 37018, 193605, 3101, 627, "Output",ExpressionUUID->"56b73901-68fb-418c-9b20-cc88bf2920b4"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2175058, 40123, 2696, 75, 136, "Input",ExpressionUUID->"2e672617-07c7-4026-b4c5-d629a9b7e7d3"],
-Cell[2177757, 40200, 62687, 1142, 633, "Output",ExpressionUUID->"f568320c-9bc6-49aa-830e-3262ab164adf"]
+Cell[2175107, 40124, 2696, 75, 136, "Input",ExpressionUUID->"2e672617-07c7-4026-b4c5-d629a9b7e7d3"],
+Cell[2177806, 40201, 62687, 1142, 633, "Output",ExpressionUUID->"f568320c-9bc6-49aa-830e-3262ab164adf"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[2240493, 41348, 264, 4, 38, "Subsection",ExpressionUUID->"36d1e56a-76dc-412b-a33b-d050c2227738"],
-Cell[2240760, 41354, 954, 17, 52, "Input",ExpressionUUID->"92e3e0a0-3e50-4394-ace0-1ad14a32b2ae"],
-Cell[2241717, 41373, 1708, 40, 52, "Input",ExpressionUUID->"cbf0ece7-a6d8-4216-9800-13513313fd23"],
+Cell[2240542, 41349, 264, 4, 38, "Subsection",ExpressionUUID->"36d1e56a-76dc-412b-a33b-d050c2227738"],
+Cell[2240809, 41355, 954, 17, 52, "Input",ExpressionUUID->"92e3e0a0-3e50-4394-ace0-1ad14a32b2ae"],
+Cell[2241766, 41374, 1708, 40, 52, "Input",ExpressionUUID->"cbf0ece7-a6d8-4216-9800-13513313fd23"],
 Cell[CellGroupData[{
-Cell[2243450, 41417, 691, 17, 30, "Input",ExpressionUUID->"6d0afd27-58c4-4348-9c00-8c857ce69212"],
-Cell[2244144, 41436, 44335, 835, 579, "Output",ExpressionUUID->"6d91e9e9-10dc-4e3d-9977-435c798030bd"]
+Cell[2243499, 41418, 691, 17, 30, "Input",ExpressionUUID->"6d0afd27-58c4-4348-9c00-8c857ce69212"],
+Cell[2244193, 41437, 44335, 835, 579, "Output",ExpressionUUID->"6d91e9e9-10dc-4e3d-9977-435c798030bd"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2288516, 42276, 300, 7, 30, "Input",ExpressionUUID->"ad9b0a8d-8fae-4425-9348-0b3808e2a7fb"],
-Cell[2288819, 42285, 676, 11, 56, "Output",ExpressionUUID->"67ad1763-fa63-446e-a438-6b155b1259b1"]
+Cell[2288565, 42277, 300, 7, 30, "Input",ExpressionUUID->"ad9b0a8d-8fae-4425-9348-0b3808e2a7fb"],
+Cell[2288868, 42286, 676, 11, 56, "Output",ExpressionUUID->"67ad1763-fa63-446e-a438-6b155b1259b1"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2289532, 42301, 2377, 62, 157, "Input",ExpressionUUID->"68a1d7e3-c5e9-49f8-b0f8-82e65437ed2a"],
-Cell[2291912, 42365, 85815, 1718, 634, "Output",ExpressionUUID->"31a8fdb8-f3fb-42ce-87d3-d22e5cd24b80"]
+Cell[2289581, 42302, 2377, 62, 157, "Input",ExpressionUUID->"68a1d7e3-c5e9-49f8-b0f8-82e65437ed2a"],
+Cell[2291961, 42366, 85815, 1718, 634, "Output",ExpressionUUID->"31a8fdb8-f3fb-42ce-87d3-d22e5cd24b80"]
 }, Open  ]]
 }, Closed]],
-Cell[2377754, 44087, 171, 3, 38, "Subsection",ExpressionUUID->"c3422a6f-416d-40bd-8217-b8ed5d1638ae"],
 Cell[CellGroupData[{
-Cell[2377950, 44094, 163, 3, 38, "Subsection",ExpressionUUID->"125fcbc6-bcc7-4c79-8a31-43a6de74f98f"],
+Cell[2377825, 44090, 171, 3, 38, "Subsection",ExpressionUUID->"c3422a6f-416d-40bd-8217-b8ed5d1638ae"],
+Cell[2377999, 44095, 1435, 37, 52, "Input",ExpressionUUID->"0789a472-3dd7-4cc2-8ab8-d222439f36df"],
 Cell[CellGroupData[{
-Cell[2378138, 44101, 657, 17, 30, "Input",ExpressionUUID->"37afb6dc-8439-4f58-a31a-cc8d5b1440c2"],
-Cell[2378798, 44120, 33657, 617, 309, "Output",ExpressionUUID->"305c734d-f28f-4701-b8af-2ac6fa541acc"]
+Cell[2379459, 44136, 473, 12, 30, "Input",ExpressionUUID->"06be5941-5fa4-4beb-8a1f-8f37fc0a9f3f"],
+Cell[2379935, 44150, 92548, 1746, 627, "Output",ExpressionUUID->"46be74bb-1afc-4042-9273-00a339834bf7"]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[2472532, 45902, 163, 3, 38, "Subsection",ExpressionUUID->"125fcbc6-bcc7-4c79-8a31-43a6de74f98f"],
+Cell[CellGroupData[{
+Cell[2472720, 45909, 657, 17, 30, "Input",ExpressionUUID->"37afb6dc-8439-4f58-a31a-cc8d5b1440c2"],
+Cell[2473380, 45928, 33657, 617, 309, "Output",ExpressionUUID->"305c734d-f28f-4701-b8af-2ac6fa541acc"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2507074, 46550, 2255, 58, 157, "Input",ExpressionUUID->"8e1dae76-e190-4545-8634-b9c3e28ab329"],
+Cell[2509332, 46610, 42183, 849, 451, "Output",ExpressionUUID->"5bd779c1-4cd3-4e90-86e9-d5528b83f72b"]
 }, Open  ]]
 }, Closed]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[2551576, 47466, 155, 3, 53, "Section",ExpressionUUID->"7de23843-a657-4fa4-8dc2-253e4f3e07ee"],
+Cell[2551734, 47471, 887, 21, 30, "Input",ExpressionUUID->"ab656e45-bfda-4303-ae8d-d58ee4c94bef"],
+Cell[CellGroupData[{
+Cell[2552646, 47496, 3066, 61, 157, "Input",ExpressionUUID->"0fcb7344-d015-42a3-a592-bf417faddff7"],
+Cell[2555715, 47559, 19516, 326, 501, "Output",ExpressionUUID->"31ff0bb8-5bfc-4b50-a374-80a451912b96"]
 }, Open  ]],
+Cell[2575246, 47888, 2868, 71, 199, "Input",ExpressionUUID->"7bf5637d-5f9d-4b3e-89f4-d82fa3bdd605"],
 Cell[CellGroupData[{
-Cell[2412516, 44744, 155, 3, 67, "Section",ExpressionUUID->"7de23843-a657-4fa4-8dc2-253e4f3e07ee"],
-Cell[2412674, 44749, 887, 21, 30, "Input",ExpressionUUID->"ab656e45-bfda-4303-ae8d-d58ee4c94bef"],
-Cell[CellGroupData[{
-Cell[2413586, 44774, 3066, 61, 157, "Input",ExpressionUUID->"0fcb7344-d015-42a3-a592-bf417faddff7"],
-Cell[2416655, 44837, 19492, 326, 501, "Output",ExpressionUUID->"b8dc22d0-5281-422b-b468-fff8daec3118"]
-}, Open  ]],
-Cell[2436162, 45166, 2409, 61, 136, "Input",ExpressionUUID->"7bf5637d-5f9d-4b3e-89f4-d82fa3bdd605"],
-Cell[CellGroupData[{
-Cell[2438596, 45231, 360, 7, 30, "Input",ExpressionUUID->"d26b3443-e955-4775-a83c-70060451a64c"],
-Cell[2438959, 45240, 231, 4, 34, "Output",ExpressionUUID->"7d0e6550-741d-47d3-b5a8-890600325ce9"]
+Cell[2578139, 47963, 360, 7, 30, "Input",ExpressionUUID->"d26b3443-e955-4775-a83c-70060451a64c"],
+Cell[2578502, 47972, 256, 5, 34, "Output",ExpressionUUID->"8dfc888b-033c-4b66-9c73-a6a39017b3c0"]
 }, Open  ]]
 }, Open  ]]
 }
