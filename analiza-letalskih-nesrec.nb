@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1614796,      30133]
-NotebookOptionsPosition[   1606345,      29978]
-NotebookOutlinePosition[   1606743,      29994]
-CellTagsIndexPosition[   1606700,      29991]
+NotebookDataLength[   1641395,      30595]
+NotebookOptionsPosition[   1632122,      30428]
+NotebookOutlinePosition[   1632542,      30445]
+CellTagsIndexPosition[   1632499,      30442]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -26,8 +26,8 @@ Cell[BoxData[
 Cell[CellGroupData[{
 
 Cell["Pridobivanje  podatkov", "Section",
- CellChangeTimes->{{3.9262712776006727`*^9, 
-  3.9262712788900137`*^9}},ExpressionUUID->"a108690d-3a29-4201-af4d-\
+ CellChangeTimes->{{3.926271277600673*^9, 
+  3.9262712788900146`*^9}},ExpressionUUID->"a108690d-3a29-4201-af4d-\
 f5c25797a8aa"],
 
 Cell[CellGroupData[{
@@ -2593,7 +2593,7 @@ Adonis",
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ - 20 
                     If[True, 4005, 1], {1, 4005 - -20 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -2641,7 +2641,7 @@ Adonis",
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ - 20 
                     If[False, 4005, 1], {1, 4005 - -20 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -2878,7 +2878,7 @@ Adonis",
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$hPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$hPos$$ + (-10) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$hPos$$ - 10 
                     If[True, 24, 1], {1, 24 - -10 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -2928,7 +2928,7 @@ Adonis",
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$hPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$hPos$$ + (-10) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$hPos$$ - 10 
                     If[False, 24, 1], {1, 24 - -10 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -3463,7 +3463,25 @@ resource=download"},
   "HyperlinkURL"]], "Output",
  CellChangeTimes->{3.926271365855535*^9},
  CellLabel->"Out[90]=",ExpressionUUID->"3d999037-1b92-47f6-a3c0-69b036d3795a"]
-}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.926312773747851*^9, 
+  3.926312776332197*^9}},ExpressionUUID->"a4c52972-8dcf-4513-a67c-\
+565b2e20f4db"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Zemljevidi", "Section",
+ CellChangeTimes->{{3.926312778373641*^9, 
+  3.926312785252879*^9}},ExpressionUUID->"71a8a7bf-70ef-4d30-95aa-\
+2eba443b31b6"],
+
+Cell[BoxData["s"], "Input",
+ CellChangeTimes->{{3.926312795840598*^9, 
+  3.926312799744445*^9}},ExpressionUUID->"24288512-f029-4166-a1b5-\
+11d962dd67b5"]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -4040,7 +4058,7 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{3.9262714443574753`*^9},
+ CellChangeTimes->{3.9262714443574758`*^9},
  CellLabel->"Out[91]=",ExpressionUUID->"881e1d74-7232-4d37-b772-beedcfe9e991"]
 }, Open  ]],
 
@@ -4159,14 +4177,15 @@ fwH7O9W1
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{0.01607986862598231, 0.9998707105546052, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Human factor\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 FontColor->GrayLevel[0]], {1.1400000000000001`, 
-                1.0998577816100659`, 0.5}, {-1, 0}]},
+                FormBox[
+                 StyleBox["\<\"Human factor\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], StandardForm], {
+                1.1400000000000001`, 1.0998577816100659`, 0.5}, {-1, 0}]},
               StatusArea[#, 2023]& ,
               TagBoxNote->"2023"],
              StyleBox["2023", {
@@ -4249,13 +4268,14 @@ Zz7YYy+XPthjL8c+2GMv94DhibWc/GCPvVz9YI+9HP5gDwByF4vl
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{0.7935323771665759, -0.6085280325411173, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Unknown\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 FontColor->GrayLevel[0]], {
+                FormBox[
+                 StyleBox["\<\"Unknown\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], StandardForm], {
                 1.1400000000000001`, -0.6693808357952291, 0.5}, {-1, 0}]},
               StatusArea[#, 793]& ,
               TagBoxNote->"793"],
@@ -4328,6 +4348,7 @@ vb74YI+9fvlgDwBw2d3J
                    Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {
                     0.2903081346947794, -0.9569332196815188, 1.}, {
                     0.2903081346947794, -0.9569332196815188, 0.}}}]}},
+                 
                  ImageSizeCache->{{166.0292621052065, 
                   304.1944453237751}, {-15.220202231499016`, 
                   105.7120606418792}}],
@@ -4340,16 +4361,16 @@ vb74YI+9fvlgDwBw2d3J
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.4056614600108992, -0.9140234022506347, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Technical failure\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -1.0054257424756983`, 0.5}, {1, 
-                0}]},
+                FormBox[
+                 StyleBox["\<\"Technical failure\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -1.0054257424756983`, 
+                0.5}, {1, 0}]},
               StatusArea[#, 908]& ,
               TagBoxNote->"908"],
              StyleBox["908", {
@@ -4428,16 +4449,16 @@ vb74YI+9fvlgDwBw2d3J
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.9386148503881511, -0.3449669007757537, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Other causes\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -0.3794635908533291, 0.5}, {1, 
-                0}]},
+                FormBox[
+                 StyleBox["\<\"Other causes\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -0.3794635908533291, 
+                0.5}, {1, 0}]},
               StatusArea[#, 113]& ,
               TagBoxNote->"113"],
              StyleBox["113", {
@@ -4511,16 +4532,16 @@ FfvR7UEFH+ypJY7d3g/22N35wR67vz7YYw+HD/YAQhFWDA==
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.987962899518327, -0.15469101194103022`, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Weather\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -0.17016011313513324`, 0.5}, {1,
-                 0}]},
+                FormBox[
+                 StyleBox["\<\"Weather\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -0.17016011313513324`, 
+                0.5}, {1, 0}]},
               StatusArea[#, 138]& ,
               TagBoxNote->"138"],
              StyleBox["138", {
@@ -4560,14 +4581,14 @@ FfvR7UEFH+ypJY7d3g/22N35wR67vz7YYw+HD/YAQhFWDA==
                    
                    Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
                     0.}, {-0.9988926445681491, -0.04704768461518031, 
-                    0.}, {-1., -1.2246467991473532`*^-16, 0.}}, {{0., 0., 
-                    1.}, {0., 0., 1.}, {-1., -1.2246467991473532`*^-16, 
+                    0.}, {-1., -1.224646799147353*^-16, 0.}}, {{0., 0., 1.}, {
+                    0., 0., 1.}, {-1., -1.224646799147353*^-16, 
                     1.}, {-0.9988926445681491, -0.04704768461518031, 1.}}}], 
                    
-                   BSplineSurface3DBox[{{{-1., -1.2246467991473532`*^-16, 
+                   BSplineSurface3DBox[{{{-1., -1.224646799147353*^-16, 
                     0.}, {-1., -0.023536874150310545`, 
                     0.}, {-0.9988926445681491, -0.047047684615180316`, 
-                    0.}}, {{-1., -1.2246467991473532`*^-16, 
+                    0.}}, {{-1., -1.224646799147353*^-16, 
                     1}, {-1., -0.023536874150310545`, 
                     1}, {-0.9988926445681491, -0.047047684615180316`, 1}}}, 
                     SplineDegree -> {1, 2}, 
@@ -4576,8 +4597,8 @@ FfvR7UEFH+ypJY7d3g/22N35wR67vz7YYw+HD/YAQhFWDA==
                     SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
                    
                    Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
-                    1.}, {-1., -1.2246467991473532`*^-16, 
-                    1.}, {-1., -1.2246467991473532`*^-16, 0.}}}], 
+                    1.}, {-1., -1.224646799147353*^-16, 
+                    1.}, {-1., -1.224646799147353*^-16, 0.}}}], 
                    
                    Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
                     1.}, {-0.9988926445681491, -0.04704768461518031, 
@@ -4596,18 +4617,18 @@ FfvR7UEFH+ypJY7d3g/22N35wR67vz7YYw+HD/YAQhFWDA==
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.9997231228115485, -0.023530357326770113`, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                
-                StyleBox["\<\"Terrorism act, Hijacking, Sabotage\"\>", 
-                 "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
+                FormBox[
                  
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -0.025883393059447125`, 0.5}, {
-                1, 0}]},
+                 StyleBox["\<\"Terrorism act, Hijacking, Sabotage\"\>", 
+                  "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -0.025883393059447125`,
+                 0.5}, {1, 0}]},
               StatusArea[#, 30]& ,
               TagBoxNote->"30"],
              StyleBox["30", {
@@ -4640,7 +4661,360 @@ FfvR7UEFH+ypJY7d3g/22N35wR67vz7YYw+HD/YAQhFWDA==
   ViewVertical->{-0.060170089623042794`, 0.04563381802147073, 
    0.9971444804879274}]], "Output",
  CellChangeTimes->{3.926271522737092*^9},
- CellLabel->"Out[92]=",ExpressionUUID->"6ae06ae9-7234-4796-b46c-f627d03aa7bf"]
+ CellLabel->"Out[92]=",ImageCache->GraphicsData["CompressedBitmap", "\<\
+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\
+\>", "ImageResolution" -> \
+144.],ExpressionUUID->"6ae06ae9-7234-4796-b46c-f627d03aa7bf"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -9974,9 +10348,10 @@ Y7j42SS9OwZpr/Y/Pns66b7oI7i4b1+JWvKE1/u77KJYPBwfwMWxgw/2AyWO
 
 Cell[CellGroupData[{
 
-Cell["Ugotovitve", "Section",
- CellChangeTimes->{{3.92627171441897*^9, 
-  3.9262717154601316`*^9}},ExpressionUUID->"9b793cd2-1715-463b-b301-\
+Cell["Grafi", "Section",
+ CellChangeTimes->{{3.92627171441897*^9, 3.9262717154601316`*^9}, {
+  3.9263886050893803`*^9, 
+  3.926388608431344*^9}},ExpressionUUID->"9b793cd2-1715-463b-b301-\
 9c345296c8a7"],
 
 Cell[CellGroupData[{
@@ -12588,7 +12963,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ - 20 
                     If[True, 4005, 1], {1, 4005 - -20 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -12636,7 +13011,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ - 20 
                     If[False, 4005, 1], {1, 4005 - -20 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -12873,7 +13248,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$hPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$hPos$$ + (-10) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$hPos$$ - 10 
                     If[True, 15, 1], {1, 15 - -10 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -12923,7 +13298,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$hPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$hPos$$ + (-10) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$hPos$$ - 10 
                     If[False, 15, 1], {1, 15 - -10 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -14035,7 +14410,7 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{3.9262718254273148`*^9},
+ CellChangeTimes->{3.926271825427315*^9},
  CellLabel->
   "Out[103]=",ExpressionUUID->"77b029ed-3204-4d12-a566-b559f42c0a7d"]
 }, Open  ]],
@@ -14581,9 +14956,9 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
 
 Cell[CellGroupData[{
 
-Cell["Tip  leta", "Subsection",
- CellChangeTimes->{{3.926272240727072*^9, 
-  3.926272244809971*^9}},ExpressionUUID->"75efddcd-a4b4-4c6a-861d-\
+Cell["Tip leta", "Subsection",
+ CellChangeTimes->{{3.926272240727072*^9, 3.926272244809971*^9}, 
+   3.9263883930996027`*^9},ExpressionUUID->"75efddcd-a4b4-4c6a-861d-\
 ade2fefc800b"],
 
 Cell[BoxData[
@@ -15224,7 +15599,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ - 20 
                     If[True, 29, 1], {1, 29 - -20 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -15273,7 +15648,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ - 20 
                     If[False, 29, 1], {1, 29 - -20 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -15917,11 +16292,12 @@ zhNkdP4go/Mq+g9kviGj8xAZnZ/I6LxFRuczMjrPkdH5j4zeF8jo/YKM3kfI
                     1.}, {-0.009033210654212347, 0.9999591997203069, 0.}}}], 
                    
                    Polygon3DBox[{{{0., 0., 0.}, {0., 0., 1.}, {-1., 
-                    1.2246467991473532`*^-16, 1.}, {-1., 
-                    1.2246467991473532`*^-16, 0.}}}]}},
+                    1.224646799147353*^-16, 1.}, {-1., 1.224646799147353*^-16,
+                     0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{218.1465556175332, 
+                  492.20129978875775`}, {-209.3663383767995, \
+-3.121370751207195}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.7102933234425803, 0.7039058137797229, 
@@ -15931,14 +16307,16 @@ zhNkdP4go/Mq+g9kviGj8xAZnZ/I6LxFRuczMjrPkdH5j4zeF8jo/YKM3kfI
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.7102933234425803, 0.7039058137797229, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Private\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 FontColor->GrayLevel[0]], {-1.1400000000000001`, 
-                0.7742963951576953, 0.5}, {1, 0}]},
+                FormBox[
+                 StyleBox["\<\"Private\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, 0.7742963951576953, 
+                0.5}, {1, 0}]},
               StatusArea[#, 389]& ,
               TagBoxNote->"389"],
              StyleBox["389", {
@@ -16006,8 +16384,9 @@ vX2wBwDQQ7Hw
                     1.}, {-0.009033210654212347, 0.9999591997203069, 0.}}}]}},
                  
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{487.74377197518123`, 
+                  626.6491121185137}, {-209.70910679703707`, \
+-3.121370751207195}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{0.25121668085166915`, 0.9679308752498138, 0.5}, {
@@ -16017,14 +16396,17 @@ vX2wBwDQQ7Hw
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{0.25121668085166915`, 0.9679308752498138, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Scheduled Revenue Flight\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 FontColor->GrayLevel[0]], {1.1400000000000001`, 
-                1.0647239627747953`, 0.5}, {-1, 0}]},
+                FormBox[
+                 
+                 StyleBox["\<\"Scheduled Revenue Flight\"\>", 
+                  "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], StandardForm], {
+                1.1400000000000001`, 1.0647239627747953`, 0.5}, {-1, 0}]},
               StatusArea[#, 131]& ,
               TagBoxNote->"131"],
              StyleBox["131", {
@@ -16089,8 +16471,9 @@ vX2wBwDQQ7Hw
                     0.4941939635691035, 0.8693516701380746, 1.}, {
                     0.4941939635691035, 0.8693516701380746, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{490.20129978875775`, 
+                  692.2318949326973}, {-190.72421913737583`, \
+-3.121370751207195}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{0.6221436329986747, 0.7829031229463901, 0.5}, {
@@ -16100,14 +16483,15 @@ vX2wBwDQQ7Hw
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{0.6221436329986747, 0.7829031229463901, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Positioning\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 FontColor->GrayLevel[0]], {1.1400000000000001`, 
-                0.8611934352410292, 0.5}, {-1, 0}]},
+                FormBox[
+                 StyleBox["\<\"Positioning\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], StandardForm], {
+                1.1400000000000001`, 0.8611934352410292, 0.5}, {-1, 0}]},
               StatusArea[#, 77]& ,
               TagBoxNote->"77"],
              StyleBox["77", {
@@ -16115,6 +16499,7 @@ vX2wBwDQQ7Hw
             Annotation[#, 
              Style[77, {
                GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
            EventHandlerTag[{
             "MouseClicked" :> 
              FEPrivate`Set[DynamicChart`click$190393$192179, 
@@ -16171,8 +16556,9 @@ Y3fnB3vs/vpgjz0cPthjD7cP9tjD+YM99nj5YA8Axp9vjA==
                     0.7352586177216054, 0.6777866663383945, 1.}, {
                     0.7352586177216054, 0.6777866663383945, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{490.20129978875775`, 
+                  743.2587873493668}, {-162.52959959026032`, \
+-3.121370751207195}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{0.8418450028189544, 0.5397193633998643, 0.5}, {
@@ -16182,16 +16568,17 @@ Y3fnB3vs/vpgjz0cPthjD7cP9tjD+YM99nj5YA8Axp9vjA==
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{0.8418450028189544, 0.5397193633998643, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                
-                StyleBox["\<\"Executive/Corporate/Business\"\>", 
-                 "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 FontColor->GrayLevel[0]], {1.1400000000000001`, 
-                0.5936912997398507, 0.5}, {-1, 0}]},
+                FormBox[
+                 
+                 StyleBox["\<\"Executive/Corporate/Business\"\>", 
+                  "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], StandardForm], {
+                1.1400000000000001`, 0.5936912997398507, 0.5}, {-1, 0}]},
               StatusArea[#, 87]& ,
               TagBoxNote->"87"],
              StyleBox["87", {
@@ -16258,8 +16645,9 @@ wR57PH6wxx7vH+yxp5MP9tjT1Qd77Onwgz32dPvBHgDuwMVk
                     0.9228197373488906, 0.38523205001573346`, 1.}, {
                     0.9228197373488906, 0.38523205001573346`, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{490.20129978875775`, 
+                  781.9616087059239}, {-117.39694416311772`, 
+                  33.190311620765016`}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{0.9955525139018988, 0.09420823776936679, 0.5}, {
@@ -16269,16 +16657,17 @@ wR57PH6wxx7vH+yxp5MP9tjT1Qd77Onwgz32dPvBHgDuwMVk
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{0.9955525139018988, 0.09420823776936679, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                
-                StyleBox["\<\"Charter/Taxi (Non Scheduled Revenue \
+                FormBox[
+                 
+                 StyleBox["\<\"Charter/Taxi (Non Scheduled Revenue \
 Flight)\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 FontColor->GrayLevel[0]], {1.1400000000000001`, 
-                0.10362906154630348`, 0.5}, {-1, 0}]},
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], StandardForm], {
+                1.1400000000000001`, 0.10362906154630348`, 0.5}, {-1, 0}]},
               StatusArea[#, 150]& ,
               TagBoxNote->"150"],
              StyleBox["150", {
@@ -16343,8 +16732,9 @@ Flight)\"\>", "Graphics3DLabel",
                     0.9787005810386912, -0.20529289484667565`, 1.}, {
                     0.9787005810386912, -0.20529289484667565`, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{490.20129978875775`, 
+                  767.1724898699979}, {-53.798685114469095`, 
+                  51.60165784681388}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{0.9666579560523325, -0.25607107607210683`, 0.5}, {
@@ -16354,13 +16744,14 @@ Flight)\"\>", "Graphics3DLabel",
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{0.9666579560523325, -0.25607107607210683`, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Government\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 FontColor->GrayLevel[0]], {
+                FormBox[
+                 StyleBox["\<\"Government\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], StandardForm], {
                 1.1400000000000001`, -0.2816781836793175, 0.5}, {-1, 0}]},
               StatusArea[#, 26]& ,
               TagBoxNote->"26"],
@@ -16427,8 +16818,9 @@ rPH7wR4Ad7eO5A==
                     0.9519826879005961, -0.30615186090820384`, 1.}, {
                     0.9519826879005961, -0.30615186090820384`, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{490.20129978875775`, 
+                  769.420076915665}, {-53.798685114469095`, 
+                  114.50895723471672`}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{0.8776571239269182, -0.47928902847898586`, 0.5}, {
@@ -16438,13 +16830,14 @@ rPH7wR4Ad7eO5A==
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{0.8776571239269182, -0.47928902847898586`, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Training\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 FontColor->GrayLevel[0]], {
+                FormBox[
+                 StyleBox["\<\"Training\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], StandardForm], {
                 1.1400000000000001`, -0.5272179313268844, 0.5}, {-1, 0}]},
               StatusArea[#, 94]& ,
               TagBoxNote->"94"],
@@ -16513,8 +16906,9 @@ dP7BHnu++GCPPR99sMee7z7YY8+nH+yx5+sP9gCPwBM5
                     0.7721740577898539, -0.6354110673228405, 1.}, {
                     0.7721740577898539, -0.6354110673228405, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{490.20129978875775`, 
+                  726.491774864511}, {-53.798685114469095`, 
+                  189.38268683232457`}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{0.448167886611158, -0.8939494087533635, 0.5}, {
@@ -16524,13 +16918,14 @@ dP7BHnu++GCPPR99sMee7z7YY8+nH+yx5+sP9gCPwBM5
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{0.448167886611158, -0.8939494087533635, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Cargo\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 FontColor->GrayLevel[0]], {
+                FormBox[
+                 StyleBox["\<\"Cargo\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], StandardForm], {
                 1.1400000000000001`, -0.9833443496286999, 0.5}, {-1, 0}]},
               StatusArea[#, 208]& ,
               TagBoxNote->"208"],
@@ -16595,8 +16990,9 @@ Hru/PthjD4cP9tjD7YM99nD+YI89Xj7YAwDR+3uG
                     0.047156580124629296`, -0.9988875096580943, 1.}, {
                     0.047156580124629296`, -0.9988875096580943, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{398.67155310655403`, 
+                  506.5233056888155}, {-53.798685114469095`, 
+                  191.18959445083252`}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.12911631180386843`, -0.9916294560097366, 
@@ -16606,16 +17002,16 @@ Hru/PthjD4cP9tjD7YM99nD+YI89Xj7YAwDR+3uG
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.12911631180386843`, -0.9916294560097366, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Military\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -1.0907924016107104`, 0.5}, {1, 
-                0}]},
+                FormBox[
+                 StyleBox["\<\"Military\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -1.0907924016107104`, 
+                0.5}, {1, 0}]},
               StatusArea[#, 88]& ,
               TagBoxNote->"88"],
              StyleBox["88", {
@@ -16680,8 +17076,9 @@ Hru/PthjD4cP9tjD7YM99nD+YI89Xj7YAwDR+3uG
                     1.}, {-0.30137048283082774`, -0.9535071221959036, 
                     1.}, {-0.30137048283082774`, -0.9535071221959036, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{376.44529621715395`, 
+                  492.20129978875775`}, {-53.798685114469095`, 
+                  179.70076225971087`}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.33939889245584426`, -0.9406425419891162, 
@@ -16691,16 +17088,18 @@ Hru/PthjD4cP9tjD7YM99nD+YI89Xj7YAwDR+3uG
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.33939889245584426`, -0.9406425419891162, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Skydiving / Paratroopers\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
+                FormBox[
                  
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -1.0347067961880279`, 0.5}, {1, 
-                0}]},
+                 StyleBox["\<\"Skydiving / Paratroopers\"\>", 
+                  "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -1.0347067961880279`, 
+                0.5}, {1, 0}]},
               StatusArea[#, 20]& ,
               TagBoxNote->"20"],
              StyleBox["20", {
@@ -16765,8 +17164,9 @@ Hru/PthjD4cP9tjD7YM99nD+YI89Xj7YAwDR+3uG
                     1.}, {-0.3768803073570083, -0.9262619683040467, 
                     1.}, {-0.3768803073570083, -0.9262619683040467, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{347.31287081733905`, 
+                  492.20129978875775`}, {-53.798685114469095`, 
+                  173.93525136371323`}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.426505696851628, -0.9044848758011972, 
@@ -16776,18 +17176,16 @@ Hru/PthjD4cP9tjD7YM99nD+YI89Xj7YAwDR+3uG
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.426505696851628, -0.9044848758011972, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                
-                StyleBox["\<\"Spraying (Agricultural)\"\>", "Graphics3DLabel",
-                 
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -0.994933363381317, 0.5}, {1, 
-                0}]},
+                FormBox[
+                 StyleBox["\<\"Spraying (Agricultural)\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -0.994933363381317, 
+                0.5}, {1, 0}]},
               StatusArea[#, 27]& ,
               TagBoxNote->"27"],
              StyleBox["27", {
@@ -16847,13 +17245,13 @@ Hru/PthjD4cP9tjD7YM99nD+YI89Xj7YAwDR+3uG
                    Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
                     1.}, {-0.4924478260024238, -0.8703419665082722, 
                     1.}, {-0.4924478260024238, -0.8703419665082722, 0.}}}], 
-                   
                    Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
                     1.}, {-0.47487847279132633`, -0.8800513826359103, 
                     1.}, {-0.47487847279132633`, -0.8800513826359103, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{342.8058706321848, 
+                  492.20129978875775`}, {-53.798685114469095`, 
+                  164.23634251197285`}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.4836875130442059, -0.8752407610052855, 
@@ -16863,16 +17261,18 @@ Hru/PthjD4cP9tjD7YM99nD+YI89Xj7YAwDR+3uG
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.4836875130442059, -0.8752407610052855, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Meteorological / Weather\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
+                FormBox[
                  
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -0.9627648371058141, 0.5}, {1, 
-                0}]},
+                 StyleBox["\<\"Meteorological / Weather\"\>", 
+                  "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -0.9627648371058141, 
+                0.5}, {1, 0}]},
               StatusArea[#, 5]& ,
               TagBoxNote->"5"],
              StyleBox["5", {
@@ -16934,8 +17334,9 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.4924478260024238, -0.8703419665082722, 
                     1.}, {-0.4924478260024238, -0.8703419665082722, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{294.0393477898451, 
+                  492.20129978875775`}, {-53.798685114469095`, 
+                  162.21115816707328`}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.5771793422895712, -0.8166174176651989, 
@@ -16945,16 +17346,16 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.5771793422895712, -0.8166174176651989, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Ferry\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -0.8982791594317189, 0.5}, {1, 
-                0}]},
+                FormBox[
+                 StyleBox["\<\"Ferry\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -0.8982791594317189, 
+                0.5}, {1, 0}]},
               StatusArea[#, 50]& ,
               TagBoxNote->"50"],
              StyleBox["50", {
@@ -16962,6 +17363,7 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
             Annotation[#, 
              Style[50, {
                GrayLevel[0], "Graphics3DLabel"}], "Tooltip"]& ],
+           
            EventHandlerTag[{
             "MouseClicked" :> 
              FEPrivate`Set[DynamicChart`click$190673$192179, 
@@ -17019,8 +17421,9 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.6561011115714016, -0.7546729963333597, 
                     1.}, {-0.6561011115714016, -0.7546729963333597, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{258.98274168997335`, 
+                  492.20129978875775`}, {-53.798685114469095`, 
+                  138.4172040254938}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.7228939452759663, -0.6909590030409534, 
@@ -17030,16 +17433,16 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.7228939452759663, -0.6909590030409534, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Ambulance\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -0.7600549033450488, 0.5}, {1, 
-                0}]},
+                FormBox[
+                 StyleBox["\<\"Ambulance\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -0.7600549033450488, 
+                0.5}, {1, 0}]},
               StatusArea[#, 46]& ,
               TagBoxNote->"46"],
              StyleBox["46", {
@@ -17104,8 +17507,9 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.7835271763657892, -0.6213575169709091, 
                     1.}, {-0.7835271763657892, -0.6213575169709091, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{242.9473822831957, 
+                  492.20129978875775`}, {-53.79868511446908, 
+                  111.73231873636622`}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.8183516641566279, -0.5747178035976245, 
@@ -17115,16 +17519,16 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.8183516641566279, -0.5747178035976245, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Test\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -0.632189583957387, 0.5}, {1, 
-                0}]},
+                FormBox[
+                 StyleBox["\<\"Test\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -0.632189583957387, 
+                0.5}, {1, 0}]},
               StatusArea[#, 29]& ,
               TagBoxNote->"29"],
              StyleBox["29", {
@@ -17189,8 +17593,9 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.8504035701151653, -0.5261309418152302, 
                     1.}, {-0.8504035701151653, -0.5261309418152302, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{240.21517399598685`, 
+                  492.20129978875775`}, {-53.798685114469095`, 
+                  93.13814989641855}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.8597697015715856, -0.510681956073941, 
@@ -17200,16 +17605,16 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.8597697015715856, -0.510681956073941, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Postal (mail)\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -0.5617501516813351, 0.5}, {1, 
-                0}]},
+                FormBox[
+                 StyleBox["\<\"Postal (mail)\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -0.5617501516813351, 
+                0.5}, {1, 0}]},
               StatusArea[#, 9]& ,
               TagBoxNote->"9"],
              StyleBox["9", {
@@ -17275,8 +17680,9 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.8688552079985464, -0.49506628599996844`, 
                     1.}, {-0.8688552079985464, -0.49506628599996844`, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{230.9684250587345, 
+                  492.20129978875775`}, {-53.798685114469095`, 
+                  87.15419096084526}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.8871009332742043, -0.4615754913164648, 
@@ -17286,16 +17692,16 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.8871009332742043, -0.4615754913164648, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Fire fighting\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -0.5077330404481113, 0.5}, {1, 
-                0}]},
+                FormBox[
+                 StyleBox["\<\"Fire fighting\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -0.5077330404481113, 
+                0.5}, {1, 0}]},
               StatusArea[#, 19]& ,
               TagBoxNote->"19"],
              StyleBox["19", {
@@ -17359,8 +17765,9 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.9040563349186167, -0.4274133167011973, 
                     1.}, {-0.9040563349186167, -0.4274133167011973, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{229.55013451973687`, 
+                  492.20129978875775`}, {-53.798685114469095`, 
+                  74.25864243453239}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.9099728324437498, -0.4146678721751894, 
@@ -17370,16 +17777,16 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.9099728324437498, -0.4146678721751894, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Calibration\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -0.45613465939270836`, 0.5}, {1,
-                 0}]},
+                FormBox[
+                 StyleBox["\<\"Calibration\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -0.45613465939270836`, 
+                0.5}, {1, 0}]},
               StatusArea[#, 7]& ,
               TagBoxNote->"7"],
              StyleBox["7", {
@@ -17439,12 +17846,14 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.9325575162479366, -0.36102143826853195`, 
                     1.}, {-0.9325575162479366, -0.36102143826853195`, 0.}}}], 
                    
+                   
                    Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
                     1.}, {-0.9157096546509434, -0.4018405509391129, 
                     1.}, {-0.9157096546509434, -0.4018405509391129, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{225.48739674640117`, 
+                  492.20129978875775`}, {-53.798685114469095`, 
+                  69.43218217488825}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.9243589312304181, -0.381524004820875, 
@@ -17454,16 +17863,16 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.9243589312304181, -0.381524004820875, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Delivery\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -0.4196764053029625, 0.5}, {1, 
-                0}]},
+                FormBox[
+                 StyleBox["\<\"Delivery\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -0.4196764053029625, 
+                0.5}, {1, 0}]},
               StatusArea[#, 11]& ,
               TagBoxNote->"11"],
              StyleBox["11", {
@@ -17529,8 +17938,9 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.9325575162479366, -0.36102143826853195`, 
                     1.}, {-0.9325575162479366, -0.36102143826853195`, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{222.04107323648338`, 
+                  492.20129978875775`}, {-53.798685114469095`, 
+                  61.78205788393353}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.9409827240523615, -0.33845459523398, 
@@ -17540,18 +17950,18 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.9409827240523615, -0.33845459523398, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                
-                StyleBox["\<\"Geographical / Geophysical / Scientific\"\>", 
-                 "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
+                FormBox[
                  
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -0.37230005475737804`, 0.5}, {1,
-                 0}]},
+                 StyleBox["\<\"Geographical / Geophysical / Scientific\"\>", 
+                  "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -0.37230005475737804`, 
+                0.5}, {1, 0}]},
               StatusArea[#, 12]& ,
               TagBoxNote->"12"],
              StyleBox["12", {
@@ -17617,8 +18027,9 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.9488619298953358, -0.31569136509461077`, 
                     1.}, {-0.9488619298953358, -0.31569136509461077`, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{215.54287564076097`, 
+                  492.20129978875775`}, {-53.798685114469095`, 
+                  53.363193609348485`}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.9640391131066538, -0.265760396599148, 
@@ -17628,18 +18039,18 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.9640391131066538, -0.265760396599148, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                
-                StyleBox["\<\"Survey / Patrol / Reconnaissance\"\>", 
-                 "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
+                FormBox[
                  
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -0.29233643625906286`, 0.5}, {1,
-                 0}]},
+                 StyleBox["\<\"Survey / Patrol / Reconnaissance\"\>", 
+                  "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -0.29233643625906286`, 
+                0.5}, {1, 0}]},
               StatusArea[#, 26]& ,
               TagBoxNote->"26"],
              StyleBox["26", {
@@ -17704,8 +18115,9 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.9765907854364996, -0.21510564334884597`, 
                     1.}, {-0.9765907854364996, -0.21510564334884597`, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{216.28334385535607`, 
+                  492.20129978875775`}, {-53.798685114469095`, 
+                  34.96467497776237}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.9807117811007634, -0.19545946487742247`, 
@@ -17715,16 +18127,16 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.9807117811007634, -0.19545946487742247`, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Demonstration\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -0.21500541136516474`, 0.5}, {1,
-                 0}]},
+                FormBox[
+                 StyleBox["\<\"Demonstration\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -0.21500541136516474`, 
+                0.5}, {1, 0}]},
               StatusArea[#, 10]& ,
               TagBoxNote->"10"],
              StyleBox["10", {
@@ -17791,8 +18203,9 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.984437594114201, -0.1757345250502695, 
                     1.}, {-0.984437594114201, -0.1757345250502695, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{213.42923890559283`, 
+                  492.20129978875775`}, {-53.798685114469095`, 
+                  27.867229589096695`}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.9936881056603953, -0.11217820050729513`, 
@@ -17802,16 +18215,16 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.9936881056603953, -0.11217820050729513`, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Illegal (smuggling)\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -0.12339602055802465`, 0.5}, {1,
-                 0}]},
+                FormBox[
+                 StyleBox["\<\"Illegal (smuggling)\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -0.12339602055802465`, 
+                0.5}, {1, 0}]},
               StatusArea[#, 32]& ,
               TagBoxNote->"32"],
              StyleBox["32", {
@@ -17870,14 +18283,14 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                    Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
                     1.}, {-0.9990249748001975, -0.0441486095530165, 
                     1.}, {-0.9990249748001975, -0.0441486095530165, 0.}}}], 
-                   
                    Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
                     1.}, {-0.9988396752808307, -0.04815914331551843, 
                     1.}, {-0.9988396752808307, -0.04815914331551843, 0.}}}]}},
                  
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{217.05059786841304`, 
+                  492.20129978875775`}, {-53.798685114469095`, 
+                  5.260477858717479}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.9989343377350247, -0.04615396942720744, 
@@ -17887,16 +18300,16 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.9989343377350247, -0.04615396942720744, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Topographic\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -0.05076936636992819, 0.5}, {1, 
-                0}]},
+                FormBox[
+                 StyleBox["\<\"Topographic\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -0.05076936636992819, 
+                0.5}, {1, 0}]},
               StatusArea[#, 1]& ,
               TagBoxNote->"1"],
              StyleBox["1", {
@@ -17960,8 +18373,9 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.9990249748001975, -0.0441486095530165, 
                     1.}, {-0.9990249748001975, -0.0441486095530165, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{216.97728986770568`, 
+                  492.20129978875775`}, {-53.798685114469095`, 
+                  4.559325859431425}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.9994177670752079, -0.03411930325205174, 
@@ -17971,16 +18385,16 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.9994177670752079, -0.03411930325205174, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Humanitarian\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -0.03753123357725691, 0.5}, {1, 
-                0}]},
+                FormBox[
+                 StyleBox["\<\"Humanitarian\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -0.03753123357725691, 
+                0.5}, {1, 0}]},
               StatusArea[#, 5]& ,
               TagBoxNote->"5"],
              StyleBox["5", {
@@ -18046,8 +18460,9 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     1.}, {-0.9997098767344531, -0.02408655972912368, 0.}}}]}},
                  
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{217.4755786519932, 
+                  492.20129978875775`}, {-53.798685114469095`, 
+                  1.0605098744523502`}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.9998710528623372, -0.016058569299947, 
@@ -18057,16 +18472,16 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.9998710528623372, -0.016058569299947, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Aerial photography\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -0.0176644262299417, 0.5}, {1, 
-                0}]},
+                FormBox[
+                 StyleBox["\<\"Aerial photography\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -0.0176644262299417, 
+                0.5}, {1, 0}]},
               StatusArea[#, 4]& ,
               TagBoxNote->"4"],
              StyleBox["4", {
@@ -18106,14 +18521,15 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                    
                    Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
                     0.}, {-0.9999677626959624, -0.008029543500808457, 
-                    0.}, {-1., -1.2246467991473532`*^-16, 0.}}, {{0., 0., 
-                    1.}, {0., 0., 1.}, {-1., -1.2246467991473532`*^-16, 
+                    0.}, {-1., -1.224646799147353*^-16, 0.}}, {{0., 0., 1.}, {
+                    0., 0., 1.}, {-1., -1.224646799147353*^-16, 
                     1.}, {-0.9999677626959624, -0.008029543500808457, 1.}}}], 
                    
-                   BSplineSurface3DBox[{{{-1., -1.2246467991473532`*^-16, 
+                   
+                   BSplineSurface3DBox[{{{-1., -1.224646799147353*^-16, 
                     0.}, {-1., -0.004014836464157299, 
                     0.}, {-0.9999677626959624, -0.008029543500808459, 
-                    0.}}, {{-1., -1.2246467991473532`*^-16, 
+                    0.}}, {{-1., -1.224646799147353*^-16, 
                     1}, {-1., -0.004014836464157299, 
                     1}, {-0.9999677626959624, -0.008029543500808459, 1}}}, 
                     SplineDegree -> {1, 2}, 
@@ -18122,15 +18538,16 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                     SplineKnots -> {{0, 0, 1, 1}, {0, 0, 0, 1, 1, 1}}], 
                    
                    Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
-                    1.}, {-1., -1.2246467991473532`*^-16, 
-                    1.}, {-1., -1.2246467991473532`*^-16, 0.}}}], 
+                    1.}, {-1., -1.224646799147353*^-16, 
+                    1.}, {-1., -1.224646799147353*^-16, 0.}}}], 
                    
                    Polygon3DBox[{{{0., 0., 0.}, {0., 0., 
                     1.}, {-0.9999677626959624, -0.008029543500808457, 
                     1.}, {-0.9999677626959624, -0.008029543500808457, 0.}}}]}},
                  
-                 ImageSizeCache->{{164.5614973262032, 
-                  166.5614973262032}, {-3.5, -1.5}}],
+                 ImageSizeCache->{{217.92032324073782`, 
+                  492.20129978875775`}, {-53.798685114469095`, \
+-1.7295628114471242`}}],
                 "DelayedMouseEffectStyle"], 
                {GrayLevel[0], Thickness[0.0025], Opacity[1], 
                 Line3DBox[{{-0.999991940641514, -0.0040148041071498405`, 
@@ -18140,16 +18557,16 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
                {GrayLevel[0], Opacity[1], 
                 SphereBox[{-0.999991940641514, -0.0040148041071498405`, 0.5}, 
                  0.016666666666666666`]}, Text3DBox[
-                StyleBox["\<\"Refuelling\"\>", "Graphics3DLabel",
-                 StripOnInput->False,
-                 LineColor->GrayLevel[0],
-                 FrontFaceColor->GrayLevel[0],
-                 BackFaceColor->GrayLevel[0],
-                 GraphicsColor->GrayLevel[0],
-                 
-                 FontColor->GrayLevel[
-                  0]], {-1.1400000000000001`, -0.004416284517864825, 0.5}, {1,
-                 0}]},
+                FormBox[
+                 StyleBox["\<\"Refuelling\"\>", "Graphics3DLabel",
+                  StripOnInput->False,
+                  LineColor->GrayLevel[0],
+                  FrontFaceColor->GrayLevel[0],
+                  BackFaceColor->GrayLevel[0],
+                  GraphicsColor->GrayLevel[0],
+                  FontColor->GrayLevel[0]], 
+                 StandardForm], {-1.1400000000000001`, -0.004416284517864825, 
+                0.5}, {1, 0}]},
               StatusArea[#, 2]& ,
               TagBoxNote->"2"],
              StyleBox["2", {
@@ -18174,6 +18591,7 @@ tRf70e1BBR/sqSWO3d4P9tjd+cEeu78+2GMPhw/2AJtcX0g=
   BoxRatios->{1, 1, 0.1},
   Boxed->False,
   FaceGridsStyle->Automatic,
+  ImageSize->{997.00390625, Automatic},
   Lighting->"Neutral",
   PlotRange->{{1.2, -1.2}, {1.2, -1.2}, {0., 1.02}},
   ViewPoint->{0, -2.4, 2}]], "Output",
@@ -18187,8 +18605,8 @@ Cell[CellGroupData[{
 
 Cell["Modeli letala", "Subsection",
  CellChangeTimes->{{3.9262725266396523`*^9, 3.926272532186714*^9}, {
-  3.9262725731293716`*^9, 
-  3.9262725777616577`*^9}},ExpressionUUID->"d4de1c5a-014b-4407-b605-\
+  3.926272573129371*^9, 
+  3.926272577761658*^9}},ExpressionUUID->"d4de1c5a-014b-4407-b605-\
 16c4da821052"],
 
 Cell[BoxData[
@@ -19230,7 +19648,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ - 20 
                     If[True, 373, 1], {1, 373 - -20 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -19279,7 +19697,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ - 20 
                     If[False, 373, 1], {1, 373 - -20 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -20705,7 +21123,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ - 20 
                     If[True, 258, 1], {1, 258 - -20 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -20754,7 +21172,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ - 20 
                     If[False, 258, 1], {1, 258 - -20 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -21265,9 +21683,9 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
 
 Cell[CellGroupData[{
 
-Cell["Po  letih", "Subsection",
- CellChangeTimes->{{3.926273381957432*^9, 
-  3.926273385243191*^9}},ExpressionUUID->"7228806d-516d-4b7c-b919-\
+Cell["Po letih", "Subsection",
+ CellChangeTimes->{{3.926273381957432*^9, 3.926273385243191*^9}, 
+   3.9263884651231003`*^9},ExpressionUUID->"7228806d-516d-4b7c-b919-\
 eb0417716bf8"],
 
 Cell[BoxData[
@@ -22142,7 +22560,7 @@ TXjI+Rqq3xvEZ+Bwg/F9wOZHNMH4vmDz6/dB+QyeIH7D0l8wvh+I/+G02Rso
          RowBox[{#2, ",", "After"}], "]"}]}], "]"}]& )]], "Output",
  CellChangeTimes->{{3.9263049596062593`*^9, 3.926304964478794*^9}, 
    3.926305029840127*^9, 3.926305099406633*^9, {3.92630516634101*^9, 
-   3.9263051810807753`*^9}},
+   3.926305181080775*^9}},
  CellLabel->
   "Out[245]=",ExpressionUUID->"74011def-5f05-4725-9f50-62e8b7e63036"]
 }, Open  ]]
@@ -23328,9 +23746,9 @@ Cell[BoxData[
 
 Cell[CellGroupData[{
 
-Cell["Letalske  dru\[ZHacek]be", "Subsection",
- CellChangeTimes->{{3.926305237744442*^9, 
-  3.9263052427440767`*^9}},ExpressionUUID->"a2f9899e-9b2d-4dee-b2b4-\
+Cell["Letalske dru\[ZHacek]be", "Subsection",
+ CellChangeTimes->{{3.926305237744442*^9, 3.926305242744077*^9}, 
+   3.926388561278543*^9},ExpressionUUID->"a2f9899e-9b2d-4dee-b2b4-\
 a6731f6b5a92"],
 
 Cell[BoxData[
@@ -25638,7 +26056,7 @@ Cell[CellGroupData[{
 
 Cell["Letali\[SHacek]\[CHacek]a", "Subsection",
  CellChangeTimes->{{3.926304798382263*^9, 
-  3.9263048036049767`*^9}},ExpressionUUID->"bda0ae55-3791-4bf5-8b87-\
+  3.926304803604977*^9}},ExpressionUUID->"bda0ae55-3791-4bf5-8b87-\
 10254c87c339"],
 
 Cell[CellGroupData[{
@@ -25713,7 +26131,7 @@ Cell[BoxData[{
        RowBox[{"[", "2", "]"}], "]"}]}], "&"}]}], "]"}]}]}], "Input",
  CellChangeTimes->{{3.926304073348811*^9, 3.926304359446233*^9}, {
   3.9263044196906757`*^9, 3.926304445841419*^9}, {3.926304537973144*^9, 
-  3.926304551180942*^9}, {3.926304599370899*^9, 3.9263046066941767`*^9}},
+  3.926304551180942*^9}, {3.926304599370899*^9, 3.926304606694177*^9}},
  CellLabel->
   "In[223]:=",ExpressionUUID->"12fbf3da-5027-446f-bf8a-595511731563"],
 
@@ -28215,7 +28633,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ - 20 
                     If[True, 1954, 1], {1, 1954 - -20 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -28263,7 +28681,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ - 20 
                     If[False, 1954, 1], {1, 1954 - -20 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -29412,7 +29830,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ - 20 
                     If[True, 2226, 1], {1, 2226 - -20 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -29459,7 +29877,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ - 20 
                     If[False, 2226, 1], {1, 2226 - -20 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -29969,13 +30387,46 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{{3.9263047050496187`*^9, 3.926304720963889*^9}},
+ CellChangeTimes->{{3.926304705049619*^9, 3.926304720963889*^9}},
  CellLabel->
   "Out[238]=",ExpressionUUID->"623fe57e-c937-4764-9a19-60ee2f402c60"]
 }, Open  ]]
+}, Closed]],
+
+Cell["Proizvajalci  letal", "Subsection",
+ CellChangeTimes->{{3.926388657215445*^9, 3.926388658213746*^9}, {
+  3.9263887591801434`*^9, 3.926388773154451*^9}, {3.926388945629424*^9, 
+  3.926388948349258*^9}},ExpressionUUID->"36d1e56a-76dc-412b-a33b-\
+d050c2227738"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ProizvajalciLetal", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<Douglas\>\"", ",", "\"\<Cessna\>\"", ",", "\"\<Airbus\>\"", ",", 
+     "\"\<Boeing\>\"", ",", "\"\<Antonov\>\"", ",", "\"\<Beechraft\>\"", ",", 
+     "\"\<De Havilland\>\"", ",", "\"\<Piper\>\"", ",", "\"\<Mitsubishi\>\"", 
+     ",", "\"\<Embraer\>\""}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.926388778749321*^9, 3.926389033956416*^9}},
+ CellLabel->
+  "In[249]:=",ExpressionUUID->"92e3e0a0-3e50-4394-ace0-1ad14a32b2ae"],
+
+Cell[CellGroupData[{
+
+Cell["Aplikacija", "Section",
+ CellChangeTimes->{{3.926312816917904*^9, 
+  3.926312823554786*^9}},ExpressionUUID->"7de23843-a657-4fa4-8dc2-\
+253e4f3e07ee"],
+
+Cell[BoxData["CloudDeploy"], "Input",
+ CellChangeTimes->{{3.926312834402478*^9, 
+  3.9263128358086863`*^9}},ExpressionUUID->"445b46d7-a2b6-4960-a2df-\
+59b03ba563b1"]
 }, Closed]]
-}, Open  ]]
 },
+CellGrouping->Manual,
 WindowSize->{1132, 747},
 WindowMargins->{{20, Automatic}, {Automatic, 43}},
 FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
@@ -29995,146 +30446,157 @@ CellTagsIndex->{}
 Notebook[{
 Cell[558, 20, 166, 3, 71, "Input",ExpressionUUID->"8c212da1-b512-42b5-aeea-07ce1278f077"],
 Cell[CellGroupData[{
-Cell[749, 27, 171, 3, 67, "Section",ExpressionUUID->"a108690d-3a29-4201-af4d-f5c25797a8aa"],
+Cell[749, 27, 169, 3, 67, "Section",ExpressionUUID->"a108690d-3a29-4201-af4d-f5c25797a8aa"],
 Cell[CellGroupData[{
-Cell[945, 34, 434, 9, 30, "Input",ExpressionUUID->"9d55be6e-7cf4-43f4-9dc2-7d8b7dec7ba0"],
-Cell[1382, 45, 187171, 3400, 653, "Output",ExpressionUUID->"8e99a882-e6c9-4628-8931-c6eaa039d504"]
+Cell[943, 34, 434, 9, 30, "Input",ExpressionUUID->"9d55be6e-7cf4-43f4-9dc2-7d8b7dec7ba0"],
+Cell[1380, 45, 187159, 3400, 653, "Output",ExpressionUUID->"8e99a882-e6c9-4628-8931-c6eaa039d504"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[188590, 3450, 239, 4, 30, "Input",ExpressionUUID->"82306002-00a4-422d-94ea-21f31ae07154"],
-Cell[188832, 3456, 374, 8, 36, "Output",ExpressionUUID->"3d999037-1b92-47f6-a3c0-69b036d3795a"]
+Cell[188576, 3450, 239, 4, 30, "Input",ExpressionUUID->"82306002-00a4-422d-94ea-21f31ae07154"],
+Cell[188818, 3456, 374, 8, 36, "Output",ExpressionUUID->"3d999037-1b92-47f6-a3c0-69b036d3795a"]
+}, Open  ]],
+Cell[189207, 3467, 152, 3, 30, "Input",ExpressionUUID->"a4c52972-8dcf-4513-a67c-565b2e20f4db"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[189396, 3475, 155, 3, 53, "Section",ExpressionUUID->"71a8a7bf-70ef-4d30-95aa-2eba443b31b6"],
+Cell[189554, 3480, 153, 3, 30, "Input",ExpressionUUID->"24288512-f029-4166-a1b5-11d962dd67b5"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[189744, 3488, 173, 3, 53, "Section",ExpressionUUID->"59116dfb-8676-403e-9b26-dc70fbffba88"],
+Cell[CellGroupData[{
+Cell[189942, 3495, 596, 15, 30, "Input",ExpressionUUID->"260db97d-f093-49de-aadb-b8c85025c6f9"],
+Cell[190541, 3512, 30413, 549, 227, "Output",ExpressionUUID->"881e1d74-7232-4d37-b772-beedcfe9e991"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[220991, 4066, 609, 16, 52, "Input",ExpressionUUID->"6c6da6ae-f287-45c8-9ff4-9040ece97528"],
+Cell[221603, 4084, 50930, 932, 266, 29325, 577, "CachedBoxData", "BoxData", "Output",ExpressionUUID->"6ae06ae9-7234-4796-b46c-f627d03aa7bf"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[272570, 5021, 981, 27, 52, "Input",ExpressionUUID->"41eee0d3-146e-42f8-8266-f8f8bd8feed1"],
+Cell[273554, 5050, 30407, 549, 227, "Output",ExpressionUUID->"dc3fe87e-8af6-4436-8e55-1ac5d72c3a7c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[303998, 5604, 690, 16, 52, "Input",ExpressionUUID->"c0739519-442a-4713-8779-077fecda9dc4"],
+Cell[304691, 5622, 28976, 574, 253, "Output",ExpressionUUID->"b218f25e-576d-4ba7-9652-af31fcab212a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[333704, 6201, 272, 6, 54, "Subsection",ExpressionUUID->"d58f03d5-fec1-471b-a1ab-55740df3ffbb"],
+Cell[CellGroupData[{
+Cell[334001, 6211, 978, 27, 52, "Input",ExpressionUUID->"f93903ea-d96f-4e40-9884-0eab7f03250b"],
+Cell[334982, 6240, 30407, 549, 227, "Output",ExpressionUUID->"fa622d4b-0513-466f-85b3-24708b6f036e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[365426, 6794, 636, 14, 52, "Input",ExpressionUUID->"f32fc068-70d8-474f-b0a7-7b7f42532af0"],
+Cell[366065, 6810, 42930, 922, 257, "Output",ExpressionUUID->"1f82de45-9be7-48ee-97a1-a34dae008eb2"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[189255, 3470, 173, 3, 53, "Section",ExpressionUUID->"59116dfb-8676-403e-9b26-dc70fbffba88"],
+Cell[409044, 7738, 173, 3, 38, "Subsection",ExpressionUUID->"d930c5b9-f39a-4ddd-9b67-1f327df12dad"],
+Cell[409220, 7743, 477, 12, 30, "Input",ExpressionUUID->"944542e3-6477-4e4d-9c52-a92ac21ff5ea"],
+Cell[409700, 7757, 880, 15, 94, "Input",ExpressionUUID->"e3fe11c7-41be-4c5a-8646-bd804dbb1530"],
 Cell[CellGroupData[{
-Cell[189453, 3477, 596, 15, 30, "Input",ExpressionUUID->"260db97d-f093-49de-aadb-b8c85025c6f9"],
-Cell[190052, 3494, 30413, 549, 227, "Output",ExpressionUUID->"881e1d74-7232-4d37-b772-beedcfe9e991"]
+Cell[410605, 7776, 1357, 36, 136, "Input",ExpressionUUID->"76ef12c3-e06a-4d5b-8d0a-7979f085da1e"],
+Cell[411965, 7814, 44727, 835, 579, "Output",ExpressionUUID->"d3214a87-27f7-4db2-a948-64457f018839"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[220502, 4048, 609, 16, 52, "Input",ExpressionUUID->"6c6da6ae-f287-45c8-9ff4-9040ece97528"],
-Cell[221114, 4066, 29232, 576, 266, "Output",ExpressionUUID->"6ae06ae9-7234-4796-b46c-f627d03aa7bf"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[250383, 4647, 981, 27, 52, "Input",ExpressionUUID->"41eee0d3-146e-42f8-8266-f8f8bd8feed1"],
-Cell[251367, 4676, 30407, 549, 227, "Output",ExpressionUUID->"dc3fe87e-8af6-4436-8e55-1ac5d72c3a7c"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[281811, 5230, 690, 16, 52, "Input",ExpressionUUID->"c0739519-442a-4713-8779-077fecda9dc4"],
-Cell[282504, 5248, 28976, 574, 253, "Output",ExpressionUUID->"b218f25e-576d-4ba7-9652-af31fcab212a"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[311517, 5827, 272, 6, 54, "Subsection",ExpressionUUID->"d58f03d5-fec1-471b-a1ab-55740df3ffbb"],
-Cell[CellGroupData[{
-Cell[311814, 5837, 978, 27, 52, "Input",ExpressionUUID->"f93903ea-d96f-4e40-9884-0eab7f03250b"],
-Cell[312795, 5866, 30407, 549, 227, "Output",ExpressionUUID->"fa622d4b-0513-466f-85b3-24708b6f036e"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[343239, 6420, 636, 14, 52, "Input",ExpressionUUID->"f32fc068-70d8-474f-b0a7-7b7f42532af0"],
-Cell[343878, 6436, 42930, 922, 257, "Output",ExpressionUUID->"1f82de45-9be7-48ee-97a1-a34dae008eb2"]
-}, Open  ]]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[386857, 7364, 173, 3, 38, "Subsection",ExpressionUUID->"d930c5b9-f39a-4ddd-9b67-1f327df12dad"],
-Cell[387033, 7369, 477, 12, 30, "Input",ExpressionUUID->"944542e3-6477-4e4d-9c52-a92ac21ff5ea"],
-Cell[387513, 7383, 880, 15, 94, "Input",ExpressionUUID->"e3fe11c7-41be-4c5a-8646-bd804dbb1530"],
-Cell[CellGroupData[{
-Cell[388418, 7402, 1357, 36, 136, "Input",ExpressionUUID->"76ef12c3-e06a-4d5b-8d0a-7979f085da1e"],
-Cell[389778, 7440, 44727, 835, 579, "Output",ExpressionUUID->"d3214a87-27f7-4db2-a948-64457f018839"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[434542, 8280, 620, 16, 52, "Input",ExpressionUUID->"2ea3d754-3a43-4a60-bad5-fc15bed7aa71"],
-Cell[435165, 8298, 83654, 1671, 414, "Output",ExpressionUUID->"77e1cadf-b132-4e55-bde5-4378ef0b1d88"]
+Cell[456729, 8654, 620, 16, 52, "Input",ExpressionUUID->"2ea3d754-3a43-4a60-bad5-fc15bed7aa71"],
+Cell[457352, 8672, 83654, 1671, 414, "Output",ExpressionUUID->"77e1cadf-b132-4e55-bde5-4378ef0b1d88"]
 }, Open  ]]
 }, Closed]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[518880, 9976, 156, 3, 53, "Section",ExpressionUUID->"9b793cd2-1715-463b-b301-9c345296c8a7"],
+Cell[541067, 10350, 202, 4, 53, "Section",ExpressionUUID->"9b793cd2-1715-463b-b301-9c345296c8a7"],
 Cell[CellGroupData[{
-Cell[519061, 9983, 181, 3, 54, "Subsection",ExpressionUUID->"fb84a9e1-7dbd-40bc-858e-4a0d056246f6"],
-Cell[519245, 9988, 1155, 31, 52, "Input",ExpressionUUID->"db23d7bc-f05d-4276-a521-ec51d411f481"],
+Cell[541294, 10358, 181, 3, 54, "Subsection",ExpressionUUID->"fb84a9e1-7dbd-40bc-858e-4a0d056246f6"],
+Cell[541478, 10363, 1155, 31, 52, "Input",ExpressionUUID->"db23d7bc-f05d-4276-a521-ec51d411f481"],
 Cell[CellGroupData[{
-Cell[520425, 10023, 351, 9, 30, "Input",ExpressionUUID->"c2e7040e-b835-43a3-9038-0ff721671137"],
-Cell[520779, 10034, 184418, 3407, 653, "Output",ExpressionUUID->"40d21cb5-9723-483e-8a7c-737895ded3f6"]
+Cell[542658, 10398, 351, 9, 30, "Input",ExpressionUUID->"c2e7040e-b835-43a3-9038-0ff721671137"],
+Cell[543012, 10409, 184406, 3407, 653, "Output",ExpressionUUID->"40d21cb5-9723-483e-8a7c-737895ded3f6"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[705246, 13447, 208, 4, 38, "Subsection",ExpressionUUID->"34693d88-79f7-4afd-af7c-12f3ca71f785"],
+Cell[727467, 13822, 208, 4, 38, "Subsection",ExpressionUUID->"34693d88-79f7-4afd-af7c-12f3ca71f785"],
 Cell[CellGroupData[{
-Cell[705479, 13455, 1099, 32, 52, "Input",ExpressionUUID->"0beb4d32-d327-4816-91d1-e584476ef6a8"],
-Cell[706581, 13489, 30389, 550, 227, "Output",ExpressionUUID->"77b029ed-3204-4d12-a566-b559f42c0a7d"]
+Cell[727700, 13830, 1099, 32, 52, "Input",ExpressionUUID->"0beb4d32-d327-4816-91d1-e584476ef6a8"],
+Cell[728802, 13864, 30387, 550, 227, "Output",ExpressionUUID->"77b029ed-3204-4d12-a566-b559f42c0a7d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[737007, 14044, 886, 25, 52, "Input",ExpressionUUID->"5fbc08ec-5d77-4883-998c-bda371145316"],
-Cell[737896, 14071, 28219, 506, 173, "Output",ExpressionUUID->"ecca4b8a-edab-4ba7-a383-b610a039f75a"]
+Cell[759226, 14419, 886, 25, 52, "Input",ExpressionUUID->"5fbc08ec-5d77-4883-998c-bda371145316"],
+Cell[760115, 14446, 28219, 506, 173, "Output",ExpressionUUID->"ecca4b8a-edab-4ba7-a383-b610a039f75a"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[766164, 14583, 157, 3, 38, "Subsection",ExpressionUUID->"75efddcd-a4b4-4c6a-861d-ade2fefc800b"],
-Cell[766324, 14588, 618, 17, 30, "Input",ExpressionUUID->"f6387e0f-f199-4527-a9ac-8767a940615b"],
+Cell[788383, 14958, 181, 3, 38, "Subsection",ExpressionUUID->"75efddcd-a4b4-4c6a-861d-ade2fefc800b"],
+Cell[788567, 14963, 618, 17, 30, "Input",ExpressionUUID->"f6387e0f-f199-4527-a9ac-8767a940615b"],
 Cell[CellGroupData[{
-Cell[766967, 14609, 302, 9, 30, "Input",ExpressionUUID->"231bc9ed-0cb4-45c1-b720-ccf11634773b"],
-Cell[767272, 14620, 62055, 1160, 627, "Output",ExpressionUUID->"158bc277-c0e1-49e2-ae37-977249eb6817"]
+Cell[789210, 14984, 302, 9, 30, "Input",ExpressionUUID->"231bc9ed-0cb4-45c1-b720-ccf11634773b"],
+Cell[789515, 14995, 62049, 1160, 627, "Output",ExpressionUUID->"158bc277-c0e1-49e2-ae37-977249eb6817"]
 }, Open  ]],
-Cell[829342, 15783, 990, 27, 52, "Input",ExpressionUUID->"f46c085a-064c-450c-bafc-646fa0e38165"],
+Cell[851579, 16158, 990, 27, 52, "Input",ExpressionUUID->"f46c085a-064c-450c-bafc-646fa0e38165"],
 Cell[CellGroupData[{
-Cell[830357, 15814, 1036, 25, 94, "Input",ExpressionUUID->"9a82acba-8dc9-447a-9942-7f77bced42e5"],
-Cell[831396, 15841, 117110, 2340, 35, "Output",ExpressionUUID->"09689c31-5d00-4a6a-8533-12f4e8f00690"]
+Cell[852594, 16189, 1036, 25, 94, "Input",ExpressionUUID->"9a82acba-8dc9-447a-9942-7f77bced42e5"],
+Cell[853633, 16216, 119483, 2383, 487, "Output",ExpressionUUID->"09689c31-5d00-4a6a-8533-12f4e8f00690"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[948555, 18187, 216, 4, 38, "Subsection",ExpressionUUID->"d4de1c5a-014b-4407-b605-16c4da821052"],
-Cell[948774, 18193, 714, 19, 30, "Input",ExpressionUUID->"ae49e75d-2326-492e-93a0-1506b9ba3619"],
+Cell[973165, 18605, 212, 4, 38, "Subsection",ExpressionUUID->"d4de1c5a-014b-4407-b605-16c4da821052"],
+Cell[973380, 18611, 714, 19, 30, "Input",ExpressionUUID->"ae49e75d-2326-492e-93a0-1506b9ba3619"],
 Cell[CellGroupData[{
-Cell[949513, 18216, 378, 10, 30, "Input",ExpressionUUID->"39dacbbd-b57d-4935-b759-ee07b4627a05"],
-Cell[949894, 18228, 89324, 1558, 627, "Output",ExpressionUUID->"f82a4244-4c02-4998-9374-9bffe9564e35"]
+Cell[974119, 18634, 378, 10, 30, "Input",ExpressionUUID->"39dacbbd-b57d-4935-b759-ee07b4627a05"],
+Cell[974500, 18646, 89318, 1558, 627, "Output",ExpressionUUID->"f82a4244-4c02-4998-9374-9bffe9564e35"]
 }, Open  ]],
-Cell[1039233, 19789, 925, 26, 52, "Input",ExpressionUUID->"fd70ae42-3fe9-464d-8b99-13fdba917255"],
+Cell[1063833, 20207, 925, 26, 52, "Input",ExpressionUUID->"fd70ae42-3fe9-464d-8b99-13fdba917255"],
 Cell[CellGroupData[{
-Cell[1040183, 19819, 354, 9, 30, "Input",ExpressionUUID->"fafb326f-634b-49d2-b1eb-afe3b690cba6"],
-Cell[1040540, 19830, 80653, 1431, 627, "Output",ExpressionUUID->"114d5c95-18d1-4bf4-bfe3-2646a7b9e9f8"]
+Cell[1064783, 20237, 354, 9, 30, "Input",ExpressionUUID->"fafb326f-634b-49d2-b1eb-afe3b690cba6"],
+Cell[1065140, 20248, 80647, 1431, 627, "Output",ExpressionUUID->"114d5c95-18d1-4bf4-bfe3-2646a7b9e9f8"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[1121242, 21267, 157, 3, 38, "Subsection",ExpressionUUID->"7228806d-516d-4b7c-b919-eb0417716bf8"],
-Cell[1121402, 21272, 1135, 31, 52, "Input",ExpressionUUID->"d4bcce1f-5767-4ff8-95b7-751e577514b7"],
-Cell[1122540, 21305, 1472, 40, 73, "Input",ExpressionUUID->"43735b5a-4ad4-4bd9-89a9-1123b2a5eae7"],
+Cell[1145836, 21685, 181, 3, 38, "Subsection",ExpressionUUID->"7228806d-516d-4b7c-b919-eb0417716bf8"],
+Cell[1146020, 21690, 1135, 31, 52, "Input",ExpressionUUID->"d4bcce1f-5767-4ff8-95b7-751e577514b7"],
+Cell[1147158, 21723, 1472, 40, 73, "Input",ExpressionUUID->"43735b5a-4ad4-4bd9-89a9-1123b2a5eae7"],
 Cell[CellGroupData[{
-Cell[1124037, 21349, 984, 26, 56, "Input",ExpressionUUID->"8e6054e0-bbbf-46fb-bd87-556aee4533ba"],
-Cell[1125024, 21377, 32214, 769, 258, "Output",ExpressionUUID->"74011def-5f05-4725-9f50-62e8b7e63036"]
+Cell[1148655, 21767, 984, 26, 56, "Input",ExpressionUUID->"8e6054e0-bbbf-46fb-bd87-556aee4533ba"],
+Cell[1149642, 21795, 32212, 769, 258, "Output",ExpressionUUID->"74011def-5f05-4725-9f50-62e8b7e63036"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[1157287, 22152, 159, 3, 38, "Subsection",ExpressionUUID->"4e45dd7f-1d36-49c4-a4e7-dfec23a7a1ed"],
+Cell[1181903, 22570, 159, 3, 38, "Subsection",ExpressionUUID->"4e45dd7f-1d36-49c4-a4e7-dfec23a7a1ed"],
 Cell[CellGroupData[{
-Cell[1157471, 22159, 1009, 28, 52, "Input",ExpressionUUID->"47b53128-0dd9-4255-ac2c-69797e4a4df5"],
-Cell[1158483, 22189, 36784, 680, 389, "Output",ExpressionUUID->"fab4c564-30f5-4741-963c-619623ba3dd6"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[1195304, 22874, 171, 3, 30, "Input",ExpressionUUID->"0bd710d1-7da2-4338-9c13-9e3776032855"],
-Cell[1195478, 22879, 18039, 445, 246, "Output",ExpressionUUID->"02c52b74-b8ef-43a3-bb86-17dbbcef9496"]
-}, Open  ]]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[1213566, 23330, 174, 3, 38, "Subsection",ExpressionUUID->"a2f9899e-9b2d-4dee-b2b4-a6731f6b5a92"],
-Cell[1213743, 23335, 1301, 36, 73, "Input",ExpressionUUID->"9e1515d8-1031-413f-b492-bce96bc6dc8f"],
-Cell[CellGroupData[{
-Cell[1215069, 23375, 410, 10, 30, "Input",ExpressionUUID->"78da33ce-658c-4651-8c9e-46b182cf45af"],
-Cell[1215482, 23387, 134318, 2245, 627, "Output",ExpressionUUID->"8368fd70-7030-4eb5-96f2-a38045fe3d65"]
-}, Open  ]]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[1349849, 25638, 175, 3, 38, "Subsection",ExpressionUUID->"bda0ae55-3791-4bf5-8b87-10254c87c339"],
-Cell[CellGroupData[{
-Cell[1350049, 25645, 2691, 72, 157, "Input",ExpressionUUID->"12fbf3da-5027-446f-bf8a-595511731563"],
-Cell[1352743, 25719, 188665, 3038, 627, "Output",ExpressionUUID->"afe68542-3624-4818-840b-1264b33a1555"]
+Cell[1182087, 22577, 1009, 28, 52, "Input",ExpressionUUID->"47b53128-0dd9-4255-ac2c-69797e4a4df5"],
+Cell[1183099, 22607, 36784, 680, 389, "Output",ExpressionUUID->"fab4c564-30f5-4741-963c-619623ba3dd6"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1541445, 28762, 2561, 71, 157, "Input",ExpressionUUID->"2e672617-07c7-4026-b4c5-d629a9b7e7d3"],
-Cell[1544009, 28835, 62296, 1138, 633, "Output",ExpressionUUID->"623fe57e-c937-4764-9a19-60ee2f402c60"]
+Cell[1219920, 23292, 171, 3, 30, "Input",ExpressionUUID->"0bd710d1-7da2-4338-9c13-9e3776032855"],
+Cell[1220094, 23297, 18039, 445, 246, "Output",ExpressionUUID->"02c52b74-b8ef-43a3-bb86-17dbbcef9496"]
 }, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1238182, 23748, 194, 3, 38, "Subsection",ExpressionUUID->"a2f9899e-9b2d-4dee-b2b4-a6731f6b5a92"],
+Cell[1238379, 23753, 1301, 36, 73, "Input",ExpressionUUID->"9e1515d8-1031-413f-b492-bce96bc6dc8f"],
+Cell[CellGroupData[{
+Cell[1239705, 23793, 410, 10, 30, "Input",ExpressionUUID->"78da33ce-658c-4651-8c9e-46b182cf45af"],
+Cell[1240118, 23805, 134318, 2245, 627, "Output",ExpressionUUID->"8368fd70-7030-4eb5-96f2-a38045fe3d65"]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1374485, 26056, 173, 3, 38, "Subsection",ExpressionUUID->"bda0ae55-3791-4bf5-8b87-10254c87c339"],
+Cell[CellGroupData[{
+Cell[1374683, 26063, 2689, 72, 157, "Input",ExpressionUUID->"12fbf3da-5027-446f-bf8a-595511731563"],
+Cell[1377375, 26137, 188659, 3038, 627, "Output",ExpressionUUID->"afe68542-3624-4818-840b-1264b33a1555"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1566071, 29180, 2561, 71, 157, "Input",ExpressionUUID->"2e672617-07c7-4026-b4c5-d629a9b7e7d3"],
+Cell[1568635, 29253, 62288, 1138, 633, "Output",ExpressionUUID->"623fe57e-c937-4764-9a19-60ee2f402c60"]
+}, Open  ]]
+}, Closed]],
+Cell[1630950, 30395, 264, 4, 38, "Subsection",ExpressionUUID->"36d1e56a-76dc-412b-a33b-d050c2227738"]
+}, Open  ]],
+Cell[1631229, 30402, 529, 11, 52, "Input",ExpressionUUID->"92e3e0a0-3e50-4394-ace0-1ad14a32b2ae"],
+Cell[CellGroupData[{
+Cell[1631783, 30417, 155, 3, 67, "Section",ExpressionUUID->"7de23843-a657-4fa4-8dc2-253e4f3e07ee"],
+Cell[1631941, 30422, 165, 3, 30, "Input",ExpressionUUID->"445b46d7-a2b6-4960-a2df-59b03ba563b1"]
 }, Closed]]
-}, Open  ]]
 }
 ]
 *)
