@@ -10,8 +10,9 @@ Za projekt pri predmetu uporabljamo računalniški program *Mathematica*.
 4. Pripravila bom videoposnetek kratke predstavitve projekta.
 
 #### Povezava do aplikacije
-https://www.wolframcloud.com/obj/0446872d-d41b-48fb-98aa-6c911ab84114
+https://www.wolframcloud.com/obj/1e11ae55-0ef2-4856-a990-ad7824f7d710
 
 #### Povezava do videoposnetka
+https://youtu.be/ewhiWM5Svwg
 
 Pripravila: *Megi Škander*
