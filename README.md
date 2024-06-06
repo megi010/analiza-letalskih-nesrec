@@ -8,5 +8,10 @@ Za projekt pri predmetu uporabljamo računalniški program *Mathematica*.
 2. Analizirala bom kako se podatki spreminjajo glede na lete z preživelimi in brez preživelih. Podatke bom vizualirala na grafih in diagramih.
 3. Ustvarila bom tudi aplikacijo, kjer lahko filtriramo nesreče po letih, vzrokih itd.
 4. Pripravila bom videoposnetek kratke predstavitve projekta.
-   
+
+#### Povezava do aplikacije
+https://www.wolframcloud.com/obj/0446872d-d41b-48fb-98aa-6c911ab84114
+
+#### Povezava do videoposnetka
+
 Pripravila: *Megi Škander*
